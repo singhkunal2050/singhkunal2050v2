@@ -1,0 +1,20 @@
+
+nav{
+  background: #edefed;
+  display: flex;
+
+
+  & > *{
+    background: wheat;
+  }
+
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li{
+  list-style: none;
+}
