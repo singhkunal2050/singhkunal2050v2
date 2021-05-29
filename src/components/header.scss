@@ -8,7 +8,13 @@ nav{
     background: wheat;
   }
 
+
+  & .menu-section{
+    margin-left: auto;
+  }
+
 }
+
 
 ul{
   display: flex;
@@ -16,5 +22,6 @@ ul{
 }
 
 ul li{
+  margin: 10px 20px;
   list-style: none;
 }
