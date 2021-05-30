@@ -7,8 +7,17 @@ function Header() {
 
   function toggleMenu() {
     let menu = document.querySelector('.menu-section');
+    let linesNodeList = document.querySelectorAll('rect')  // svg lines
+    let lines = [...linesNodeList]
+
     if(menuSection===0){
       menu.style.transform = "translateX(0)";
+      // console.log(lines);
+      // lines[0].style.width= "500";
+      // lines[2].style.width= "500";
+      // lines[0].style.transform= " translateY(25px) rotate(45deg) ";
+      // lines[2].style.transform= "  translateY(-25px)  rotate(-45deg) ";
+
       setMenuSection(1)
     }else if(menuSection===1){
       menu.style.transform = "translateX(-800px)";

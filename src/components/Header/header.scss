@@ -62,6 +62,11 @@ nav{
       align-self: center;
       z-index: 2;
       cursor: pointer;
+    
+      & svg rect{
+        transition: 200ms ease-in-out;
+      }
+    
     }
   }
 
