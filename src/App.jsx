@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import './App.css'
 import Header  from './components/Header/Header' 
+import Main from './components/Main/Main'
 import Footer from './components/Footer/Footer'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,7 +11,8 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <h2>Hello World!</h2>
+      <Main/>
+      <Footer/>
     </div>
   )
 }

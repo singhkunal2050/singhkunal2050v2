@@ -3,23 +3,67 @@ nav{
   background: #edefed;
   display: flex;
 
-  & > *{
-    background: wheat;
+  & .logo-section{
+    z-index: 2;
   }
 
+  &  ul{
+    display: flex;
+    justify-content: space-evenly;
+  
+    & li{
+      margin: 10px 20px;
+      list-style: none;
+    }
+  }
+  
   & .menu-section{
     margin-left: auto;
   }
 
+  & .hamburger{
+    display: none;
+  }
+
+  @media(max-width:768px) {
+    & .menu-section ul li{
+      margin: 10px 10px;
+    }
+  }
+
+  @media(max-width:608px) {
+    & .menu-section{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      display: grid;
+      place-items: center;
+      background: coral;
+      transform: translateX(-800px);
+      transition: 325ms ease-in-out;
+    }
+
+    & .menu-section ul{
+      flex-direction: column;
+
+      & li{
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+
+    }
+
+    & .hamburger{
+      margin-left: auto;
+      margin-right: 15px;
+      display: block;
+      align-self: center;
+      z-index: 2;
+      cursor: pointer;
+    }
+  }
+
 }
 
-
-ul{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-ul li{
-  margin: 10px 20px;
-  list-style: none;
-}

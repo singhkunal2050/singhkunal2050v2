@@ -1,10 +1,12 @@
 import React from 'react'
+import './Footer.scss'
+
 
 function Footer() {
   return (
-    <div className="footer">
+    <footer className="footer container">
       Copyright @singhkunal2050
-    </div>
+    </footer>
   )
 }
 
