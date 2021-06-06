@@ -1,5 +1,6 @@
 import React , { useState }  from "react";
 import "./Header.scss";
+import { Link } from 'react-router-dom'
 
 function Header() {
 
@@ -33,11 +34,11 @@ function Header() {
       </div>
       <div className="menu-section">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Testimonials</li>
-          <li>Contact</li>
+          <li> <Link to="/"> Home </Link> </li>
+          <li> <Link to="/About"> About </Link> </li>
+          <li> <Link to="/Projects"> Projects </Link> </li>
+          <li> <Link to="/"> Testimonials </Link> </li>
+          <li> <Link to="/"> Contact </Link> </li>
         </ul>
       </div>
       <div className="hamburger" onClick={toggleMenu}>

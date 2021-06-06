@@ -1,10 +1,17 @@
 import React from 'react'
-import './Main.scss'
+import Home from '../Home/Home'
+import About from '../About/About'
+import Projects from '../Projects/Projects'
+import {Switch , Route } from 'react-router-dom'
 
-function Main() {
+const Main = () => {
   return (
-    <main class="main">
-      <h1>ASD</h1>
+    <main>
+      <Switch>
+        <Route exact path='/' component={Home}/>
+        <Route path='/About' component={About}/>
+        <Route path='/Projects' component={Projects}/>
+      </Switch>
     </main>
   )
 }
