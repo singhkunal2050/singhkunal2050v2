@@ -6,4 +6,8 @@
 - Animate on scroll
 - Semantic HTML
 - og meta tags
+- typewriter 
+- text highlight 
+- forms 
+- blogs
 - 
