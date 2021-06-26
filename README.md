@@ -11,3 +11,4 @@
 - forms 
 - blogs
 - hover on unicorn => quote
+- shine js for glass cards
