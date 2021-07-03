@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;300;600;700&display=swap');
 
 $background: #0C1118;
 $dark2: #171d25b6;
@@ -72,6 +72,7 @@ h5 {
 
 .subhead_text {
   font-size: clamp(1.5rem, 3.5vw, 4rem);
+  opacity: .4;
 }
 
 .btn {
@@ -163,16 +164,15 @@ nav {
   }
 
   & .hero-left {
-    & .head_text {
-      margin: 10px 0 20px 0;
-
-      & .rainbow{
-        // background:linear-gradient(40deg , #FF9AA2 , #FFB7B2 , #FFDAC1 , #E2F0CB , #B5EAD7 , #B5EAD7 , #C7CEEA , #C7EAE8 );
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-      }
-
+    
+    & .my-title{
+      text-transform: uppercase;
+      font-weight:600 ;
+      letter-spacing: 12px;
+      opacity: .4;
+      margin: 20px 0 40px 0;
     }
+
   }
 
   & .hero-right {
