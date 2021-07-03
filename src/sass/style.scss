@@ -28,7 +28,7 @@ $xl:1200px;
 // globals
 
 html , body{
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 body {
@@ -120,13 +120,14 @@ h5 {
 
 nav {
 
+  z-index: 9;
   position: sticky;
   top: 0;
   border-bottom: 1px solid $primary-color;
 
   &>div {
     background-color: $dark2;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(40px);
     display: flex;
     justify-content: space-between;
     padding: 20px 80px !important;
