@@ -101,14 +101,21 @@ h5 {
   position: absolute;
   width: 40vw;
   height: 40vh;
-  right: 0;
-  bottom:0;
-  z-index: 555;
+  // z-index: 555;
   background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, #FFD460 0%, #F07B3F 95.31%);
   opacity: 0.56;
   filter: blur(253px);
 }
 
+.bokey1{
+  right: 0;
+  bottom:0;
+}
+
+.bokey2{
+  left: 0;
+  bottom:0;
+}
 
 
 nav {
@@ -238,6 +245,8 @@ nav {
 // work section 
 
 .work{
+
+  position: relative;
 
   & .work-container{
 
