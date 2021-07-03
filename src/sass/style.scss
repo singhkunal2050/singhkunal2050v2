@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap');
 
+$background: #0C1118;
+$dark2: #171d25b6;
+$primary-color: #F07B3F;
+$secondary-color: #FFD460;
+$font-col1  :#fffaf5;
 
 *{
   box-sizing: border-box;
@@ -9,8 +14,21 @@
   font-size: 16px;
 }
 
+html{
+  overflow-x: hidden;
+}
+
+body{
+  background: $background;
+}
+
+p , span , a , li {
+  color: $font-col1;
+} 
+
 h1, h2 , h3 , h4 , h5{
   font-weight: 700; 
+  color: $font-col1;
 }
 
 .container{
@@ -20,20 +38,26 @@ h1, h2 , h3 , h4 , h5{
   padding: 0 20px;
 }
 
+section{
+  padding: 60px 0;
+}
+
 nav{
-  background: cadetblue;
+
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $primary-color ;
 
   & > div{
-
-    background-color: rgb(126, 153, 51);
-    padding: 20px 0;
+    background-color: $dark2;
+    backdrop-filter: blur(10px);
     display: flex;
     justify-content: space-between;
+    padding: 20px 20px !important;
 
     & .logo {
       display: flex;
-      width: 12rem;
-      background: black;
+      width: 15rem;
 
       & img{
         max-width: 100%;
@@ -43,7 +67,6 @@ nav{
     & .menu{
       display: flex;
       align-items: center;
-      background: antiquewhite;
   
   
       p{
