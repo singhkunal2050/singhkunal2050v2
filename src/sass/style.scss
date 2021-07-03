@@ -290,7 +290,36 @@ nav {
 
 }
 
+// tech stack 
 
+.tech-stack{
+
+  & .tech-stack-container{
+    max-width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(8 , 1fr);
+    place-items: center;
+    text-align: center;
+ 
+    @media(max-width:$xl) {
+      grid-template-columns: repeat(6 , 1fr);
+    }
+ 
+    @media(max-width:$lg) {
+      grid-template-columns: repeat(4 , 1fr);
+    }
+    
+    @media(max-width:$md) {
+      grid-template-columns: repeat(3 , 1fr);
+    }
+    
+    @media(max-width:$sm) {
+      grid-template-columns: repeat(2 , 1fr);
+    }
+  }
+
+}
 
 footer {
   background: $dark2;
