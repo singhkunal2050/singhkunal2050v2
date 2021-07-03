@@ -14,12 +14,18 @@ $font-col1  :#fffaf5;
   font-size: 16px;
 }
 
+// globals
+
 html{
   overflow-x: hidden;
 }
 
 body{
   background: $background;
+}
+
+section{
+  min-height: 80vh;
 }
 
 p , span , a , li {
@@ -31,11 +37,22 @@ h1, h2 , h3 , h4 , h5{
   color: $font-col1;
 }
 
+// generics 
+
 .container{
   width:100vw;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.head_text{
+  font-size: clamp(5rem , 2vw , 6rem);
+  line-height: 1 !important ; 
+}
+
+.subhead_text{
+  font-size: clamp(3rem , 2vw , 4rem);
 }
 
 section{
@@ -79,14 +96,28 @@ nav{
 }
 
 
+// hero section 
+
+.hero{
+
+  background: #130e01;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+
+
+  & h1{
+    margin: 10px 0 20px 0;
+  }
+
+}
+
 
 
 
 footer{
   background: $dark2;
   padding: 40px 20px !important;
-  position: sticky;
-  bottom: 0;
 
   & .footer-content{
     & p {
