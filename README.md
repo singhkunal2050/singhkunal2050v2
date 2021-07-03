@@ -13,7 +13,7 @@
 - hover on unicorn => quote
 - shine js for glass cards
 - pwa
-
+- modal popup on time delay greeting the user 
 
 
 # refs 
