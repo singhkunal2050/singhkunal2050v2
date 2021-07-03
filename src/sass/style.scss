@@ -340,14 +340,15 @@ nav {
 .testimonials{
 
   & .testimonial-slider{
-
-
-    & article{
+    
+    & .testimonial-slide{
       padding: 60px 40px ;
       background: lighten($background , 5%);
       position: relative;
+      min-width: 400px;
       max-width: 800px;
-      margin: 0 auto;
+      margin: 10px auto;
+
 
       & h2 {
         margin-top: 20px;
