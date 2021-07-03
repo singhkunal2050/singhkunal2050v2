@@ -25,6 +25,7 @@ $xxl:1400px;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
+  transition: 250ms ease-in-out;
 }
 
 // globals
@@ -420,12 +421,15 @@ nav {
             outline: none;
             border: none;
             margin: 5px;
+            color: rgba($font-col1, .5);
           }
         }
 
         & textarea{
+          padding: 10px 20px;
           margin: 5px;
           outline: none;
+          color: rgba($font-col1, .5);
           border: none;
           background: lighten($background , 8%);
         }
@@ -433,11 +437,16 @@ nav {
       }
 
       button{
-        background: #0C1118;
+        background: $background;
         outline: none;
         border: none;
         color: $font-col1;
         font-weight: 700;
+        cursor: pointer;
+
+        &:hover{
+          background: darken($background , 40%) ;
+        }
 
         @media(max-width:$lm){
           padding: 10px 20px;
