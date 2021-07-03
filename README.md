@@ -12,3 +12,9 @@
 - blogs
 - hover on unicorn => quote
 - shine js for glass cards
+
+
+
+# refs 
+
+https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html

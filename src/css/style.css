@@ -1,2 +1,1 @@
-nav ul {
-  font-size: 2rem; }
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap");*{box-sizing:border-box;margin:0;padding:0;font-family:'Josefin Sans', sans-serif;font-size:16px}h1,h2,h3,h4,h5{font-weight:700}.container{width:100vw;max-width:1440px;margin:0 auto;padding:0 20px}nav{background:cadetblue}nav>div{background-color:#7e9933;padding:20px 0;display:flex;justify-content:space-between}nav>div .logo{display:flex;width:12rem;background:black}nav>div .logo img{max-width:100%}nav>div .menu{display:flex;align-items:center;background:antiquewhite}nav>div .menu p{padding:10px;margin:0 10px}

@@ -6,8 +6,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter( "myFilter", function() {});
 
   eleventyConfig.addWatchTarget("./src/sass/");
-
   eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy("./src/img");
 
   // You can return your Config object (optional).
   return {
