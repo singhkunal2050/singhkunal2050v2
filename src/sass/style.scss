@@ -27,7 +27,7 @@ $xl:1200px;
 
 // globals
 
-html {
+html , body{
   overflow-x: hidden;
 }
 
@@ -80,6 +80,8 @@ h5 {
   font-weight: 700;
   outline: none;
   border: none;
+  outline: 2px solid $primary-color;
+  margin: 5px 0;
 }
 
 .btn-primary {
@@ -88,7 +90,6 @@ h5 {
 
 .btn-outline {
   background: transparent;
-  outline: 2px solid $primary-color;
   color: $font-col1;
 }
 
@@ -127,7 +128,7 @@ nav {
       width: 15rem;
 
       & img {
-        max-width: 100%;
+        max-width: 70%;
       }
     }
 
@@ -145,6 +146,24 @@ nav {
       }
 
     }
+
+    & .hamburger{
+      display: none;
+
+      @media(max-width:$md){
+        display: block;
+      }
+
+      
+      & .line{
+        height: 2px;
+        width: 35px;
+        background: white;
+        margin: 8px;   
+      }
+
+    }
+
   }
 }
 
@@ -171,6 +190,11 @@ nav {
       letter-spacing: 12px;
       opacity: .4;
       margin: 20px 0 40px 0;
+    }
+
+
+    & .btn-outline{
+      margin-left: 10px !important;
     }
 
   }
