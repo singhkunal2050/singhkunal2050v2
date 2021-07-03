@@ -36,7 +36,7 @@ body {
 }
 
 section {
-  min-height: 80vh;
+  // min-height: 80vh;
   padding: 60px 0;
 }
 
@@ -71,7 +71,7 @@ h5 {
 }
 
 .subhead_text {
-  font-size: clamp(1.5rem, 3.5vw, 4rem);
+  font-size: clamp(1.28rem, 3.5vw, 4rem);
   opacity: .4;
   margin-bottom: 5px;
 }
@@ -178,17 +178,23 @@ nav {
 .hero {
 
   // background: #130e01;
-  padding: 50px;
+  padding: 60px;
   display: flex;
   align-items: center;
 
   @media(max-width:$md){
     flex-direction: column;
-    padding: 50px 10px;
+    padding: 60px 10px;
   }
 
   & .hero-left {
     
+    & .head_text{
+      & .rainbow{
+        color: lighten(#F07B3F , 20%);
+      }
+    }
+
     & .my-title{
       text-transform: uppercase;
       font-weight:600 ;
@@ -213,7 +219,7 @@ nav {
       align-items: center;
 
       @media(max-width:$md){
-        margin-top: 40px;
+        margin-top: 60px;
         flex-direction: row;
       }
 
@@ -228,6 +234,51 @@ nav {
 
 }
 
+
+// work section 
+
+.work{
+
+  & .work-container{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // margin-left: -40px;
+
+    & .work-card{
+
+      max-width: 350px;
+      border: 2px solid rgba($font-col1, .1);
+      margin: 20px;
+
+      & .work-img{
+
+        & img{
+          max-width: 100%;
+        }
+      }
+
+      & .work-content{
+        padding: 20px;
+
+        & h1{
+          font-size: 1.75rem;
+        }
+
+        & a{
+          display: block;
+          margin-top: 10px !important;
+          opacity: .4;
+        }
+
+      }
+
+    }
+
+  }
+
+}
 
 
 
