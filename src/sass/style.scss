@@ -237,3 +237,19 @@ $color: $background;
   color: white;
   overflow: hidden;
 }
+
+
+.rotate {
+  display: inline-block;
+  animation: rotation 4s infinite linear !important; 
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateZ(0deg) ;
+  }
+  to {
+    transform: rotateZ(359deg);
+
+  }
+}
