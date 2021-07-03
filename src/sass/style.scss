@@ -80,3 +80,20 @@ nav{
 
 
 
+
+
+footer{
+  background: $dark2;
+  padding: 40px 20px !important;
+  position: sticky;
+  bottom: 0;
+
+  & .footer-content{
+    & p {
+      & .highlight{
+        color: $primary-color;
+      }
+    }
+  }
+
+}
