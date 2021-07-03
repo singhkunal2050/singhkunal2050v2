@@ -312,6 +312,11 @@ nav {
     
     @media(max-width:$md) {
       grid-template-columns: repeat(3 , 1fr);
+
+      & img{
+        margin-top: 10px;
+      }
+
     }
     
     @media(max-width:$sm) {
