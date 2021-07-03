@@ -333,6 +333,21 @@ nav {
 
 }
 
+// testimonials
+
+.testimonials{
+
+  & .testimonials-slider{
+
+    & article{
+      border: 2px springgreen solid;
+    }
+
+  }
+
+}
+
+
 footer {
   background: $dark2;
   padding: 40px 20px !important;
@@ -346,8 +361,6 @@ footer {
   }
 
 }
-
-
 
 // begin longshadow
 $color: $background;
