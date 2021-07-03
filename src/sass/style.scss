@@ -78,6 +78,11 @@ h5 {
   margin-bottom: 5px;
 }
 
+.handwave{
+  display: inline-block;
+  width: clamp(1.48rem, 3.5vw, 4.5rem);
+}
+
 .btn {
   padding: 1rem 1.5rem;
   font-weight: 700;
