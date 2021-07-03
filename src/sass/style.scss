@@ -12,6 +12,7 @@ $font-col1 :#fffaf5;
 $xs:320px;
 $sm:480px;
 $md:768px;
+$lm:888px;
 $lg:992px;
 $xl:1200px;
 
@@ -370,6 +371,83 @@ nav {
 
 }
 
+.contact{
+  background: lighten($background , 5%);
+
+
+  & .contact-container{
+    margin: 0 auto;
+    text-align: center;
+
+    & form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 120px;
+
+      @media(max-width:$lm){
+        display: flex;
+        flex-direction: column;
+        padding: 0 60px;
+      }
+
+      @media(max-width:$md){
+        padding: 0 20px;
+      }
+
+      & .all-input-container{
+        display: flex;
+        flex-direction: column;
+
+
+        & .input-container{
+          display: flex;
+          flex-direction: row;
+
+          @media(max-width:$md){
+            flex-direction: column;
+          }
+
+          & input{
+            flex: 1;
+            padding: 10px 20px;
+            background: lighten($background , 8%);
+            outline: none;
+            border: none;
+            margin: 5px;
+          }
+        }
+
+        & textarea{
+          margin: 5px;
+          outline: none;
+          border: none;
+          background: lighten($background , 8%);
+        }
+
+      }
+
+      button{
+        background: #0C1118;
+        outline: none;
+        border: none;
+        color: $font-col1;
+        font-weight: 700;
+
+        @media(max-width:$lm){
+          padding: 10px 20px;
+          margin: 5px;
+        }
+
+
+      }
+
+    }
+
+
+  }
+
+
+}
 
 footer {
   background: $dark2;
