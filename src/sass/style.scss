@@ -130,11 +130,13 @@ nav {
   z-index: 9;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   border-bottom: 1px solid $primary-color;
+  background-color: $dark2;
+  backdrop-filter: blur(40px);
 
   &>div {
-    background-color: $dark2;
-    backdrop-filter: blur(40px);
     display: flex;
     justify-content: space-between;
     padding: 20px 80px !important;
@@ -337,10 +339,27 @@ nav {
 
 .testimonials{
 
-  & .testimonials-slider{
+  & .testimonial-slider{
+
 
     & article{
-      border: 2px springgreen solid;
+      padding: 60px 40px ;
+      background: lighten($background , 5%);
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+
+      & h2 {
+        margin-top: 20px;
+      }
+
+      & img {
+        position: absolute;
+        max-height: 80%;
+        right: 5%;
+        top: 5%;
+      }
+
     }
 
   }
