@@ -28,7 +28,7 @@ $xl:1200px;
 // globals
 
 html , body{
-  // overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 body {
@@ -39,6 +39,8 @@ section {
   // min-height: 80vh;
   padding: 60px 0;
 }
+
+
 
 p,
 span,
@@ -121,7 +123,7 @@ h5 {
 nav {
 
   z-index: 9;
-  position: sticky;
+  position: fixed;
   top: 0;
   border-bottom: 1px solid $primary-color;
 
