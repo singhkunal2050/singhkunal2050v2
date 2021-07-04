@@ -419,7 +419,7 @@ nav {
             padding: 10px 20px;
             background: lighten($background , 8%);
             outline: none;
-            border: none;
+            border: 2px solid rgba($color: #ffffff, $alpha: .2);
             margin: 5px;
             color: rgba($font-col1, .5);
           }
@@ -430,7 +430,7 @@ nav {
           margin: 5px;
           outline: none;
           color: rgba($font-col1, .5);
-          border: none;
+          border: 2px solid rgba($color: #ffffff, $alpha: .2);
           background: lighten($background , 8%);
         }
 
@@ -439,7 +439,7 @@ nav {
       button{
         background: $background;
         outline: none;
-        border: none;
+        border: 2px solid rgba($color: #ffffff, $alpha: .2);
         color: $font-col1;
         font-weight: 700;
         cursor: pointer;
