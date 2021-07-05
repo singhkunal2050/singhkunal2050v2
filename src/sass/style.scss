@@ -106,8 +106,12 @@ h5 {
   outline: 2px solid $primary-color;
   margin: 5px 0;
   cursor: pointer;
-  &:hover{
-    box-shadow: 6px 6px 0px 0px $secondary-color;
+  box-shadow: 5px 5px 0px 0px $secondary-color;
+
+  &:active{
+    transform: translate(5px,5px);
+    box-shadow: 2px 2px 0px 0px $secondary-color;
+    transition: 50ms ease-in-out !important;
   }
 }
 
