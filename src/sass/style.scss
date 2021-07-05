@@ -36,6 +36,11 @@ html , body{
 
 body {
   background: $background;
+  cursor: url('../img/cursor1.png') , auto;
+}
+
+button:hover , a:hover {
+  cursor: url('../img/cursor2.png') , pointer!important;
 }
 
 section {
@@ -98,15 +103,20 @@ h5 {
   border: none;
   outline: 2px solid $primary-color;
   margin: 5px 0;
+  cursor: pointer;
 }
 
 .btn-primary {
   background: $primary-color;
+  &:hover{
+    background: transparent;
+    color: $font-col1;
+  }
 }
 
 .btn-outline {
   background: transparent;
-  color: $font-col1;
+  color: $font-col1; 
 }
 
 
@@ -251,7 +261,7 @@ nav {
         margin: 10px;
         background: transparent;
         &:hover{
-          border: 2px solid $primary-color;
+          transform: scale(1.2);
         }
       }
     }
