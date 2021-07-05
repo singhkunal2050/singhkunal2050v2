@@ -292,6 +292,10 @@ nav {
       border: 2px solid rgba($font-col1, .1);
       margin: 20px;
 
+      &:hover{
+        background: darken($primary-color , 57%);
+      }
+
       & .work-img{
 
         & img{
