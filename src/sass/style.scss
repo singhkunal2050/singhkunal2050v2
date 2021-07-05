@@ -82,6 +82,10 @@ h5 {
   margin-bottom: 5px;
 }
 
+.rainbow{
+  color: lighten(#F07B3F , 20%);
+}
+
 .handwave{
   display: inline-block;
   width: clamp(1.48rem, 3.5vw, 4.5rem);
@@ -214,12 +218,6 @@ nav {
 
   & .hero-left {
     
-    & .head_text{
-      & .rainbow{
-        color: lighten(#F07B3F , 20%);
-      }
-    }
-
     & .my-title{
       text-transform: uppercase;
       font-weight:600 ;
