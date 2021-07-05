@@ -106,14 +106,13 @@ h5 {
   outline: 2px solid $primary-color;
   margin: 5px 0;
   cursor: pointer;
+  &:hover{
+    box-shadow: 6px 6px 0px 0px $secondary-color;
+  }
 }
 
 .btn-primary {
   background: $primary-color;
-  &:hover{
-    background: transparent;
-    color: $font-col1;
-  }
 }
 
 .btn-outline {
@@ -296,6 +295,7 @@ nav {
 
       &:hover{
         background: darken($primary-color , 57%);
+        box-shadow: 10px 10px 0px 0px rgba($color: $secondary-color, $alpha: .1)
       }
 
       & .work-img{
