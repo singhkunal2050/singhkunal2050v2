@@ -49,7 +49,9 @@ section {
   position: relative;
 }
 
-
+a{
+  text-decoration: none;
+}
 
 p,
 span,
@@ -155,7 +157,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  // border-bottom: 1px solid $primary-color;
+  border-bottom: 1px solid darken($primary-color , 45%);
   background-color: $dark2;
   backdrop-filter: blur(40px);
 
