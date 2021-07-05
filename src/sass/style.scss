@@ -552,6 +552,48 @@ footer {
 
 }
 
+
+.greeting{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 50;
+  display: grid;
+  place-items: center;
+  background: $background;
+  text-align: center;
+  transform: translateY(-100%);
+  
+  & img{
+    // min-height: 65vh;
+    aspect-ratio: 1;
+    min-width: 70%;
+  }
+
+  & h1{
+    font-size: 1.25rem;
+    margin-top: 15px;
+  }
+
+  & .close{
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    color: $font-col1;
+    font-size: 5rem;
+    transform: rotate(45deg);
+    cursor: url('../img/cursor2.png') , pointer!important;
+  }
+
+}
+
+.show-greeting{
+  transform: translateY(0);
+}
+
+
 // begin longshadow
 $color: $background;
 

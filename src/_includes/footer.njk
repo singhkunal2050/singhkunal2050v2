@@ -9,3 +9,58 @@
   </div>
 
 </footer>
+
+
+</body>
+
+<!-- jq  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- slick  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+
+
+// testimonials 
+// $('.testimonial-slider').slick({
+//   dots: true,
+//   infinite: true,
+//   speed: 10,
+//   autoplay:true,
+//   arrows:true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   responsive: [
+//     {
+//       breakpoint: 1024,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 480,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//     // You can unslick at a given breakpoint now by adding:
+//     // settings: "unslick"
+//     // instead of a settings object
+//   ]
+// });
+
+
+  document.querySelector('.hamburger').addEventListener('click' , (e)=>{
+    document.querySelector('.hamburger').classList.toggle('active')
+    document.querySelector('.menu').classList.toggle('show-menu')
+  })
+
+
+</script>
+
+<script src="../js/script.js"></script>
+
+</html>

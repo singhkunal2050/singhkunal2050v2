@@ -7,6 +7,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addPassthroughCopy("./src/img");
 
   // You can return your Config object (optional).
