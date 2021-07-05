@@ -120,6 +120,7 @@ h5 {
   background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, #FFD460 0%, #F07B3F 95.31%);
   opacity: 0.56;
   filter: blur(253px);
+  z-index: -1;
 
   @media(min-width:$xxl){
     opacity: .2;
@@ -248,6 +249,10 @@ nav {
 
       & img {
         margin: 10px;
+        background: transparent;
+        &:hover{
+          border: 2px solid $primary-color;
+        }
       }
     }
 
@@ -492,7 +497,7 @@ $color: $background;
 }
 .long-shadow {
   @include longshadow(darken($color, 11% ));
-  background: $color;
+  // background: $color;
   color: white;
   overflow: hidden;
 }
