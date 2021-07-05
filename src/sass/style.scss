@@ -189,7 +189,26 @@ nav {
       align-items: center;
 
       @media(max-width:$md) {
-        display: none;
+        // display: none;
+        display: flex;
+        flex-direction: column ;
+        justify-content: center;
+        align-items: center;
+        background: $background;
+        color: $background;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        margin: 0 !important;
+        padding: 0 !important;
+        transform: translateX(-100%) translateY(-20%);
+        
+        &.show-menu{
+          transform: translateX(0) translateY(0);
+        }
+
       }
 
       p {
@@ -200,19 +219,39 @@ nav {
 
     }
 
+
     & .hamburger{
       display: none;
+      z-index: 11;
 
       @media(max-width:$md){
         display: block;
       }
-
-      
       & .line{
-        height: 2px;
+        height: 3px;
         width: 35px;
         background: white;
         margin: 8px;   
+        display: flex;
+      }
+
+     
+    }
+
+    & .active{
+      transform: translateY(-10px);
+
+      & .line1{
+        transform: translateY(20px) rotate(45deg);
+      }
+
+      & .line2{
+        transform: translateY(10px);
+        opacity: 0;
+      }
+
+      & .line3{
+        transform: rotate(-45deg);
       }
 
     }
