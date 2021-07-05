@@ -178,6 +178,7 @@ nav {
     & .logo {
       display: flex;
       width: 15rem;
+      z-index: 2;
 
       & img {
         max-width: 70%;
@@ -204,6 +205,13 @@ nav {
         margin: 0 !important;
         padding: 0 !important;
         transform: translateX(-100%) translateY(-20%);
+
+        & p{
+          margin: 10px 0 !important; 
+          & a{
+            font-size: 1.75rem;
+          }
+        }
         
         &.show-menu{
           transform: translateX(0) translateY(0);
@@ -222,7 +230,7 @@ nav {
 
     & .hamburger{
       display: none;
-      z-index: 11;
+      z-index: 2;
 
       @media(max-width:$md){
         display: block;
