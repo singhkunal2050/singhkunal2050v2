@@ -2,8 +2,8 @@
 
 $background: #0C1118;
 $dark2: #171d25b6;
-$primary-color: #F07B3F;
-$secondary-color: #FFD460;
+$primary-color: #f07b3f;
+$secondary-color: #ffd460;
 $font-col1 :#fffaf5;
 
 
@@ -629,3 +629,25 @@ $color: $background;
 
   }
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #f0a33f #000000;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #f0a33f;
+    border-radius: 10px;
+    border: 0px solid #ffffff;
+  }
