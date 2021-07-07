@@ -117,15 +117,24 @@ h5 {
     transform: translate(5px,5px);
     box-shadow: 2px 2px 0px 0px $secondary-color;
   }
+
 }
 
 .btn-primary {
   background: $primary-color;
+  &:hover{
+    background:darken($primary-color , 3%);
+  }
 }
 
 .btn-outline {
   background: transparent;
   color: $font-col1; 
+  &:hover{
+    background:$font-col1;
+    color: $background;
+    outline-color: $font-col1;
+  }
 }
 
 
