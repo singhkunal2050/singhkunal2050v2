@@ -35,6 +35,7 @@ html , body{
   scroll-behavior: smooth;
 }
 
+// near edges cursor issue needs to bn solved
 body {
   background: $background;
   cursor: url('../img/cursor1.png') , auto;
