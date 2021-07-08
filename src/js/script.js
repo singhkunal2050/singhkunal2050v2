@@ -29,7 +29,5 @@ const update = () => {
 }
 
 if(window.innerWidth>748){
-  update();
-}else{
-  console.table('na' , 'aa')
+  update(); // execute animation only on desktop
 }
