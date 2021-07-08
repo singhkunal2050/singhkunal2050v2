@@ -111,13 +111,11 @@ h5 {
   cursor: pointer;
   box-shadow: 5px 5px 0px 0px $secondary-color;
   color: $background;
-
   &:active{
     transition: 50ms ease-in-out !important;
     transform: translate(5px,5px);
     box-shadow: 2px 2px 0px 0px $secondary-color;
   }
-
 }
 
 .btn-primary {
