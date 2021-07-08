@@ -5,7 +5,7 @@ const showGreeting = () =>{
   }
 }
 
-setTimeout( showGreeting , 10000);
+setTimeout( showGreeting , 20000);
 
 document.querySelector('.close').addEventListener('click' , ()=>{
   document.querySelector('.greeting').classList.toggle('show-greeting')
