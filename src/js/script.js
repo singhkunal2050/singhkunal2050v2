@@ -8,7 +8,7 @@ document.querySelector('.close').addEventListener('click' , ()=>{
   document.querySelector('.greeting').classList.toggle('show-greeting')
 })
 
-// skew 
+// skew on scroll
 
 const section = document.querySelectorAll('section');
 
@@ -20,7 +20,7 @@ const update = () => {
 	const speed = diff * 0.35;
 	
 	section.forEach((elem) => {
-    elem.style.transform = `skewY(${ speed % 10 }deg)`
+    elem.style.transform = `skewY(${ speed % 15 }deg)`
   });
 	
 	currentPos = newPos;
