@@ -1,5 +1,8 @@
 const showGreeting = () =>{
-  document.querySelector('.greeting').classList.toggle('show-greeting')
+  if(!localStorage.greeted){
+    document.querySelector('.greeting').classList.toggle('show-greeting')
+    localStorage.setItem('greeted', true);
+  }
 }
 
 setTimeout( showGreeting , 10000);
