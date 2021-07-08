@@ -20,7 +20,7 @@ const update = () => {
 	const speed = diff * 0.35;
 	
 	section.forEach((elem) => {
-    elem.style.transform = `skewY(${ speed % 20 }deg)`
+    elem.style.transform = `skewY(${ speed % 10 }deg)`
   });
 	
 	currentPos = newPos;
@@ -28,4 +28,8 @@ const update = () => {
 	requestAnimationFrame(update);
 }
 
-update();
+if(window.innerWidth>748){
+  update();
+}else{
+  console.table('na' , 'aa')
+}
