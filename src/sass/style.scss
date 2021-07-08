@@ -41,6 +41,10 @@ body {
   cursor: url('../img/cursor1.png') , auto;
 }
 
+main{
+  min-height: 80vh;
+}
+
 button:hover , a:hover {
   cursor: url('../img/cursor2.png') , pointer!important;
 }
