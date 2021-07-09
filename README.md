@@ -14,7 +14,8 @@
 - shine js for glass cards
 - pwa
 - modal popup on time delay greeting the user 
-
+- max score on lighthouse and share on eleventy hashtag
+- 
 
 # refs 
 
