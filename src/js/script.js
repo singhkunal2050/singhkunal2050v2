@@ -1,3 +1,8 @@
+document.querySelector('.hamburger').addEventListener('click' , (e)=>{
+  document.querySelector('.hamburger').classList.toggle('active')
+  document.querySelector('.menu').classList.toggle('show-menu')
+})
+
 const showGreeting = () =>{
   if(!localStorage.greeted){
     document.querySelector('.greeting').classList.toggle('show-greeting')
