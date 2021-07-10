@@ -59,6 +59,7 @@ a{
 }
 
 p,
+blockquote,
 span,
 a,
 li {
@@ -72,6 +73,12 @@ h4,
 h5 {
   font-weight: 700;
   color: $font-col1;
+}
+
+blockquote{
+  border-left: 3px dashed $primary-color;
+  padding: 20px;
+  margin-top: 20px;
 }
 
 // generics 
