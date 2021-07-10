@@ -771,3 +771,57 @@ $color: $background;
     }
   }
 }
+
+// ---------------------blog single ----------------------
+
+.blog-single-hero{
+  text-align: center;
+  background-image: url(//source.unsplash.com/random);
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.765);
+  background-blend-mode: multiply;
+  padding: 120px 40px;
+}
+
+.blog-single-container{
+  padding:60px 80px;
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  @media(max-width:$md){
+    padding:60px 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  & .blog-social-share{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    & img{
+      margin: 10px 0;
+    }
+
+    @media(max-width:$md){
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: center;
+      & img{
+        margin: 20px 10px;
+      }
+    }
+
+  }
+
+  & .blog-single-content{
+
+    margin-left: 20px;
+
+    & p{
+      margin-top: 20px;
+    }
+  }
+
+
+}
