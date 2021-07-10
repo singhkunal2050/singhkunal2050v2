@@ -790,6 +790,11 @@ $color: $background;
         color: rgba(255, 255, 255, 0.61);
       }
 
+      & .blog-length{
+        margin-top: 15px;
+        display: block;
+      }
+
       & a.blog-link{
         font-weight: bold;
         display: block;
@@ -865,6 +870,12 @@ $color: $background;
       line-height: 1.35;
       letter-spacing:1px;
       color: rgba($color: $font-col1, $alpha: .74);
+    }
+
+    & img{
+      padding: 20px;
+      margin: 0 0 0 -10px;
+      width: 100%;
     }
 
     & blockquote{
