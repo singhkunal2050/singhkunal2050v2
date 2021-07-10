@@ -774,6 +774,11 @@ $color: $background;
           padding: 5px;
           border-radius: 4px;
           border: 1px solid #fffaf55b;
+
+          &:hover{
+            color: $primary-color;
+          }
+
         }
 
       }
