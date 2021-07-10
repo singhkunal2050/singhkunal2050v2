@@ -470,7 +470,7 @@ nav {
 
 .contact{
   background: lighten($background , 5%);
-
+  scroll-margin-top: 80px;
 
   & .contact-container{
     margin: 0 auto;
