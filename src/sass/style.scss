@@ -773,10 +773,21 @@ $color: $background;
         margin-top: 20px;
         color: $primary-color;
       }
-
-    
     }
   }
+
+  .pagination{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+    & a{
+      margin: 20px;
+      color: $primary-color;
+    }
+  }
+
 }
 
 // ---------------------blog single ----------------------
@@ -827,7 +838,19 @@ $color: $background;
 
     & p{
       margin-top: 20px;
+      font-size: 1.15rem;
+      line-height: 1.35;
+      letter-spacing:1px;
+      color: rgba($color: $font-col1, $alpha: .74);
     }
+
+    & blockquote{
+      font-size: 1.15rem;
+      line-height: 1.75;
+      letter-spacing:1px;
+      color: rgba($color: $font-col1, $alpha: .74);
+    }
+
   }
 
 
