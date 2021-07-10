@@ -846,11 +846,18 @@ $color: $background;
         display: block;
       }
 
-      & a.blog-link{
-        font-weight: bold;
-        display: block;
+      & .blog-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         margin-top: 20px;
-        color: $primary-color;
+        & a.blog-link{
+          font-weight: bold;
+          display: inline-block;
+          color: $primary-color;
+        }
+        & .blog-date{
+          margin-left: auto;
+        }
       }
     }
   }
