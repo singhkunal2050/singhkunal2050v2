@@ -760,14 +760,30 @@ $color: $background;
       }
 
       & h1{
-        margin-bottom: 10px;
+        margin-bottom: 5px;
       }
+
+      & .blog-hashtags{
+        display: flex;
+        margin-bottom: 10px;
+
+        & a{
+          margin: 5px;
+          color: $font-col1;
+          background: #19202b;
+          padding: 5px;
+          border-radius: 4px;
+          border: 1px solid #fffaf55b;
+        }
+
+      }
+
 
       & p{
         color: rgba(255, 255, 255, 0.61);
       }
 
-      & a{
+      & a.blog-link{
         font-weight: bold;
         display: block;
         margin-top: 20px;
