@@ -41,6 +41,7 @@ body {
 
 main{
   min-height: 80vh;
+  padding-top: 80px;
 }
 
 button:hover , a:hover {
@@ -283,8 +284,7 @@ nav {
 .hero {
 
   // background: #130e01;
-  padding: 60px;
-  padding-top: 100px;
+  padding:80px 60px;
   display: flex;
   align-items: center;
 
@@ -668,3 +668,106 @@ $color: $background;
     border-radius: 10px;
     border: 0px solid #ffffff;
   }
+
+
+
+// -----------------------ABOUT PAGE--------------------------
+
+
+.about-hero{
+ 
+ 
+  & .about-hero-container {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 70px;
+
+    @media(max-width:$lm){
+      display: flex;
+      flex-direction: column;
+      
+      & .about-hero-image{
+        margin-top: 20px;
+      }
+      
+    }
+
+    & .about-hero-image{
+      max-width: 400px;
+      border-radius: 16px;
+      box-shadow: 10px 10px rgba($color: $primary-color, $alpha: .4);
+      & img{
+        max-width: 100%;
+        border-radius: 16px;
+        &:hover{
+          transform: translate(5px , 5px);
+        }
+      }
+      &:hover{
+        box-shadow: 10px 5px rgba($color: $primary-color, $alpha: .8);
+      }
+
+    }
+  
+  }
+  
+}
+
+// -----------------------BLOGS PAGE--------------------------
+
+.blogs-hero{
+  padding: 60px 20px;
+  background: lighten($color: $background, $amount: 5);
+
+  & h1{
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+.blog-list-section{
+
+  & .blog-list-container{
+    padding: 0 150px;
+
+    @media(max-width:$md){
+      padding: 0 70px;
+    }
+
+    @media(max-width:$sm){
+      padding: 0 20px;
+    }
+
+    & .blog-card{
+      background: rgba(255, 255, 255, 0.041);
+      padding:40px 20px;
+      margin-top: 20px;
+      border-radius: 16px;
+      border:2px solid rgba(255, 255, 255, 0.13);
+    
+      &:hover{
+        background: rgba(255, 255, 255, 0.061);
+        border-image: linear-gradient(120deg , $primary-color , rgb(245, 232, 208)) 2% 2% stretch;
+      }
+
+      & h1{
+        margin-bottom: 10px;
+      }
+
+      & p{
+        color: rgba(255, 255, 255, 0.61);
+      }
+
+      & a{
+        font-weight: bold;
+        display: block;
+        margin-top: 20px;
+        color: $primary-color;
+      }
+
+    
+    }
+  }
+}
