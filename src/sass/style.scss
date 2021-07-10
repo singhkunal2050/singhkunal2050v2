@@ -744,7 +744,7 @@ $color: $background;
     }
 
     @media(max-width:$sm){
-      padding: 0 20px;
+      padding: 0 0 !important;
     }
 
     & .blog-card{
@@ -764,7 +764,7 @@ $color: $background;
       }
 
       & .blog-hashtags{
-        display: flex;
+        display: block;
         margin-bottom: 10px;
 
         & a{
@@ -774,6 +774,8 @@ $color: $background;
           padding: 5px;
           border-radius: 4px;
           border: 1px solid #fffaf55b;
+          display: inline-block;
+          font-size: .75rem;
 
           &:hover{
             color: $primary-color;
