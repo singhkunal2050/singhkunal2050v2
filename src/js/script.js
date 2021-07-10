@@ -39,3 +39,12 @@ const update = () => {
 if(window.innerWidth>748){
   update(); // execute animation only on desktop
 }
+
+// preloader
+
+document.onreadystatechange = function () {
+  if (document.readyState == "complete") {
+  // document is ready. Do your stuff here
+  document.querySelector('.preloader').style.transform="translateY(-100vh)";
+}
+}
