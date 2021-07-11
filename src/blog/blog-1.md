@@ -5,7 +5,7 @@ image: /img/post/post-1.jfif
 date: 2021-08-02
 author : Kunal SIngh
 tags: ["post" , "html" , "web" , "java" , "android"]
-
+readTime : 2 minutes ⌚
 ---
 
 

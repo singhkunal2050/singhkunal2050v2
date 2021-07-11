@@ -46,7 +46,7 @@ layout: 'base.njk'
             {%- endfor %}
           </div>
           <p class="blog-description">{{post.data.description}}</p>
-          <p class="blog-length">2 minutes read ⌚</p>
+          <p class="blog-length"> {{ post.data.readTime  }} </p>
           <div class="blog-details">
             <a href="{{ post.url | url }}" class="blog-link">Read  Article >> </a>
             <p class="blog-date">{{ post.data.date | postDate }}</p>

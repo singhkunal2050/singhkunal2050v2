@@ -5,6 +5,7 @@ image: /img/post/post-2.jfif
 date: 2021-02-02
 author : Kunal Singh
 tags: ["post" , "android"]
+readTime : 1 minutes ⌚
 
 ---
 

@@ -5,6 +5,7 @@ image: /img/post/post-4.png
 date: 2021-02-09
 author : Kunal 
 tags: ["post" , "web" ]
+readTime : 1 minutes ⌚
 
 ---
 
