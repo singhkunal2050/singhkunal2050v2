@@ -7,8 +7,6 @@ author : Kunal Singh
  
 ---
 
-<main>
 
 <p> Blog 2 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
 
-</main>
