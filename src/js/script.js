@@ -53,5 +53,27 @@ document.onreadystatechange = function () {
   // document is ready. Do your stuff here
   document.querySelector('.preloader').style.transform="translateY(-100vh)";
   document.querySelector('.preloader').style.display="none";
+  }
 }
+
+// share on social media 
+
+
+function shareonfb(){
+  window.open('https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(document.URL) + '&t=' + encodeURIComponent(document.URL)); return false;
 }
+  // twitter has probably blocked this source but it will work for u ;)
+  function shareontwitter(){
+   window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(document.title) + ':%20 ' + encodeURIComponent(document.URL)); return false;
+  }
+  
+  function shareonlinkedin (){
+    window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + encodeURIComponent(document.URL) + '&title=' + encodeURIComponent(document.title)); return false;
+  }
+
+  function shareonpinterest(){
+    window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' + encodeURIComponent(document.title)); return false;
+  }
+
+
+
