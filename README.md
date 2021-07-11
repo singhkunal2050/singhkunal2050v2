@@ -16,6 +16,8 @@
 - modal popup on time delay greeting the user 
 - max score on lighthouse and share on eleventy hashtag
 - gradient border using border-image
+- tags specific collections
+- 
 
 # refs 
 
