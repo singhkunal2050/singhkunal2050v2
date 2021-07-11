@@ -426,6 +426,7 @@ nav {
 
         & img{
           max-width: 100%;
+          object-fit: contain;
         }
       }
 
@@ -461,6 +462,11 @@ nav {
     grid-template-columns: repeat(8 , 1fr);
     place-items: center;
     text-align: center;
+
+    img{
+      object-fit: contain;
+      margin: 15px 10px;
+    }
  
     @media(max-width:$xl) {
       grid-template-columns: repeat(6 , 1fr);
@@ -474,7 +480,7 @@ nav {
       grid-template-columns: repeat(3 , 1fr);
 
       & img{
-        margin-top: 10px;
+        margin: 10px 0;
       }
 
     }
