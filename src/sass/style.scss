@@ -918,6 +918,34 @@ $color: $background;
   background-color: rgba(0, 0, 0, 0.765);
   background-blend-mode: multiply;
   padding: 120px 40px;
+
+  & h2{
+    margin-top: 20px;
+  }
+
+  & .blog-hashtags{
+    display: block;
+    margin-bottom: 10px;
+
+    & a{
+      margin: 5px;
+      color: $font-col1;
+      background: #19202b;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #fffaf55b;
+      display: inline-block;
+      font-size: .75rem;
+
+      &:hover{
+        color: $primary-color;
+      }
+
+    }
+
+  }
+
+
 }
 
 .blog-single-container{

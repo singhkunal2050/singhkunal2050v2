@@ -14,7 +14,7 @@ layout: 'base.njk'
   <section class="blog-list-section container">
     <div class="blog-list-container ">
 
-      <div class="blog-card">
+      <!-- <div class="blog-card">
         <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
         <div class="blog-hashtags">
           <a href="#">#css</a>
@@ -29,7 +29,7 @@ layout: 'base.njk'
           <a href="/blog-single" class="blog-link">Read  Article >> </a>
           <p class="blog-date">24th Jan 2021</p>
         </div>
-      </div>
+      </div> -->
 
 
       {%- for post in collections.post -%}
@@ -37,11 +37,13 @@ layout: 'base.njk'
         <div class="blog-card">
           <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
           <div class="blog-hashtags">
-            <a href="#">#css</a>
-            <a href="#">#javascript</a>
-            <a href="#">#html</a>
-            <a href="#">#design</a>
-            <a href="#">#alogriths</a>
+            {% set comma = joiner() %}
+            {% for tag in post.data.tags -%}
+              {% if tag !== 'post' %}
+                {{ comma() }}
+                <a href="#">#{{ tag }}</a>
+              {% endif %}
+            {%- endfor %}
           </div>
           <p class="blog-description">{{post.data.description}}</p>
           <p class="blog-length">2 minutes read ⌚</p>

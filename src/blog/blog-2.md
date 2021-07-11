@@ -4,7 +4,8 @@ description : Blog 2 is a godd blog  type and scrambled it to make a type specim
 image: /img/post/post-2.jfif
 date: 2021-02-02
 author : Kunal Singh
- 
+tags: ["post" , "android"]
+
 ---
 
 

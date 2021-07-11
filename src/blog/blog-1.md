@@ -4,6 +4,7 @@ description : Blog 1 is a godd blog  type and scrambled it to make a type specim
 image: /img/post/post-1.jfif
 date: 2021-08-02
 author : Kunal SIngh
+tags: ["post" , "html" , "web" , "java" , "android"]
 
 ---
 

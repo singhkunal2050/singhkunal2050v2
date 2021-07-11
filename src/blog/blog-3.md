@@ -4,7 +4,9 @@ description : Blog 3 is a godd blog  type and scrambled it to make a type specim
 image: /img/post/post-3.jfif
 date: 2021-04-04
 author : Komal 
- 
+tags: ["post" , "java" ]
+
+
 ---
 
 <p> Blog 3 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>

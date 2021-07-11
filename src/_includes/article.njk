@@ -9,6 +9,15 @@ layout: 'base.njk'
       {{ title }}
      </h1>
     <h2 class="subhead_text">{{ author }}</h2>
+    <div class="blog-hashtags">
+      {% set comma = joiner() %}
+      {% for tag in tags -%}
+        {% if tag !== 'post' %}
+          {{ comma() }}
+          <a href="#">#{{ tag }}</a>
+        {% endif %}
+      {%- endfor %}
+    </div>
     <p style="margin-top: 20px;" class="rainbow">{{ date | postDate }}</p>
   </section>
 
