@@ -299,6 +299,7 @@ nav {
         margin: 0 !important;
         padding: 0 !important;
         transform: translateX(-100%) translateY(-20%);
+        transition: 250ms ease-in-out;
 
         & p{
           margin: 10px 0 !important; 
