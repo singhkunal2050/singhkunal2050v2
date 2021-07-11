@@ -150,6 +150,26 @@ blockquote{
   }
 }
 
+// swal modal 
+
+.swal-modal{
+  background: lighten($color: $background, $amount: .5);
+
+
+  & .swal-text{
+    color: $font-col1 !important;
+  }
+
+  & .swal-button{
+    background: $primary-color;
+    &:hover{
+      background: linear-gradient(12deg , $primary-color , $secondary-color);
+    }
+  } 
+
+}
+
+
 
 // bokey 
 
