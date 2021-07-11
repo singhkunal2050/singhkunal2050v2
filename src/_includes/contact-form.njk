@@ -1,0 +1,18 @@
+<script>
+  var submitted=false;
+  function submitform(){
+      alert('thank you!!')
+      document.getElementById('form1').reset();
+  }
+</script>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted)  { submitform() }"></iframe>
+<form id="form1" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd2lY21Z-8TL88KgA1NFoLeL4C1SZiatPLnAOlN6IvoXtSNWg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+  <div class="all-input-container">
+    <div class="input-container">
+      <input type="text" placeholder="Name" name="entry.1366873136" required>
+      <input type="email" placeholder="Email" name="entry.1954686353" required>
+    </div>
+    <textarea id="" cols="30" rows="10" placeholder="Message" name="entry.1936327169" required></textarea>
+  </div>
+  <button >Submit</button>
+</form>
