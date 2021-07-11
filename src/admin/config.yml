@@ -21,4 +21,3 @@ collections:
       - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
       - { label : "Body" , name : "body" , widget : "markdown" }
       - { label : "Read Time" , name : "readTime" , widget : "string" , default: "2 Minutes ⌚" }
-    
