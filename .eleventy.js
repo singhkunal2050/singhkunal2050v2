@@ -1,9 +1,11 @@
-// const pluginSass = require("eleventy-plugin-sass");
-
+const { DateTime } = require("luxon")
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addFilter( "postDate", function(dateObj) {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)    
+  });
+
   // Add a filter using the Config API
-  eleventyConfig.addFilter( "myFilter", function() {});
 
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/css");

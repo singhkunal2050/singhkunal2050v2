@@ -31,126 +31,27 @@ layout: 'base.njk'
         </div>
       </div>
 
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
-        </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
 
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
+      {%- for post in collections.post -%}
+      
+        <div class="blog-card">
+          <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
+          <div class="blog-hashtags">
+            <a href="#">#css</a>
+            <a href="#">#javascript</a>
+            <a href="#">#html</a>
+            <a href="#">#design</a>
+            <a href="#">#alogriths</a>
+          </div>
+          <p class="blog-description">{{post.data.description}}</p>
+          <p class="blog-length">2 minutes read ⌚</p>
+          <div class="blog-details">
+            <a href="{{ post.url | url }}" class="blog-link">Read  Article >> </a>
+            <p class="blog-date">{{ post.data.date | postDate }}</p>
+          </div>
         </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
 
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
-        </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
-        </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
-        </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
-        </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
-
-      <div class="blog-card">
-        <h1 class="blog-title subhead_text">Best CSS Practices I Follow</h1>
-        <div class="blog-hashtags">
-          <a href="#">#css</a>
-          <a href="#">#javascript</a>
-          <a href="#">#html</a>
-          <a href="#">#design</a>
-          <a href="#">#alogriths</a>
-        </div>
-        <p class="blog-description">It  has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin wor...</p>
-        <p class="blog-length">2 minutes read ⌚</p>
-        <div class="blog-details">
-          <a href="/blog-single" class="blog-link">Read  Article >> </a>
-          <p class="blog-date">24th Jan 2021</p>
-        </div>
-      </div>
-
-    
+      {%- endfor -%}
 
     <div class="pagination">
 

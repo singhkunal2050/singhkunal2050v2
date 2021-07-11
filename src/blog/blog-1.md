@@ -1,8 +1,15 @@
 ---
 title: Blog 1
-layout: 'base.njk'
+description : Blog 1 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially un
+image: /img/post/post-1.jfif
+date: 2021-08-02
+author : Kunal SIngh
+
 ---
 
 <main>
-Blog 1 content
+
+<p> Blog 1 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
+
+
 </main>

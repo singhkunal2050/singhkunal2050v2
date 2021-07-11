@@ -1,0 +1,35 @@
+---
+title: Blog Single
+layout: 'base.njk'
+---
+
+<main>
+
+  <section class="blog-single-hero" style=" background-image: url({{ image }}) ">
+    <h1 class="head_text"> 
+      {{ title }}
+     </h1>
+    <h2 class="subhead_text">{{ author }}</h2>
+    <p style="margin-top: 20px;" class="rainbow">{{ date | postDate }}</p>
+  </section>
+
+  <section class="blog-single-container container">
+    <div class="blog-social-share">
+      <a href="https://www.linkedin.com/in/singhkunal2050" target="_blank"> <img class="long-shadow"
+          src="/img/Vector.svg" loading="lazy" alt="linkedin"> </a>
+      <a href="https://instagram.com/singhkunal2050" target="_blank"> <img class="long-shadow" src="/img/Vector-1.svg"
+          loading="lazy" alt="instagram"> </a>
+      <a href="https://github.com/singhkunal2050" target="_blank"> <img class="long-shadow" src="/img/Vector-2.svg"
+          loading="lazy" alt="github"> </a>
+      <a href="https://twitter.com/singhkunal2050" target="_blank"> <img class="long-shadow" src="/img/Vector-3.svg"
+          loading="lazy" alt="twitter"> </a>
+    </div>
+
+    <div class="blog-single-content">
+      
+      {{ content | safe }}
+
+    </div>
+  </section>
+
+</main>

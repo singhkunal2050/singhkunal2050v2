@@ -903,6 +903,7 @@ $color: $background;
     & a{
       margin: 20px;
       color: $primary-color;
+      font-weight: bold;
     }
   }
 
@@ -912,7 +913,7 @@ $color: $background;
 
 .blog-single-hero{
   text-align: center;
-  background-image: url(//source.unsplash.com/random);
+  // background-image: url(//source.unsplash.com/random);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.765);
   background-blend-mode: multiply;
