@@ -106,8 +106,12 @@ blockquote{
 }
 
 .handwave{
-  display: inline-block;
-  width: clamp(1.48rem, 3.5vw, 4.5rem);
+  // display: inline-block;
+  object-fit: contain;
+  width: clamp(1.98rem, 3.5vw, 4.5rem);
+  @media (max-width:$lm) {
+    margin-bottom: -10px;
+  }
 }
 
 .btn {
