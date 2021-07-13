@@ -237,6 +237,7 @@ blockquote{
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
+    padding: 1px;
     background: linear-gradient(12deg , $primary-color , $secondary-color);
     z-index: 55;
     animation: pulse ease-in-out;
