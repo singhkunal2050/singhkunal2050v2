@@ -13,7 +13,12 @@
 
   <!-- identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
+  
+  <!-- PWA -->
+  <script>
+    if ("serviceWorker" in navigator)
+      navigator.serviceWorker.register("/js/service-worker.js");
+  </script> 
 </head>
 
 <body>

@@ -1,11 +1,18 @@
 const { DateTime } = require("luxon")
+const pluginPWA = require("eleventy-plugin-pwa")
+
 
 module.exports = function(eleventyConfig) {
+
+  // Add a filter using the Config API
   eleventyConfig.addFilter( "postDate", function(dateObj) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)    
   });
 
-  // Add a filter using the Config API
+  //add plugin
+  eleventyConfig.addPlugin(pluginPWA);
+
+
 
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/css");
