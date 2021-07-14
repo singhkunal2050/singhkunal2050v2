@@ -17,7 +17,7 @@
 - max score on lighthouse and share on eleventy hashtag
 - gradient border using border-image
 - tags specific collections
-- 
+- Switch for color mode
 
 # refs 
 
