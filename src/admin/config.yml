@@ -24,7 +24,7 @@ collections:
 
   - name: "work"
     label: "Work"
-    folder: "src/blog"
+    folder: "src/work"
     create: true
     slug: "work-{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
