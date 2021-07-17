@@ -17,11 +17,22 @@ readTime: 1 minutes ⌚
 
 <!--StartFragment-->
 
-```javascript
-let x = myFunction(4, 3);   // Function is called, return value will end up in x
+```css
 
-function myFunction(a, b) {
-  return a * b;             // Function returns the product of a and b
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+	color: #e6db74;
+}
+
+.token.keyword {
+	color: #66d9ef;
+}
+
+.token.regex,
+.token.important {
+	color: #fd971f;
 }
 ```
 
