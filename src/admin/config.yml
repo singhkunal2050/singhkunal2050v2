@@ -21,3 +21,17 @@ collections:
       - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
       - { label : "Read Time" , name : "readTime" , widget : "string" , default: "2 Minutes ⌚" }
       - { label : "Body" , name : "body" , widget : "markdown" }
+
+  - name: "work"
+    label: "Work"
+    folder: "src/work"
+    create: true
+    slug: "work-{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label : "Title" , name : "title" , widget : "string" }
+      - { label : "Work Url" , name : "workUrl" , widget : "string" }
+      - { label : "Description" , name : "description" , widget : "string" }
+      - { label : "Tags" , name : "tags" , widget : "list" , default : ["work"] }
+      - { label : "Featured Image" , name : "image" , widget : "image" }
+      - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
+
