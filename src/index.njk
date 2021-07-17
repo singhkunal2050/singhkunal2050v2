@@ -45,7 +45,7 @@ layout: 'base.njk'
 
       <div class="work-container">
 
-        <a href="https://uiuxdesignschool.in/" target="_blank">
+        {# <a href="https://uiuxdesignschool.in/" target="_blank">
           <div class="work-card">
             <div class="work-img">
               <img src="./img/work/1.webp" loading="lazy" width="333" height="177" alt="UI UX Design School">
@@ -115,7 +115,22 @@ layout: 'base.njk'
               <p>mahendrasolankiarts.com</p> 
             </div>
           </div>
-        </a>
+        </a> #}
+
+
+      {%- for work in collections.work -%}
+          <a href="{{ work.data.workUrl | url }}" target="_blank">
+            <div class="work-card">
+              <div class="work-img">
+                <img src="{{ work.data.image | url }}" loading="lazy" width="333" height="177" alt="{{ work.data.imageAlt }}">
+              </div>
+              <div class="work-content">
+                <h1>{{ work.data.title }}</h1>
+                <p>{{ work.data.workUrl | urlClean }}</p> 
+              </div>
+            </div>
+          </a>
+     {%- endfor  -%}
 
 
       </div>

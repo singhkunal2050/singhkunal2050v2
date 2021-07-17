@@ -9,6 +9,13 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)    
   });
 
+
+  // Add a filter for cleaning work url
+  eleventyConfig.addFilter( "urlClean", function(url) {
+    return url.split("//")[1]
+  });
+
+
   //add plugin
   eleventyConfig.addPlugin(pluginPWA);
 
