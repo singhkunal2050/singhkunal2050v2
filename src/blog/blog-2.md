@@ -17,22 +17,18 @@ readTime: 1 minutes ⌚
 
 <!--StartFragment-->
 
-```css
+```javascript
+function getUserById(id) {
+    if (typeof id !== 'number' || id <= 0) {
+        throw new Error('Invalid id argument');
+    }
 
-.token.atrule,
-.token.attr-value,
-.token.function,
-.token.class-name {
-	color: #e6db74;
-}
-
-.token.keyword {
-	color: #66d9ef;
-}
-
-.token.regex,
-.token.important {
-	color: #fd971f;
+    return new Promise((resolve, reject) => {
+        resolve({
+            id: id,
+            username: 'admin'
+        });
+    });
 }
 ```
 
