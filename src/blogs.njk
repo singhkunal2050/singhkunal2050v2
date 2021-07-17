@@ -1,6 +1,10 @@
 ---
 title: Blogs
 layout: 'base.njk'
+pagination:
+  data: collections.post
+  size: 3
+  alias: posts
 ---
 
 <main>
@@ -32,7 +36,7 @@ layout: 'base.njk'
       </div> -->
 
 
-      {%- for post in collections.post -%}
+      {%- for post in posts -%}
       
         <div class="blog-card">
           <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
@@ -55,11 +59,14 @@ layout: 'base.njk'
 
       {%- endfor -%}
 
+    {# <div class="pagination">
+      <a href=""><< Previous</a><a href="">Next >> </a> 
+    </div> #}
+
     <div class="pagination">
-
-      <a href=""><< Previous</a>
-       <a href="">Next >> </a> 
-
+    {%- for pageEntry in pagination.pages %}
+        <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a>
+    {%- endfor %}
     </div>
 
 

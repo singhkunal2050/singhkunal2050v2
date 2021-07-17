@@ -67,6 +67,10 @@ li {
   color: $font-col1;
 }
 
+li{
+  list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -905,10 +909,18 @@ $color: $background;
     justify-content: center;
 
     & a{
-      margin: 20px;
+      margin: 10px 5px;
+      padding: 10px 15px;
+      background: lighten($color: $background, $amount: 10);
       color: $primary-color;
       font-weight: bold;
     }
+
+    // current page
+    a[aria-current="page"]{
+      border: 1px solid $primary-color;
+    }
+
   }
 
 }
