@@ -680,7 +680,8 @@ footer {
   background: $background;
   text-align: center;
   transform: translateY(-100%);
-  
+  transition: 250ms ease-in-out;
+    
   & img{
     // min-height: 65vh;
     aspect-ratio: 1;
