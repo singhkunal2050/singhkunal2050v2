@@ -17,7 +17,7 @@ readTime: 1 minutes ⌚
 
 <!--StartFragment-->
 
-```markdown
+```javascript
 let x = myFunction(4, 3);   // Function is called, return value will end up in x
 
 function myFunction(a, b) {
