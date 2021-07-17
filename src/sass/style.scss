@@ -332,7 +332,6 @@ nav {
     & .hamburger{
       display: none;
       z-index: 2;
-
       @media(max-width:$md){
         display: block;
       }
@@ -342,16 +341,15 @@ nav {
         background: white;
         margin: 8px;   
         display: flex;
+        transition: 250ms ease-in-out;
       }
-
-     
     }
 
     & .active{
       transform: translateY(-10px);
 
       & .line1{
-        transform: translateY(20px) rotate(45deg);
+        transform: translateY(22px) rotate(45deg);
       }
 
       & .line2{
