@@ -1,3 +1,8 @@
+# singhkunal2050
+## A Personal website/Blog Portal based on eleventy and The **Jamstack**
+
+![Google SEO Audit Score](/docs/test.png "Google SEO Audit Score")
+
 # Key Points
 
 - Jamstack
