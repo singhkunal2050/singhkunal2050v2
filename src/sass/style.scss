@@ -131,6 +131,11 @@ blockquote{
     transform: translate(5px,5px);
     box-shadow: 2px 2px 0px 0px $secondary-color;
   }
+
+  @media (max-width:768px) {
+    padding: 1rem 1.2rem;
+  }
+
 }
 
 .btn-primary {
