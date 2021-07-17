@@ -1,9 +1,10 @@
 # singhkunal2050
-## A Personal website/Blog Portal based on eleventy and The **Jamstack**
+### A Personal website/Blog Portal based on eleventy and The **Jamstack**
+![Website Snap](/docs/home-snap.png "Website Snap")
 
+### SEO Score
 ![Google SEO Audit Score](/docs/test.png "Google SEO Audit Score")
-
-# Key Points
+### Key Points
 
 - Jamstack
 - Custom Cursor
