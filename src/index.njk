@@ -119,7 +119,7 @@ layout: 'base.njk'
         </a> #}
 
 
-      {%- for work in collections.work -%}
+      {%- for work in collections.work | reverse -%}
           <a href="{{ work.data.workUrl | url }}" target="_blank">
             <div class="work-card">
               <div class="work-img">
