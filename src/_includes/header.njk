@@ -5,11 +5,27 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ title }}</title>
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
   <link rel="shortcut icon" href="{{ '/img/icon.png' | url }}" type="image/x-icon">
-  <!-- slick  -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <!-- Primary Meta Tags -->
+  <title>{{ title }}</title>
+  <meta name="title" content="{{ title }}">
+  <meta name="description" content="{{ description }}">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="{{ '/img/icon.png' | url }}">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="{{ '/img/icon.png' | url }}">
+  <meta property="twitter:url" content="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}">
+  <meta property="twitter:title" content="{{ title }}">
+  <meta property="twitter:description" content="{{ description }}">
+  <meta property="twitter:image" content="{{ '/img/icon.png' | url }}">
+
 
   <!-- identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
