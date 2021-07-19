@@ -35,7 +35,7 @@ $xxl:1400px;
 
 // globals
 
-html , body{
+body{
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
@@ -984,23 +984,29 @@ $color: $background;
   }
 
   & .blog-social-share{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
-    & img{
-      margin: 10px 0;
-    }
-
-    @media(max-width:$md){
-      margin-top: 20px;
-      flex-direction: row;
-      justify-content: center;
+   
+    & .share-btn-group{
+      position: sticky;
+      top: 200px;
+    
       & img{
-        margin: 20px 10px;
+        display: block;
+        margin: 20px 0;        
+      }
+  
+      @media(max-width:$md){
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: center;
+        & img{
+          margin: 20px 10px;
+        }
       }
     }
-
   }
 
   & .blog-single-content{
