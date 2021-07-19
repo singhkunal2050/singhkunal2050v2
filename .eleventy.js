@@ -1,6 +1,8 @@
 const { DateTime } = require("luxon")
 const pluginPWA = require("eleventy-plugin-pwa")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const criticalCss = require("eleventy-critical-css");
+
 
 module.exports = function(eleventyConfig) {
 
@@ -19,6 +21,7 @@ module.exports = function(eleventyConfig) {
   //add plugin
   eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(criticalCss);
 
 
   eleventyConfig.addWatchTarget("./src/sass/");
