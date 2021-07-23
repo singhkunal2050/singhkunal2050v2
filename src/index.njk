@@ -147,8 +147,8 @@ layout: 'base.njk'
 
         <div class="blog-list-container ">
           {%- for post in collections.post | reverse -%}
-              {% if loop.index0 <div 3 %}    
-                <div class="blog-card blog-card-home">
+              {% if loop.index0 < 3 %}    
+                <div class="blog-card">
                   <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
                   <div class="blog-hashtags">
                     {% set comma = joiner() %}
@@ -170,6 +170,8 @@ layout: 'base.njk'
           {%- endfor  -%}
         </div>
 
+        <a href="/blogs" class="btn-link" >All Blogs >> </a>
+        
     </section>
 
 
