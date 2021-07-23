@@ -23,6 +23,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   // eleventyConfig.addPlugin(criticalCss);
 
+  // adding config for tags collection
+  // eleventyConfig.addCollection("tagsList", function(collectionApi) {
+  //     const tagsList = new Set();
+  //     collectionApi.getAll().map( item => {
+  //         if (item.data.tags) { // handle pages that don't have tags
+  //             item.data.tags.map( tag => tagsList.add(tag))
+  //         }
+  //     });
+  //     return tagsList;
+  // });
+
 
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/css");

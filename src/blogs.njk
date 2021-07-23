@@ -72,14 +72,7 @@ pagination:
         <p>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">>></a>{% else %}>>{% endif %}</p>
     </div>
 
-    {# <div class="pagination">
-    {%- for pageEntry in pagination.pages %}
-        <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a>
-    {%- endfor %}
-    </div> #}
-
-
-  </section>
+    </section>
 
 
 </main>
