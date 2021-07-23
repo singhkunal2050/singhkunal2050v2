@@ -35,13 +35,13 @@ $xxl:1400px;
 
 // globals
 
-body{
-  overflow-x: hidden;
+html{
   scroll-behavior: smooth;
 }
 
 // near edges cursor issue needs to bn solved
 body {
+  overflow-x: hidden;
   background: $background;
   cursor: url('../img/cursor1.png') , auto;
 }
