@@ -65,10 +65,18 @@ pagination:
     </div> #}
 
     <div class="pagination">
+        <p>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><<</a>{% else %}<<{% endif %}</p>
+    {%- for pageEntry in pagination.pages %}
+          <p><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a></p>
+    {%- endfor %}
+        <p>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">>></a>{% else %}>>{% endif %}</p>
+    </div>
+
+    {# <div class="pagination">
     {%- for pageEntry in pagination.pages %}
         <a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a>
     {%- endfor %}
-    </div>
+    </div> #}
 
 
   </section>

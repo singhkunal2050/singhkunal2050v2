@@ -911,10 +911,14 @@ $color: $background;
   }
 
   .pagination{
-    margin-top: 20px;
+    margin: 50px 0;
     text-align: center;
     display: flex;
     justify-content: center;
+    
+    & p{
+      color: gray;
+    }
 
     & a{
       margin: 10px 5px;

@@ -21,7 +21,7 @@ module.exports = function(eleventyConfig) {
   //add plugin
   eleventyConfig.addPlugin(pluginPWA);
   eleventyConfig.addPlugin(syntaxHighlight);
-  eleventyConfig.addPlugin(criticalCss);
+  // eleventyConfig.addPlugin(criticalCss);
 
 
   eleventyConfig.addWatchTarget("./src/sass/");
