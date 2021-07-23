@@ -3,15 +3,16 @@
 $background: #0C1118;
 $dark2: #171d25b6;
 $primary-color: #f07b3f;
+$primary-color-300:#f0a33f;
 $secondary-color: #ffd460;
 $font-col1 :#fffaf5;
 
 
-// $background: #cbf7e8;
-// $dark2: #b1ffcfb6;
-// $primary-color: #86f03f;
-// $secondary-color: #60b2ff;
-// $font-col1 :#130a01;
+// $background: #fafffd;
+// $dark2: #dbffe9;
+// $primary-color: #ff9046;
+// $secondary-color: #7cc0ff;
+// $font-col1 :#222121;
 
 
 // breakpoints 
@@ -114,7 +115,7 @@ blockquote{
 }
 
 .rainbow{
-  color: lighten(#F07B3F , 20%);
+  color: lighten($primary-color , 20%);
 }
 
 .handwave{
@@ -198,7 +199,7 @@ blockquote{
   width: 40vw;
   height: 40vh;
   // z-index: 555;
-  background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, #FFD460 0%, #F07B3F 95.31%);
+  background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, $secondary-color 0%, $primary-color 95.31%);
   opacity: 0.56;
   filter: blur(253px);
   z-index: -1;
@@ -353,7 +354,7 @@ nav {
       & .line{
         height: 3px;
         width: 35px;
-        background: white;
+        background: $font-col1;
         margin: 8px;   
         display: flex;
         transition: 250ms ease-in-out;
@@ -464,7 +465,7 @@ nav {
       &:hover{
         background: darken($primary-color , 57%);
         box-shadow: 10px 10px 0px 0px rgba($color: $secondary-color, $alpha: .1);
-        border-image: linear-gradient(120deg , $primary-color , rgb(245, 232, 208)) 2% 2% stretch;
+        border-image: linear-gradient(120deg , $primary-color , $secondary-color ) 2% 2% stretch;
       }
 
       & .work-img{
@@ -552,7 +553,7 @@ nav {
       border: 1px transparent solid;
 
       &:hover{
-        border-image: linear-gradient(120deg , $primary-color , rgb(245, 232, 208)) 2% 2% stretch !important;
+        border-image: linear-gradient(120deg , $primary-color , $secondary-color) 2% 2% stretch !important;
       }
 
       & h4 {
@@ -618,7 +619,7 @@ nav {
             padding: 10px 20px;
             background: lighten($background , 8%);
             outline: none;
-            border: 2px solid rgba($color: #ffffff, $alpha: .2);
+            border: 2px solid rgba($color: $font-col1 , $alpha: .2);
             margin: 5px;
             color: rgba($font-col1, .5);
           }
@@ -629,7 +630,7 @@ nav {
           margin: 5px;
           outline: none;
           color: rgba($font-col1, .5);
-          border: 2px solid rgba($color: #ffffff, $alpha: .2);
+          border: 2px solid rgba($color: $font-col1, $alpha: .2);
           background: lighten($background , 8%);
         }
 
@@ -638,7 +639,7 @@ nav {
       button{
         background: $background;
         outline: none;
-        border: 2px solid rgba($color: #ffffff, $alpha: .2);
+        border: 2px solid rgba($color: $font-col1, $alpha: .2);
         color: $font-col1;
         font-weight: 700;
         cursor: pointer;
@@ -737,7 +738,7 @@ $color: $background;
 .long-shadow {
   @include longshadow(darken($color, 11% ));
   // background: $color;
-  color: white;
+  color: $font-col1;
   overflow: hidden;
 }
 
@@ -761,7 +762,7 @@ $color: $background;
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #f0a33f #000000;
+    scrollbar-color: $primary-color-300 $background;
   }
 
   /* Chrome, Edge, and Safari */
@@ -770,13 +771,13 @@ $color: $background;
   }
 
   *::-webkit-scrollbar-track {
-    background: #000000;
+    background: $background;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #f0a33f;
+    background-color: $primary-color-300;
     border-radius: 10px;
-    border: 0px solid #ffffff;
+    border: 0px solid $font-col1;
   }
 
 
@@ -858,7 +859,7 @@ $color: $background;
     justify-content: center;
     
     & p{
-      color: gray;
+      color: #6b6b6b;
     }
 
     & a{
@@ -889,7 +890,7 @@ $color: $background;
 
   &:hover{
     background: rgba(255, 255, 255, 0.061);
-    border-image: linear-gradient(120deg , $primary-color , rgb(245, 232, 208)) 2% 2% stretch;
+    border-image: linear-gradient(120deg , $primary-color , $secondary-color) 2% 2% stretch;
   }
 
   & h1{
@@ -903,10 +904,10 @@ $color: $background;
     & p{
       margin: 5px;
       color: $font-col1;
-      background: #19202b;
+      background: $background;
       padding: 5px;
       border-radius: 4px;
-      border: 1px solid #fffaf55b;
+      border: 1px solid rgba($color: $font-col1 , $alpha: .3) ;
       display: inline-block;
       font-size: .75rem;
 
@@ -920,7 +921,7 @@ $color: $background;
 
 
   & p{
-    color: rgba(255, 255, 255, 0.61);
+    color: rgba($color: $font-col1 , $alpha: .8);
   }
 
   & .blog-length{
@@ -967,7 +968,7 @@ $color: $background;
   text-align: center;
   // background-image: url(//source.unsplash.com/random);
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.765);
+  background-color: rgba($color: $background, $alpha: .7);
   background-blend-mode: multiply;
   padding: 120px 40px;
 
@@ -982,10 +983,11 @@ $color: $background;
     & a{
       margin: 5px;
       color: $font-col1;
-      background: #19202b;
+      color: $font-col1;
+      background: $background;
       padding: 5px;
       border-radius: 4px;
-      border: 1px solid #fffaf55b;
+      border: 1px solid rgba($color: $font-col1 , $alpha: .3) ;
       display: inline-block;
       font-size: .75rem;
 
@@ -1017,10 +1019,9 @@ $color: $background;
     flex-direction: column;
     align-items: center;
    
-    & .share-btn-group{
+    & .share-btn-group {
       position: sticky;
       top: 200px;
-    
       & img{
         display: block;
         margin: 20px 0;        
@@ -1028,6 +1029,7 @@ $color: $background;
   
       @media(max-width:$md){
         margin-top: 20px;
+        display: flex;
         flex-direction: row;
         justify-content: center;
         & img{
