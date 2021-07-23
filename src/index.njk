@@ -53,7 +53,7 @@ layout: 'base.njk'
             </div>
             <div class="work-content">
               <h1>UI UX Design School</h1>
-              <p>uiuxdesignschool.in/</p]>
+              <p>uiuxdesignschool.in/</p>
             </div>
           </div>
         </a>
@@ -139,6 +139,39 @@ layout: 'base.njk'
       <div class="bokey bokey2"></div>
 
     </section>
+
+    <section class="writing-section">
+      
+       <h1 class="head_text" style="text-align: center; padding-bottom: 40px;"><span
+          class="head_text rainbow">Recent</span> Blogs</h1>
+
+        <div class="blog-list-container ">
+          {%- for post in collections.post | reverse -%}
+              {% if loop.index0 <div 3 %}    
+                <div class="blog-card blog-card-home">
+                  <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
+                  <div class="blog-hashtags">
+                    {% set comma = joiner() %}
+                    {% for tag in post.data.tags -%}
+                      {% if tag !== 'post' %}
+                        {{ comma() }}
+                        <p href="#">#{{ tag }}</p>
+                      {% endif %}
+                    {%- endfor %}
+                  </div>
+                  <p class="blog-description">{{post.data.description}}</p>
+                  <p class="blog-length"> {{ post.data.readTime  }} </p>
+                  <div class="blog-details">
+                    <a href="{{ post.url | url }}" class="blog-link">Read  Article >> </a>
+                    <p class="blog-date">{{ post.data.date | postDate }}</p>
+                  </div>
+                </div>
+              {% endif %}
+          {%- endfor  -%}
+        </div>
+
+    </section>
+
 
     <section class="tech-stack">
 

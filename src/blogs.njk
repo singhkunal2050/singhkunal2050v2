@@ -46,7 +46,7 @@ pagination:
             {% for tag in post.data.tags -%}
               {% if tag !== 'post' %}
                 {{ comma() }}
-                <a href="#">#{{ tag }}</a>
+                <p href="#">#{{ tag }}</p>
               {% endif %}
             {%- endfor %}
           </div>

@@ -7,6 +7,7 @@ tags:
   - post
   - css
   - html
+  - featured-blog
 date: 2021-07-11T17:05:54.928Z
 image: /img/post/download.jfif
 imageAlt: CSS Border Image

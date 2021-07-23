@@ -845,69 +845,6 @@ $color: $background;
     @media(max-width:$sm){
       padding: 0 0 !important;
     }
-
-    & .blog-card{
-      background: rgba(255, 255, 255, 0.041);
-      padding:40px 20px;
-      margin-top: 20px;
-      border-radius: 16px;
-      border:2px solid rgba(255, 255, 255, 0.13);
-    
-      &:hover{
-        background: rgba(255, 255, 255, 0.061);
-        border-image: linear-gradient(120deg , $primary-color , rgb(245, 232, 208)) 2% 2% stretch;
-      }
-
-      & h1{
-        margin-bottom: 5px;
-      }
-
-      & .blog-hashtags{
-        display: block;
-        margin-bottom: 10px;
-
-        & a{
-          margin: 5px;
-          color: $font-col1;
-          background: #19202b;
-          padding: 5px;
-          border-radius: 4px;
-          border: 1px solid #fffaf55b;
-          display: inline-block;
-          font-size: .75rem;
-
-          &:hover{
-            color: $primary-color;
-          }
-
-        }
-
-      }
-
-
-      & p{
-        color: rgba(255, 255, 255, 0.61);
-      }
-
-      & .blog-length{
-        margin-top: 15px;
-        display: block;
-      }
-
-      & .blog-details{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin-top: 20px;
-        & a.blog-link{
-          font-weight: bold;
-          display: inline-block;
-          color: $primary-color;
-        }
-        & .blog-date{
-          margin-left: auto;
-        }
-      }
-    }
   }
 
   .pagination{
@@ -934,6 +871,89 @@ $color: $background;
     }
 
   }
+
+}
+
+// blog card
+
+.blog-card{
+  background: rgba(255, 255, 255, 0.041);
+  padding:40px 20px;
+  margin-top: 20px;
+  border-radius: 16px;
+  border:2px solid rgba(255, 255, 255, 0.13);
+
+  &:hover{
+    background: rgba(255, 255, 255, 0.061);
+    border-image: linear-gradient(120deg , $primary-color , rgb(245, 232, 208)) 2% 2% stretch;
+  }
+
+  & h1{
+    margin-bottom: 5px;
+  }
+
+  & .blog-hashtags{
+    display: block;
+    margin-bottom: 10px;
+
+    & p{
+      margin: 5px;
+      color: $font-col1;
+      background: #19202b;
+      padding: 5px;
+      border-radius: 4px;
+      border: 1px solid #fffaf55b;
+      display: inline-block;
+      font-size: .75rem;
+
+      &:hover{
+        color: $primary-color;
+      }
+
+    }
+
+  }
+
+
+  & p{
+    color: rgba(255, 255, 255, 0.61);
+  }
+
+  & .blog-length{
+    margin-top: 15px;
+    display: block;
+  }
+
+  & .blog-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    & a.blog-link{
+      font-weight: bold;
+      display: inline-block;
+      color: $primary-color;
+    }
+    & .blog-date{
+      margin-left: auto;
+    }
+  }
+}
+
+// for home page featured 
+
+.writing-section{
+  padding:0 120px !important;
+  @media (max-width:$md) {
+    padding:0 60px !important;
+  }
+  @media (max-width:$sm) {
+    padding:0 10px !important;
+  }
+}
+
+.blog-card-home{
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
 
 }
 
