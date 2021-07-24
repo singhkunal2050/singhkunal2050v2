@@ -24,6 +24,7 @@
 - gradient border using border-image
 - tags specific collections
 - Switch for color mode
+- 404 page added
 
 # refs 
 
