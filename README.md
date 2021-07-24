@@ -28,3 +28,10 @@
 # refs 
 
 https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html
+
+  ```
+   <script> 
+            console.log('{{ collections.post[0].templateContent  | console | safe }}' )
+    </script> 
+    
+  ```

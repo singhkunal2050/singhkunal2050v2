@@ -2,6 +2,7 @@ const { DateTime } = require("luxon")
 const pluginPWA = require("eleventy-plugin-pwa")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const criticalCss = require("eleventy-critical-css");
+const util = require('util');
 
 
 module.exports = function(eleventyConfig) {
@@ -11,12 +12,20 @@ module.exports = function(eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)    
   });
 
-
   // Add a filter for cleaning work url
   eleventyConfig.addFilter( "urlClean", function(url) {
     return url.split("//")[1]
   });
 
+  // Add a filter for Blog Read Time
+  // eleventyConfig.addFilter( "readTime", function(content) {
+  //   return content
+  // });
+  
+  // debug filter 
+  eleventyConfig.addFilter('console', function(value) {
+      return util.inspect(value);
+  });
 
   //add plugin
   eleventyConfig.addPlugin(pluginPWA);

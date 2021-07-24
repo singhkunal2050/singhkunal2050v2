@@ -36,7 +36,6 @@ pagination:
         </div>
       </div> -->
 
-
       {%- for post in posts -%}
       
         <div class="blog-card">
@@ -57,8 +56,9 @@ pagination:
             <p class="blog-date">{{ post.data.date | postDate }}</p>
           </div>
         </div>
-
-      {%- endfor -%}
+     
+     {%- endfor -%}
+ 
 
     {# <div class="pagination">
       <a href=""><< Previous</a><a href="">Next >> </a> 
@@ -73,6 +73,5 @@ pagination:
     </div>
 
     </section>
-
 
 </main>
