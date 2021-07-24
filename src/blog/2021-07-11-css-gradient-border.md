@@ -15,8 +15,6 @@ readTime: 2 Minutes ⌚
 ---
 Here is a quick example
 
-![](/img/post/instagram-post-53.png)
-
 Let me know what you think
 
 ```javascript
