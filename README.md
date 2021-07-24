@@ -29,9 +29,19 @@
 
 https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html
 
+### using debugger 
+
   ```
    <script> 
             console.log('{{ collections.post[0].templateContent  | console | safe }}' )
     </script> 
     
   ```
+
+### Blog Features
+
+- Highlighted Code
+- embedded videos
+- social share 
+- tags 
+-  
