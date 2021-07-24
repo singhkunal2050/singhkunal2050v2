@@ -18,3 +18,5 @@ Here is a quick example
 ![](/img/post/instagram-post-53.png)
 
 Let me know what you think
+
+<iframe width="677" height="381" src="https://www.youtube.com/embed/1BfCnjr_Vjg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
