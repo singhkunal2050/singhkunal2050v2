@@ -12,7 +12,7 @@
   <meta name="title" content="{{ title }}">
   <meta name="description" content="{{ description }}">
   <link rel="canonical" href="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}" />
-  <meta name="keywords" content="{{ title + ',' +  tags  | string  }}">
+  <meta name="keywords" content="{{  tags if tags else title }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{{ 'article' if tags else 'website' }}">
