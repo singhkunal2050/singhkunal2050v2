@@ -45,4 +45,9 @@ https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html
 - embedded videos
 - social share 
 - tags 
--  
+
+
+
+### Todos
+
+Can work on a eleventy plugin with npm to create a simple 404 page 
