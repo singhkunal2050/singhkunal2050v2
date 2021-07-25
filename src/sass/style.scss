@@ -676,6 +676,15 @@ footer {
         color: $primary-color;
       }
     }
+
+    & .footer-socials{
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      & img{
+        margin: 4px 6px;
+      }
+    }
   }
 
 }
