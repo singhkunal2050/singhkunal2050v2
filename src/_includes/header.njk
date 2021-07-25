@@ -14,9 +14,8 @@
   <link rel="canonical" href="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}" />
   <meta name="keywords" content="{{ title + ',' +  tags  | string  }}">
 
-
   <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
+  <meta property="og:type" content="{{ 'article' if tags else 'website' }}">
   <meta property="og:url" content="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
