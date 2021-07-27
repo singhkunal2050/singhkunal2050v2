@@ -15,6 +15,17 @@ readTime: 1 minutes ⌚
 ---
 <p> Blog 2 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
 
+<a href="google.com">dmeo</a>
+
+<blockquote>Lorem20 dsnhajhdb asjkbdk jbaskbdk jbaskjbd kjbsakjdb kjsbakjdb k </blockquote>
+
+<ul>
+  <li>Kunal </li>
+  <li>Rohit</li>
+  <li>Ram</li>
+  <li>Push</li>
+</ul>
+
 <!--StartFragment-->
 
 ```javascript

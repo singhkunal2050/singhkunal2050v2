@@ -90,9 +90,9 @@ h5 {
 }
 
 blockquote{
-  border-left: 3px dashed $primary-color;
-  padding: 20px;
-  margin-top: 20px;
+  border-left: 3px solid $primary-color;
+  padding: 10px;
+  margin: 20px 0;
 }
 
 // generics 
@@ -1112,11 +1112,25 @@ $color: $background;
 
     margin-left: 20px;
 
+    & li{
+      list-style: unset;
+      color: rgba($color: $font-col1, $alpha: .74);
+      margin: 2px 0;
+    }
+
+    & a{
+      color: rgba($color: $font-col1, $alpha: .74);
+      background-image: linear-gradient(0, #f07b3f 12%, transparent 20%);
+    }
+
+    & ul{
+      margin: 20px 0 20px 40px;
+    }
+
     & p{
       margin-top: 20px;
       font-size: 1.15rem;
       line-height: 1.35;
-      letter-spacing:1px;
       color: rgba($color: $font-col1, $alpha: .74);
     }
 
@@ -1129,8 +1143,8 @@ $color: $background;
     & blockquote{
       font-size: 1.15rem;
       line-height: 1.75;
-      letter-spacing:1px;
       color: rgba($color: $font-col1, $alpha: .74);
+      background: lighten($color: $background , $amount: 5);
     }
 
   }
