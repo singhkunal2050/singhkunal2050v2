@@ -51,3 +51,4 @@ https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html
 ### Todos
 
 Can work on a eleventy plugin with npm to create a simple 404 page 
+Add Styling for inline code
