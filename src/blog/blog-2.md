@@ -13,9 +13,10 @@ image: /img/post/post-2.jfif
 imageAlt: demo
 readTime: 1 minutes ⌚
 ---
-<p> Blog 2 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap </p>
+<p> Blog 2 is a godd blog  type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap 
+<a href="//www.google.com">dmeo</a>
+</p>
 
-<a href="google.com">dmeo</a>
 
 <blockquote>Lorem20 dsnhajhdb asjkbdk jbaskbdk jbaskjbd kjbsakjdb kjsbakjdb k </blockquote>
 
