@@ -891,20 +891,25 @@ $color: $background;
 
 // blog card
 
+
 .blog-card{
-  background: rgba(255, 255, 255, 0.041);
-  padding:40px 20px;
-  margin-top: 20px;
+  padding:20px;
+  margin: 20px 0;
   border-radius: 16px;
-  border:2px solid rgba(255, 255, 255, 0.13);
 
   &:hover{
     background: rgba(255, 255, 255, 0.061);
     border-image: linear-gradient(120deg , $primary-color , $secondary-color) 2% 2% stretch;
   }
 
+  &:hover > h1 {
+    text-decoration: underline;
+  }
+
   & h1{
     margin-bottom: 5px;
+    color: $primary-color;
+    opacity: 1;
   }
 
   & .blog-hashtags{
@@ -929,30 +934,83 @@ $color: $background;
 
   }
 
-
   & p{
     color: rgba($color: $font-col1 , $alpha: .8);
   }
 
-  & .blog-length{
-    margin-top: 15px;
-    display: block;
+  hr{
+    background: $primary-color;
   }
 
   & .blog-details{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 20px;
-    & a.blog-link{
-      font-weight: bold;
-      display: inline-block;
-      color: $primary-color;
-    }
-    & .blog-date{
-      margin-left: auto;
-    }
+    padding-top: 10px;
   }
+
 }
+
+
+// .blog-card{
+//   background: rgba(255, 255, 255, 0.041);
+//   padding:40px 20px;
+//   margin-top: 20px;
+//   border-radius: 16px;
+//   border:2px solid rgba(255, 255, 255, 0.13);
+
+//   &:hover{
+//     background: rgba(255, 255, 255, 0.061);
+//     border-image: linear-gradient(120deg , $primary-color , $secondary-color) 2% 2% stretch;
+//   }
+
+//   & h1{
+//     margin-bottom: 5px;
+//   }
+
+//   & .blog-hashtags{
+//     display: block;
+//     margin-bottom: 10px;
+
+//     & p{
+//       margin: 5px;
+//       color: $font-col1;
+//       background: $background;
+//       padding: 5px;
+//       border-radius: 4px;
+//       border: 1px solid rgba($color: $font-col1 , $alpha: .3) ;
+//       display: inline-block;
+//       font-size: .75rem;
+
+//       &:hover{
+//         color: $primary-color;
+//       }
+
+//     }
+
+//   }
+
+
+//   & p{
+//     color: rgba($color: $font-col1 , $alpha: .8);
+//   }
+
+//   & .blog-length{
+//     margin-top: 15px;
+//     display: block;
+//   }
+
+//   & .blog-details{
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     margin-top: 20px;
+//     & a.blog-link{
+//       font-weight: bold;
+//       display: inline-block;
+//       color: $primary-color;
+//     }
+//     & .blog-date{
+//       margin-left: auto;
+//     }
+//   }
+// }
 
 // for home page featured 
 

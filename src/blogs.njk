@@ -4,7 +4,7 @@ description: Blogs and Tips on Web Development, Design, and Productivity.
 layout: 'base.njk'
 pagination:
   data: collections.post
-  size: 3
+  size: 8
   alias: posts
 ---
 
@@ -37,25 +37,29 @@ pagination:
       </div> -->
 
       {%- for post in posts -%}
-      
-        <div class="blog-card">
-          <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
-          <div class="blog-hashtags">
-            {% set comma = joiner() %}
-            {% for tag in post.data.tags -%}
-              {% if tag !== 'post' %}
-                {{ comma() }}
-                <p href="#">#{{ tag }}</p>
-              {% endif %}
-            {%- endfor %}
+
+          <a href="{{ post.url | url }}" class="blog-link">
+          <div class="blog-card">
+              <h1 class="blog-title subhead_text">{{ post.data.title}}</h1>
+            <div class="blog-hashtags">
+              {% set comma = joiner() %}
+              {% for tag in post.data.tags -%}
+                {% if tag !== 'post' %}
+                  {{ comma() }}
+                  <p href="#">#{{ tag }}</p>
+                {% endif %}
+              {%- endfor %}
+            </div>
+            <p class="blog-description">{{post.data.description}}</p>
+            {# <p class="blog-length"> {{ post.data.readTime  }} </p> #}
+            <div class="blog-details">
+              {# <a href="{{ post.url | url }}" class="blog-link">Read  Article >> </a> #}
+              <p class="blog-date">{{ post.data.date | postDate }}</p>
+            </div>
           </div>
-          <p class="blog-description">{{post.data.description}}</p>
-          <p class="blog-length"> {{ post.data.readTime  }} </p>
-          <div class="blog-details">
-            <a href="{{ post.url | url }}" class="blog-link">Read  Article >> </a>
-            <p class="blog-date">{{ post.data.date | postDate }}</p>
-          </div>
-        </div>
+          </a>
+
+          <hr>
      
      {%- endfor -%}
  

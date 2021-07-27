@@ -1,5 +1,5 @@
 ---
-title: Testing Code Snippets
+title: Testing Code Snippets 🧪
 author: Kunal Singh
 description: Blog 2 is a godd blog  type and scrambled it to make a type
   specimen book. It has survived not only five centuries, but also the leap into
