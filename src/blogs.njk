@@ -36,7 +36,7 @@ pagination:
         </div>
       </div> -->
 
-      {%- for post in posts -%}
+      {%- for post in posts | reverse -%}
 
           <a href="{{ post.url | url }}" class="blog-link">
           <div class="blog-card">
