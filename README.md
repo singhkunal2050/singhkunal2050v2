@@ -53,3 +53,4 @@ https://www.belter.io
 
 Can work on a eleventy plugin with npm to create a simple 404 page 
 Add Styling for inline code
+Added /uses inspired by https://github.com/wesbos/awesome-uses/
