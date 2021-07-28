@@ -920,10 +920,11 @@ $color: $background;
   padding:20px;
   margin: 20px 0;
   border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.061);
+
 
   &:hover{
     background: rgba(255, 255, 255, 0.061);
-    border-image: linear-gradient(120deg , $primary-color , $secondary-color) 2% 2% stretch;
   }
 
   &:hover > h1 {
