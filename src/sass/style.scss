@@ -3,18 +3,21 @@
 @font-face {
   font-family: 'Josefin Sans';
   src:  url('/fonts/static/JosefinSans-Regular.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Josefin Sans';
   src:  url('../fonts/static/JosefinSans-Light.ttf') format('truetype');
   font-weight: 100;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Josefin Sans';
   src:  url('../fonts/static/JosefinSans-Bold.ttf') format('truetype');
   font-weight: 800;
+  font-display: swap;
 }
 
 
