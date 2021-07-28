@@ -11,12 +11,12 @@
   <title>{{ title }}</title>
   <meta name="title" content="{{ title }}">
   <meta name="description" content="{{ description }}">
-  <link rel="canonical" href="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}" />
+  <link rel="canonical" href="{{ site.url + page.url | url }}" />
   <meta name="keywords" content="{{  tags if tags else title }}">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="{{ 'article' if tags else 'website' }}">
-  <meta property="og:url" content="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}">
+  <meta property="og:url" content="{{ site.url + page.url | url }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:site_name" content="singhkunal2050" />
@@ -28,11 +28,11 @@
   <meta property="twitter:description" content="{{ description }}">
   <meta property="twitter:card" content="summary_large_image">
   <meta name="twitter:widgets:new-embed-design" content="on">
-  <meta property="twitter:url" content="{{ 'https://singhkunal2050v2.netlify.app'+ page.url | url }}">
-  <meta property="twitter:image" content="{{ image or 'https://singhkunal2050v2.netlify.app/img/icon.png' | url  }}">
+  <meta property="twitter:url" content="{{ site.url + page.url | url }}">
+  <meta property="twitter:image" content="{{ image or site.url + '/img/icon.png' | url  }}">
 
-  <meta property="og:image" content="{{ image or 'https://singhkunal2050v2.netlify.app/img/icon.png' | url  }}">
-  <meta name="twitter:image:src" content="{{ image or 'https://singhkunal2050v2.netlify.app/img/icon.png' | url  }}">
+  <meta property="og:image" content="{{ image or  site.url + '/img/icon.png' | url  }}">
+  <meta name="twitter:image:src" content="{{ image or  site.url + '/img/icon.png' | url  }}">
 
   <!-- identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
