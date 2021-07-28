@@ -17,10 +17,6 @@ module.exports = function(eleventyConfig) {
     return url.split("//")[1]
   });
 
-  // Add a filter for Blog Read Time
-  // eleventyConfig.addFilter( "readTime", function(content) {
-  //   return content
-  // });
   
   // debug filter 
   eleventyConfig.addFilter('console', function(value) {
