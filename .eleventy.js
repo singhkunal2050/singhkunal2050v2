@@ -49,6 +49,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js");
   eleventyConfig.addPassthroughCopy("./src/img");
   eleventyConfig.addPassthroughCopy('./src/admin');
+  eleventyConfig.addPassthroughCopy("./src/fonts");
 
   // You can return your Config object (optional).
   return {

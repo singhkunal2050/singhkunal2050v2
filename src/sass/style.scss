@@ -1,4 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src:  url('/fonts/static/JosefinSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src:  url('../fonts/static/JosefinSans-Light.ttf') format('truetype');
+  font-weight: 100;
+}
+
+
+// @font-face {
+//   font-family: 'Josefin Sans';
+//   src:  url('../fonts/static/JosefinSans-SemiBold.ttf') format('truetype');
+//   font-weight: 400;
+// }
+
+
+@font-face {
+  font-family: 'Josefin Sans';
+  src:  url('../fonts/static/JosefinSans-Bold.ttf') format('truetype');
+  font-weight: 800;
+}
+
 
 $background: #0C1118;
 $dark2: #171d25b6;
@@ -31,6 +57,7 @@ $xxl:1400px;
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   // transition: 250ms ease-in-out;
 }
@@ -117,6 +144,7 @@ blockquote{
 
 .rainbow{
   color: lighten($primary-color , 20%);
+  font-weight: 700;
 }
 
 .handwave{
