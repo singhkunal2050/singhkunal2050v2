@@ -21,21 +21,13 @@ Jamstack stands for Javascript APIS and Markup and it is based on this idea of s
 
 ![](/img/post/1_tdrfv0lag7tg3us2yjmala.jpeg)
 
-
-
 Okay let me break it down for you. Lets consider a conventional Website Architecture. You have a frontend, you have a database and you have some apis which interact with the database and the frontend takes care of the data. But you see in this architecture whenever the user goes to the site the same data is queried each time and the overall time and processing required is alot. 
 
 In contrary to this idea **JAMStack** comes with this idea of building the site once and serving it statically through a CDN to the users. Now when a new blog comes up a new build is trigerred which creates a new version of your website which is statically served. 
 
-Not only is this more optimized for better **performance** and **scalability** but with all that it has an amazing **developer experience** which is often hooked with your github.
+Not only is this more optimized for better **performance** and **scalability** but with all that it has an amazing **developer experience** which is often hooked with your github repo.
 
 ![](/img/post/wl2tdlrxg.jfif)
-
-
-
-
-
-
 
 ### How it works ?
 
