@@ -40,6 +40,8 @@ Let me give you an example of this website.
 
 ### How can I get started ?
 
+[link](url){:target="_blank"}
+
 The best resources to get started would be the [Jamstack.org](https://jamstack.org/) website and also [James Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) on Youtube Since Jamstack is not a new framework but just a philosophy for website architectures, Its very easy to pick up and especially if you are a frontend developer like me It gives you super powers 🦄
 
 ### Is it even used by companies ?
