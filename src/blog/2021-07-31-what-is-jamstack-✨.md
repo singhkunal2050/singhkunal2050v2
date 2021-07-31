@@ -36,11 +36,9 @@ Let me give you an example of this website.
 * All the content of this site is hosted at github 
 * Using Netlify CMS I can publish a new blog to my website which then pushes that data to github
 * Which then triggers a build process for the website and kaboom the new blog is live with a build time of 5-10 seconds \[ Note this build time increases as the data of your site increases but the best part is the old version is live until new one is pushed :) ] 
-* Also incase of any sourcecode changes are made even that triggers a netlify build resulting in a fresh version of the site 
+* Also incase of any sourcecode changes are made even that triggers a netlify build resulting in a fresh version of the site.
 
 ### How can I get started ?
-
-[link](url){:target="_blank"}
 
 The best resources to get started would be the [Jamstack.org](https://jamstack.org/) website and also [James Quick](https://www.youtube.com/channel/UC-T8W79DN6PBnzomelvqJYw) on Youtube Since Jamstack is not a new framework but just a philosophy for website architectures, Its very easy to pick up and especially if you are a frontend developer like me It gives you super powers 🦄
 
