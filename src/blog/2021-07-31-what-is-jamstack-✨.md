@@ -44,5 +44,5 @@ The best resources to get started would be the [Jamstack.org](https://jamstack.o
 
 ### Is it even used by companies ?
 
-Yess and there is whole new ecosystem backing it up you will know more once you visit the [Jamstack.org](https://jamstack.org/) website
+Yess and there is whole new ecosystem backing it up you will know more once you visit the <a href="https://jamstack.org/" target="_blank">Jamstack.org</a> website
 
