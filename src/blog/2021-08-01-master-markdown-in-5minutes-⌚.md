@@ -6,6 +6,8 @@ description: Markdown is a lightweight markup language for creating formatted
   in 2004 as a markup
 tags:
   - post
+  - markdown
+  - documentation
 date: 2021-08-01T10:06:04.572Z
 image: /img/post/download-1-.png
 imageAlt: "Markdown "
