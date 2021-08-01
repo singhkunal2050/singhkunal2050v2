@@ -99,9 +99,9 @@ will give
 - Oranges 
 
 ```markdown
-1 Apples
-2 Mangoes 
-3 Oranges 
+1. Apples
+2. Mangoes 
+3. Oranges 
 ```
 will give 
 
