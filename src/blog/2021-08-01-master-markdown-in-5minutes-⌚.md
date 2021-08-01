@@ -109,3 +109,26 @@ will give
 2. Mangoes 
 3. Oranges 
 
+```markdown
+1. Apples
+2. Mangoes 
+    - Oranges
+    - Berries
+3. Oranges 
+```
+will give 
+
+1. Apples
+2. Mangoes
+   - Oranges 
+   - Berries
+3. Oranges 
+  
+
+
+<br>
+<hr>
+<br>
+
+* ##### Lists 
+
