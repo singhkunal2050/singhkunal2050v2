@@ -54,7 +54,7 @@ will give
 ###### Heading 6
 
 
-
+<hr>
 
 
 * ##### Text Formatting
