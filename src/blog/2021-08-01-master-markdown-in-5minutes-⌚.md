@@ -163,7 +163,7 @@ let foo = () =>{
  ![website logo](/img/icon.png)
 
  Adding Image with URL
- [![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)
+ [ ![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)]
 
 ```
 
