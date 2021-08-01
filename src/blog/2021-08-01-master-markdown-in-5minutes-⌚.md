@@ -150,5 +150,61 @@ will give
 let foo = () =>{
   console.log('fooo!')
 }
+```
+
+<br>
+<hr>
+<br>
+
+* ##### Images
+
+```markdown
+ Adding Image 
+ ![website logo](/img/icon.png)
+
+ Adding Image with URL
+ [ ![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)]
 
 ```
+
+will give 
+
+<img src="/img/icon.png" style="max-width:100px; float:left">
+
+<a href="https://singhkunal2050v2.netlify.app/"><img src="/img/icon.png" alt="website logo" style="max-width:100px;"></a>
+
+<br>
+<hr>
+<br>
+
+* ##### Horizontal Lines
+
+```markdown
+---
+```
+
+will give  this very horizontal line 👇
+
+- - -
+
+* ##### Hyper Links
+
+```markdown
+I want to share a [url](https://www.google.com)
+```
+
+will give
+I want to share a [url](//google.com)
+
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+```markdown
+<https://www.google.com>
+<demo@demo.com>
+```
+<https://www.google.com>
+<demo@demo.com>
+
+
+
+---
