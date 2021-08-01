@@ -178,3 +178,12 @@ will give
 will give  this very horizontal line 👇
 
 ---
+
+* ##### Hyper Links
+
+```markdown
+I want to share a [url](//google.com)
+```
+will give  
+I want to share a [url](//google.com)
+---
