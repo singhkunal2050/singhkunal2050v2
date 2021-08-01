@@ -1,7 +1,9 @@
 ---
 title: Master Markdown in 5minutes ⌚
 author: Kunal Singh
-description: Documentation
+description: Markdown is a lightweight markup language for creating formatted
+  text using a plain-text editor. John Gruber and Aaron Swartz created Markdown
+  in 2004 as a markup
 tags:
   - post
 date: 2021-08-01T10:06:04.572Z
