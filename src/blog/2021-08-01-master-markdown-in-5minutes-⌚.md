@@ -166,7 +166,6 @@ let foo = () =>{
 
  Adding Image with URL
  [ ![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)]
-
 ```
 
 will give 
@@ -204,9 +203,10 @@ To quickly turn a URL or email address into a link, enclose it in angle brackets
 <https://www.google.com>
 <demo@demo.com>
 ```
+
 <https://www.google.com>
-<demo@demo.com>
+[demo@demo.com](mailto:demo@demo.com)
 
+- - -
 
-
----
+And with that I hope you can now write a basic documentation for your projects spread joy in the open source community!! 🧚‍♀️🧚‍♀️
