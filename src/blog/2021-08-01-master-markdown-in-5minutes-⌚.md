@@ -162,6 +162,7 @@ let foo = () =>{
 ```markdown
  ![website logo](/img/icon.png)
 ```
+will give 
 
 <img src="/img/icon.png" style="max-width:100px;">
 
