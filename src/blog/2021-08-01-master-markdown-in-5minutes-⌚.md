@@ -33,12 +33,9 @@ If you want to create a well documented project and share your it with the world
 #### Heading 4 
 ##### Heading 5 
 ###### Heading 6 
-
 ```
 
-The above Syntax will give you 
-
-# Heading 1
+# <hr>Heading 1
 
 ## Heading 2
 
