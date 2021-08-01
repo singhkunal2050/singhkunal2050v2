@@ -1122,10 +1122,18 @@ $color: $background;
       }
   
       @media(max-width:$md){
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        // margin-top: 20px;
+        // display: flex;
+        // // flex-direction: row;
+        // justify-content: center;
+        position: fixed;
+        right: -2px;
+        bottom: 20px;
+        top: unset;
+        background: $background;
+        border-radius: 8px;
+        border: 1px solid $primary-color;
+
         & img{
           margin: 20px 10px;
         }
@@ -1134,7 +1142,7 @@ $color: $background;
   }
 
   & .blog-single-content{
-
+    text-align: justify;
     margin-left: 20px;
 
     & li{

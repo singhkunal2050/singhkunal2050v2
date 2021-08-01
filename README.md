@@ -56,4 +56,5 @@ Add Styling for inline code
 Added /uses inspired by https://github.com/wesbos/awesome-uses/
 Add Sitemap.xml and robots.txt
 End point to fetch stars of repo at build time https://api.github.com/repos/singhkunal2050/singhkunal2050v2
+Use lamda functions for views and likes counter on blogs 
 
