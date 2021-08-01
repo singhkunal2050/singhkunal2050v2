@@ -191,6 +191,15 @@ will give
 \
 I want to share a [url](//google.com)
 
+To quickly turn a URL or email address into a link, enclose it in angle brackets.
+
+```markdown
+<https://www.google.com>
+<demo@demo.com>
+```
+<https://www.google.com>
+<demo@demo.com>
+
 
 
 - - -
