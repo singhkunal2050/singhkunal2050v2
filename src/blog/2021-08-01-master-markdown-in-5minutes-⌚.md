@@ -105,7 +105,7 @@ will give
 ```
 will give 
 
-1 Apples
-2 Mangoes 
-3 Oranges 
+1. Apples
+2. Mangoes 
+3. Oranges 
 
