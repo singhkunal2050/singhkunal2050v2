@@ -25,8 +25,7 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 If you want to create a well documented project and share your it with the world via Open source Platforms. Markdown will help your code communicate better!
 
 ### Lets Start
-
-
+<br><br>
 
 * ##### Headings
 
@@ -53,9 +52,9 @@ will give
 
 ###### Heading 6
 
-
+<br>
 <hr>
-
+<br>
 
 * ##### Text Formatting
 
