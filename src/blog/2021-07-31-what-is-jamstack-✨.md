@@ -11,7 +11,7 @@ image: /img/post/download.png
 imageAlt: "Jamstack "
 readTime: 2 Minutes ⌚
 ---
-### What the heck is JAMStack ?
+### What the heck is JAMStack? 
 
 A wise man once said 
 
@@ -29,7 +29,7 @@ Not only is this more optimized for better **performance** and **scalability** b
 
 ![](/img/post/wl2tdlrxg.jfif)
 
-### How it works ?
+### How it works?
 
 Let me give you an example of this website.
 
@@ -44,4 +44,5 @@ The best resources to get started would be the [Jamstack.org](https://jamstack.o
 
 ### Is it even used by companies ?
 
-Yessa and there is whole new ecosystem backing it up you will know more once you visit the [Jamstack.org](https://jamstack.org/) website
+Yess and there is whole new ecosystem backing it up you will know more once you visit the [Jamstack.org](https://jamstack.org/) website
+
