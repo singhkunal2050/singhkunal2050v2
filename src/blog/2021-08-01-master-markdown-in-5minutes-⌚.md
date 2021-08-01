@@ -168,8 +168,7 @@ will give
 
 <img src="/img/icon.png" style="max-width:100px;">
 
-[![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)
-
+<a href="https://singhkunal2050v2.netlify.app/"><img src="/img/icon.png" alt="website logo" style="max-width:100px;"></a>
 
 <br>
 <hr>
