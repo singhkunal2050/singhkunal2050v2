@@ -35,7 +35,9 @@ If you want to create a well documented project and share your it with the world
 ###### Heading 6 
 ```
 
-# <hr>Heading 1
+<hr>
+
+# Heading 1
 
 ## Heading 2
 
