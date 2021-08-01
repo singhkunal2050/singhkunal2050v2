@@ -160,11 +160,16 @@ let foo = () =>{
 
 ```markdown
  ![website logo](/img/icon.png)
+ [![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)
+
 ```
 
 will give 
 
 <img src="/img/icon.png" style="max-width:100px;">
+
+[![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)
+
 
 <br>
 <hr>
