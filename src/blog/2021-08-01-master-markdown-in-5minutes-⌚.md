@@ -159,7 +159,10 @@ let foo = () =>{
 * ##### Images
 
 ```markdown
+ Adding Image 
  ![website logo](/img/icon.png)
+
+ Adding Image with URL
  [![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)
 
 ```
