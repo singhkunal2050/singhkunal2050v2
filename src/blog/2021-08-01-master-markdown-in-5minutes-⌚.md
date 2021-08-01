@@ -84,3 +84,71 @@ will give
 <br>
 <hr>
 <br>
+
+* ##### Lists
+
+```markdown
+- Apples
+- Mangoes 
+- Oranges 
+```
+
+will give 
+
+* Apples
+* Mangoes 
+* Oranges 
+
+```markdown
+1. Apples
+2. Mangoes 
+3. Oranges 
+```
+
+will give 
+
+1. Apples
+2. Mangoes 
+3. Oranges 
+
+```markdown
+1. Apples
+2. Mangoes 
+    - Oranges
+    - Berries
+3. Oranges 
+```
+
+will give 
+
+1. Apples
+2. Mangoes
+
+   * Oranges 
+   * Berries
+3. Oranges 
+
+<br>
+<hr>
+<br>
+
+* ##### Code
+
+`````markdown
+```
+
+let foo = () =>{
+  console.log('fooo!')
+}
+
+````
+`````
+
+will give
+
+```javascript
+let foo = () =>{
+  console.log('fooo!')
+}
+
+```
