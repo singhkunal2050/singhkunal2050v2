@@ -1186,7 +1186,7 @@ $color: $background;
       background-image: linear-gradient(0, #f07b3f 12%, transparent 20%);
     }
 
-    & ul{
+    & ul , & ol{
       margin: 20px 0 20px 40px;
       font-size: 1.15rem;
       line-height: 1.5;
