@@ -37,7 +37,7 @@ If you want to create a well documented project and share your it with the world
 ###### Heading 6 
 ```
 
-<hr>
+will give
 
 # Heading 1
 
