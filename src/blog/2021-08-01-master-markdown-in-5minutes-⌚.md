@@ -169,7 +169,7 @@ let foo = () =>{
 
 will give 
 
-<img src="/img/icon.png" style="max-width:100px;">
+<img src="/img/icon.png" style="max-width:100px; float:left">
 
 <a href="https://singhkunal2050v2.netlify.app/"><img src="/img/icon.png" alt="website logo" style="max-width:100px;"></a>
 
