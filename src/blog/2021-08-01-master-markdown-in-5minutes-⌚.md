@@ -170,4 +170,11 @@ will give
 <hr>
 <br>
 
-* ##### Images
+* ##### Horizontal Lines 
+
+```markdown
+---
+```
+will give 
+
+---
