@@ -152,3 +152,20 @@ let foo = () =>{
 }
 
 ```
+
+<br>
+<hr>
+<br>
+
+* ##### Images
+
+```markdown
+ ![website logo](/img/icon.png)
+```
+ ![website logo](/img/icon.png)
+
+<br>
+<hr>
+<br>
+
+* ##### Images
