@@ -24,7 +24,7 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 
 ### Why use markdown
 
-If you want to create a well documented project and share your it with the world via Open source Platforms. Markdown will help your code communicate better!
+If you want to create a well documented project and share it with the world via Open source Platforms. Markdown will help your code communicate better!
 
 ### Lets Start
 
