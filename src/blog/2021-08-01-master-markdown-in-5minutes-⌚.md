@@ -150,7 +150,6 @@ will give
 let foo = () =>{
   console.log('fooo!')
 }
-
 ```
 
 <br>
@@ -162,6 +161,7 @@ let foo = () =>{
 ```markdown
  ![website logo](/img/icon.png)
 ```
+
 will give 
 
 <img src="/img/icon.png" style="max-width:100px;">
@@ -170,20 +170,23 @@ will give
 <hr>
 <br>
 
-* ##### Horizontal Lines 
+* ##### Horizontal Lines
 
 ```markdown
 ---
 ```
+
 will give  this very horizontal line 👇
 
----
+- - -
 
 * ##### Hyper Links
 
 ```markdown
-I want to share a [url](//google.com)
+I want to share a [url](https://www.google.com)
 ```
-will give  
+
+will give\
 I want to share a [url](//google.com)
----
+
+- - -
