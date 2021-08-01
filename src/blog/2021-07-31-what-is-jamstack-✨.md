@@ -11,13 +11,7 @@ image: /img/post/download.png
 imageAlt: "Jamstack "
 readTime: 2 Minutes ⌚
 ---
-## Table of Content 
-
--  [What the heck is JAMStack?](#what-the-heck-is-jamstack?)
--  [How it works?](#how-it-works?)
-
-
-### What the heck is JAMStack?
+### What the heck is JAMStack? 
 
 A wise man once said 
 
