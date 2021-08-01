@@ -26,7 +26,7 @@ If you want to create a well documented project and share your it with the world
 
 ### Lets Start
 
-##### Headings
+* ##### Headings
 
 ```markdown
 # Heading 1 
@@ -50,3 +50,14 @@ will give
 ##### Heading 5
 
 ###### Heading 6
+
+* ##### Text Formatting
+
+```markdown
+The following **word** is important while this *word* is italic
+
+```
+
+will give 
+
+The following **word** is important while this *word* is italic
