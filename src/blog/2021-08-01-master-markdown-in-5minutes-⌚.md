@@ -209,4 +209,6 @@ To quickly turn a URL or email address into a link, enclose it in angle brackets
 
 - - -
 
-And with that I hope you can now write a basic documentation for your projects spread joy in the open source community!! 🧚‍♀️🧚‍♀️
+And with that I hope you can now write a basic documentation for your projects and spread joy in the open source community!! 🧚‍♀️🧚‍♀️ If you wish to go deeper you can check this Crash Course by the GOAT himself 🐐 Brad Traversy from Traversy Media
+
+<iframe width="677" height="381" src="https://www.youtube.com/embed/HUBNt18RFbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
