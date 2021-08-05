@@ -59,4 +59,5 @@ https://www.belter.io
 - Use lamda functions for views and likes counter on blogs 
 - refactor from sass to css variables
 - add color scheme toogle
-
+- Search Blogs with tags or title 
+- Add About page with Feats Certications and Overall idea obout me 
