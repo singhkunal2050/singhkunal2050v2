@@ -1213,6 +1213,13 @@ $color: $background;
       width: 100%;
     }
 
+    & iframe{
+      width: 600px !important;
+      height: unset !important;
+      max-width: 100% !important;
+      aspect-ratio: 16/9 !important;
+    }
+
     & blockquote{
       font-size: 1.15rem;
       line-height: 1.75;
