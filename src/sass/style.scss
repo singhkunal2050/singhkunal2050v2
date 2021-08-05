@@ -456,6 +456,7 @@ nav {
       & img {
         margin: 10px;
         background: transparent;
+        transition: 200ms ease-in-out !important;
         &:hover{
           transform: scale(1.2);
         }
