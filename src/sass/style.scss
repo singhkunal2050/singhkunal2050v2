@@ -1225,6 +1225,56 @@ $color: $background;
 }
 
 
+//-------- latest-blog-strip-container---------------
+
+.latest-blog-strip-container{
+  background: $background;
+  border:1px solid transparent;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 500px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  border-image: linear-gradient(120deg , $primary-color , $secondary-color ) 2% 2% stretch;
+
+  @media (max-width:$md) {
+    width: 100%;
+     grid-template-columns: 40% 60%;
+  }
+
+}
+
+.latest-blog-strip-container .strip-content{
+  padding: 20px;
+}
+
+.latest-blog-strip-container span{
+  font-size: 2rem;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.latest-blog-strip-container h2{
+ font-size: 1.4rem;
+ @media (max-width:$md) {
+  font-size: .8rem;
+ }
+}
+
+.latest-blog-strip-container a{
+  display: block;
+  color: $primary-color;
+  font-weight: bold;
+  margin-top: 10px;
+  @media (max-width:$md) {
+    font-size: .6rem;
+  }
+}
+
+
 // for syntax highlighting
 /**
  * Coldark Theme for Prism.js
