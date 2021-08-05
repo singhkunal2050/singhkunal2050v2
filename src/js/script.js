@@ -9,18 +9,31 @@ document.querySelector('.menu').addEventListener('click' , (e)=>{
 })
 
 
+// show greeting
+
 const showGreeting = () =>{
   if(!localStorage.greeted){
     document.querySelector('.greeting').classList.toggle('show-greeting')
     localStorage.setItem('greeted', true);
   }
 }
-
 setTimeout( showGreeting , 20000);
-
 document.querySelector('.close').addEventListener('click' , ()=>{
   document.querySelector('.greeting').classList.toggle('show-greeting')
 })
+
+
+// show latest blog 
+const showLatestBlog = () =>{
+  if(document.URL.split('/').length == 4 ) { // if at home 
+    document.querySelector('.latest-blog-strip-container').classList.toggle('show-blog-strip')
+  }
+}
+setTimeout( showLatestBlog , 2000);
+document.querySelector('.close-blog-strip').addEventListener('click' , ()=>{
+  document.querySelector('.latest-blog-strip-container').classList.toggle('show-blog-strip')
+})
+
 
 // skew on scroll
 

@@ -1245,12 +1245,18 @@ $color: $background;
   right: 0;
   bottom: 0;
   border-image: linear-gradient(120deg , $primary-color , $secondary-color ) 2% 2% stretch;
+  transform: translateY(100%);
+  transition: 400ms ease-in-out;
 
   @media (max-width:$md) {
     width: 100%;
      grid-template-columns: 40% 60%;
   }
 
+}
+
+.show-blog-strip{
+  transform: translateY(0);
 }
 
 .latest-blog-strip-container .strip-content{
@@ -1272,7 +1278,7 @@ $color: $background;
  }
 }
 
-.latest-blog-strip-container a{
+.latest-blog-strip-container #blog-strip-link{
   display: block;
   color: $primary-color;
   font-weight: bold;

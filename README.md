@@ -62,3 +62,5 @@ https://www.belter.io
 - Search Blogs with tags or title 
 - Add About page with Feats Certications and Overall idea obout me 
 - Create updated resume and update it across all platforms 
+- pwa notifications on new blog posts
+- 

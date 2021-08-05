@@ -1,15 +1,16 @@
-
-        <div class="latest-blog-strip-container">
-          <span>+</span>
+        <div class="latest-blog-strip-container ">
+          <span class="close-blog-strip">+</span>
           {%- for post in collections.post | reverse -%}
               {% if loop.index0 < 1 %}    
+              <a href="{{post.url}}" style="display:inherit;">
                 <div style="background:url({{post.data.image}}); background-size: cover; background-position: center; background-repeat: no-repeat;">
                 </div>
                 <div class="strip-content">
                   <p style="font-weight: 100; font-size: .8rem; margin-bottom: 5px;">Check my latest Blog Post</p>
                   <h2>{{post.data.title}}</h2>
-                  <a href="{{post.url}}">Read Now</a>
+                  <a id="blog-strip-link" href="{{post.url}}">Read Now</a>
                 </div>
+              </a>
               {% endif %}
           {%- endfor  -%}
         </div>
