@@ -61,3 +61,4 @@ https://www.belter.io
 - add color scheme toogle
 - Search Blogs with tags or title 
 - Add About page with Feats Certications and Overall idea obout me 
+- Create updated resume and update it across all platforms 
