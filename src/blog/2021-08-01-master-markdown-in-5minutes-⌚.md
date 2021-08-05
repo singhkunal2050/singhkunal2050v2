@@ -6,6 +6,8 @@ description: Markdown is a lightweight markup language for creating formatted
   in 2004 as a markup
 tags:
   - post
+  - markdown
+  - documentation
 date: 2021-08-01T10:06:04.572Z
 image: /img/post/download-1-.png
 imageAlt: "Markdown "
@@ -22,7 +24,7 @@ Markdown is a lightweight markup language for creating formatted text using a pl
 
 ### Why use markdown
 
-If you want to create a well documented project and share your it with the world via Open source Platforms. Markdown will help your code communicate better!
+If you want to create a well documented project and share it with the world via Open source Platforms. Markdown will help your code communicate better with the masses and can also invite contributors to your project!
 
 ### Lets Start
 
@@ -164,7 +166,6 @@ let foo = () =>{
 
  Adding Image with URL
  [ ![website logo](/img/icon.png)](https://singhkunal2050v2.netlify.app/)]
-
 ```
 
 will give 
@@ -202,9 +203,12 @@ To quickly turn a URL or email address into a link, enclose it in angle brackets
 <https://www.google.com>
 <demo@demo.com>
 ```
+
 <https://www.google.com>
-<demo@demo.com>
+[demo@demo.com](mailto:demo@demo.com)
 
+- - -
 
+And with that I hope you can now write a basic documentation for your projects and spread joy in the open source community!! 🧚‍♀️🧚‍♀️ If you wish to go deeper you can check this Crash Course by the GOAT himself 🐐 Brad Traversy from Traversy Media
 
----
+<iframe width="677" height="381" src="https://www.youtube.com/embed/HUBNt18RFbo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
