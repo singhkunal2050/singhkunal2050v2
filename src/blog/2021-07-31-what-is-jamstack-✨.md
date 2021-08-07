@@ -11,7 +11,7 @@ image: /img/post/download.png
 imageAlt: "Jamstack "
 readTime: 2 Minutes ⌚
 ---
-### What the heck is JAMStack? 
+### What the heck is JAMStack?
 
 A wise man once said 
 
@@ -25,7 +25,7 @@ Okay let me break it down for you. Lets consider a conventional Website Architec
 
 In contrary to this idea **JAMStack** comes with this idea of building the site once and serving it statically through a CDN to the users. Now when a new blog comes up a new build is trigerred which creates a new version of your website which is statically served. 
 
-Not only is this more optimized for better **performance** and **scalability** but with all that it has an amazing **developer experience** which is often hooked with your github repo.
+Not only is this more optimized for better **performance , security** and **scalability** but with all that it has an amazing **developer experience** which is often hooked with your github repo.
 
 ![](/img/post/wl2tdlrxg.jfif)
 
@@ -45,4 +45,3 @@ The best resources to get started would be the <a href="https://jamstack.org/" t
 ### Is it even used by companies ?
 
 Yess and there is whole new ecosystem backing it up you will know more once you visit the <a href="https://jamstack.org/" target="_blank">Jamstack.org</a> website
-
