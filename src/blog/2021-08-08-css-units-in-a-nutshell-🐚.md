@@ -45,6 +45,10 @@ Are you still writing your css units in pixels and percentages? if you are then 
 	Pixels
 </h1>
 
+Pixels are the most commonly used way to assign length in css. A pixel represents the smallest possible unit of the screen.
+
+\> a minute area of illumination on a display screen, one of many from which an image is composed.
+
 ```css
 /* Used for defining absolute values */
 h1{
