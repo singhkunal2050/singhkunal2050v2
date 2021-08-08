@@ -72,7 +72,7 @@ Inch is not so commonly used but it has the same behaviour as px just a differen
 ```css
 /* Used for defining absolute values */
 h1{
-  padding:10px;
+  padding:10in;
 }
 ```
 
@@ -85,7 +85,7 @@ h1{
 ```css
 /* Used for defining absolute values */
 h1{
-  padding:10px;
+  padding:10mm;
 }
 ```
 
@@ -97,7 +97,7 @@ h1{
 ```css
 /* Used for defining absolute values */
 h1{
-  padding:10px;
+  padding:5cm;
 }
 ```
 
@@ -110,7 +110,7 @@ h1{
 ```css
 /* Used for defining absolute values */
 h1{
-  padding:10px;
+  padding:10pt;
 }
 ```
 
@@ -123,7 +123,7 @@ h1{
 ```css
 /* Used for defining absolute values */
 h1{
-  padding:10px;
+  padding:10pc;
 }
 ```
 
@@ -134,9 +134,9 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Sizes the child on the basis of its parents parent element's length. */
 h1{
-  padding:10px;
+  padding:10%;
 }
 ```
 
@@ -147,9 +147,11 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Relative to the font size of the current element  */
+/* if font size is 16px then 1em = 16px and 2em = 32px */
+
 h1{
-  padding:10px;
+  padding:10em;
 }
 ```
 
