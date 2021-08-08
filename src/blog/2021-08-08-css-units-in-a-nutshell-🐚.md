@@ -18,22 +18,22 @@ Are you still writing your css units in pixels and percentages? if you are then 
 
 ## List of Units
 
-- [px](#px)
-- [in](#in)
-- [mm](#mm)
-- [cm](#cm)
-- [pt](#pt)
-- [pc](#pc)
-- [%](#percentage)
-- [em](#em)
-- [rem](#rem)
-- [ch](#ch)
-- [vh](#vh)
-- [vw](#vw)
-- [vmin](#vmax)
-- [vmax](#vmax)
-- [ex](#ex)
-- [fr](#fr)
+1. [px](#px)
+2. [in](#in)
+3. [mm](#mm)
+4. [cm](#cm)
+5. [pt](#pt)
+6. [pc](#pc)
+7. [%](#percentage)
+8. [em](#em)
+9. [rem](#rem)
+10. [ch](#ch)
+11. [vh](#vh)
+12. [vw](#vw)
+13. [vmin](#vmax)
+14. [vmax](#vmax)
+15. [ex](#ex)
+16. [fr](#fr)
 
  
 <div id="px">
