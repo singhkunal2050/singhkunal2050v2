@@ -39,7 +39,7 @@ Are you still writing your css units in pixels and percentages? if you are then 
 
 </div>
  
-<br>
+<br><br>
 
 <h1 id="px">
 	Pixels
@@ -51,6 +51,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="in">
 	Inches
@@ -73,6 +75,7 @@ h1{
   padding:10px;
 }
 ```
+
 <h1 id="cm">
 	Centimeters
 </h1>
@@ -83,6 +86,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="pt">
 	Points | 1pt = 1/72 of 1in
@@ -95,6 +100,8 @@ h1{
 }
 ```
 
+<br><br>
+
 <h1 id="pc">
 	picas | 1pc = 12pt
 </h1>
@@ -105,6 +112,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="percentage">
 	Percentage
@@ -117,6 +126,8 @@ h1{
 }
 ```
 
+<br><br>
+
 <h1 id="em">
 	em
 </h1>
@@ -127,6 +138,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="rem">
 	rem
@@ -139,6 +152,8 @@ h1{
 }
 ```
 
+<br><br>
+
 <h1 id="ch">
 	ch
 </h1>
@@ -149,6 +164,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="vh">
 	vh : View Height
@@ -161,6 +178,8 @@ h1{
 }
 ```
 
+<br><br>
+
 <h1 id="vw">
 	vw : View Width
 </h1>
@@ -172,6 +191,8 @@ h1{
 }
 ```
 
+<br><br>
+
 <h1 id="vmin">
 	vmin : Minimum width out of vw and vh
 </h1>
@@ -182,6 +203,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="vmax">
 	vmax : Maximum width out of vw and vh
