@@ -63,6 +63,8 @@ h1{
 </h1>
 
 1 Inch =  96px = 2.54cm
+
+
 Inch is not so commonly used but it has the same behaviour as px just a different unit of measurement.
 
 ```css
@@ -87,6 +89,7 @@ h1{
 
 <br><br><h1 style="scroll-margin-top: 100px;"  id="cm">
 	Centimeters
+
 </h1>
 
 ```css
