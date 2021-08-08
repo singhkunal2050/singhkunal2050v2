@@ -32,7 +32,7 @@ Are you still writing your css units in pixels and percentages? if you are then 
 10. [ch](#ch)
 11. [vh](#vh)
 12. [vw](#vw)
-13. [vmin](#vmax)
+13. [vmin](#vmin)
 14. [vmax](#vmax)
 15. [ex](#ex)
 16. [fr](#fr)
