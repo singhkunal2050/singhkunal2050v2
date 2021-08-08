@@ -171,3 +171,25 @@ h1{
   padding:10px;
 }
 ```
+
+<h1 id="vmin">
+	vmin : Minimum width out of vw and vh
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="vmax">
+	vmax : Maximum width out of vw and vh
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
