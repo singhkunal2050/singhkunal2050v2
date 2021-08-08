@@ -16,6 +16,9 @@ readTime: 2 Minutes ⌚
 
 Are you still writing your css units in pixels and percentages? if you are then I would recommend you check out this article where we will cover all  possible CSS units with example and its details of use cases.
 
+There are two types of length units: **absolute** and **relative**.
+1 to 6 in the list are absolute units while the remaining ones are relative to other elements in the DOM
+
 ## List of Units
 
 <div style="columns:70px">
@@ -63,7 +66,6 @@ h1{
 </h1>
 
 1 Inch =  96px = 2.54cm
-
 
 Inch is not so commonly used but it has the same behaviour as px just a different unit of measurement.
 
