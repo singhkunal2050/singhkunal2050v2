@@ -193,3 +193,15 @@ h1{
   padding:10px;
 }
 ```
+
+<h1 id="ex">
+	ex: x-height of current font 
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
