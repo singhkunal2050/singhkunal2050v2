@@ -63,4 +63,4 @@ https://www.belter.io
 - Add About page with Feats Certications and Overall idea obout me 
 - Create updated resume and update it across all platforms 
 - pwa notifications on new blog posts
-- 
+- add site main domain to site.json 
