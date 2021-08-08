@@ -182,9 +182,9 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Relative to the width of the a character "_" */
 h1{
-  padding:10px;
+  padding:1ch;
 }
 ```
 
