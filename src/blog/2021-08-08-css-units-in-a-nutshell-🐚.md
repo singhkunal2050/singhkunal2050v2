@@ -135,8 +135,8 @@ h1{
 
 ```css
 /* Sizes the child on the basis of its parents parent element's length. */
-h1{
-  padding:10%;
+img{
+  max-width:100%;
 }
 ```
 
@@ -195,9 +195,10 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
-h1{
-  padding:10px;
+/* Relative to the height of the window  */
+section{
+  min-height:70vh;
+  /* covers 70% of the screen height */
 }
 ```
 
@@ -208,9 +209,10 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
-h1{
-  padding:10px;
+/* Relative to the width of the window  */
+section{
+  max-width:90vw;
+  margin:0 auto; 
 }
 ```
 
@@ -221,9 +223,9 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Used for selecting Minimum width out of vw and vh */
 h1{
-  padding:10px;
+  padding:5vmin;
 }
 ```
 
@@ -234,9 +236,9 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Used for selecting Maximum width out of vw and vh */
 h1{
-  padding:10px;
+  padding:5vmax;
 }
 ```
 
@@ -247,9 +249,9 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Relative to  x-height of current font */
 h1{
-  padding:10px;
+  padding:10ex;
 }
 ```
 
@@ -261,7 +263,9 @@ h1{
 
 ```css
 /* Used for defining absolute values */
-h1{
-  padding:10px;
+section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    /* creates a 2 col layout */
 }
 ```
