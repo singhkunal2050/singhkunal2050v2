@@ -39,9 +39,9 @@ Are you still writing your css units in pixels and percentages? if you are then 
 
 </div>
  
-<div id="px">
+<h1 id="px">
 	demo text
-</div>
+</h1>
 
 
  
