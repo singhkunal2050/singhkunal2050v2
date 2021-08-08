@@ -205,3 +205,13 @@ h1{
 }
 ```
 
+<h1 id="fr">
+	fr: Frames used in grid
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
