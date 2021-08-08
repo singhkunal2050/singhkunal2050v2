@@ -1095,7 +1095,6 @@ $color: $background;
 
   }
 
-
 }
 
 .blog-single-container{
@@ -1228,8 +1227,16 @@ $color: $background;
     }
 
   }
+}
 
-
+.blog-indicator{
+  background: linear-gradient(12deg , $primary-color , $secondary-color);
+  height: 3px;
+  width: 100vw;
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  transform: translateX(-100vw);
 }
 
 

@@ -116,5 +116,18 @@ function shareonfb(){
     window.open('http://pinterest.com/pin/create/button/?url=' + encodeURIComponent(document.URL) + '&description=' + encodeURIComponent(document.title)); return false;
   }
 
+// blog finish indicator
 
+var totalHeight = document.documentElement.scrollHeight;
+var header = document.querySelector('.blog-indicator');
+
+if(document.URL.split('/').includes('blog') ){
+  document.addEventListener('scroll' , (e)=>{
+  let percentage =   (Number(window.scrollY)) / (Number(totalHeight) - 100) * 100
+   percentage = (percentage + 7.8) % 100 - 100
+   console.log(percentage);
+   header.style.transform= `translateX(${percentage}vw)` ;
+ });
+ 
+}  // if its  the article page
 
