@@ -51,3 +51,112 @@ h1{
   padding:10px;
 }
 ```
+
+<h1 id="in">
+	Inches
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="mm">
+	Milimeters
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+<h1 id="cm">
+	Centimeters
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="pt">
+	Points | 1pt = 1/72 of 1in
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="pc">
+	picas | 1pc = 12pt
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="percentage">
+	Percentage
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="em">
+	em
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="rem">
+	rem
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="ch">
+	ch
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
+
+<h1 id="vh">
+	vh
+</h1>
+
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
