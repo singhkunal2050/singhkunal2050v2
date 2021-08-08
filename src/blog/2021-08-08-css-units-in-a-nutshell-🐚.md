@@ -18,6 +18,8 @@ Are you still writing your css units in pixels and percentages? if you are then 
 
 ## List of Units
 
+<div style="columns:200px 2;">
+
 1. [px](#px)
 2. [in](#in)
 3. [mm](#mm)
@@ -35,6 +37,7 @@ Are you still writing your css units in pixels and percentages? if you are then 
 15. [ex](#ex)
 16. [fr](#fr)
 
+</div>
  
 <div id="px">
 	demo text
