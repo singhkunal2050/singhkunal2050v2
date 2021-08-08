@@ -162,9 +162,16 @@ h1{
 </h1>
 
 ```css
-/* Used for defining absolute values */
+/* Relative to the font size of the root element  */
+/* if font size is 16px then 1rem = 16px and 2em = 32px */
+
+:root{
+  font-size:35px
+}
+
 h1{
-  padding:10px;
+  padding:3rem; 
+  /* This will be equal to 3*35 = 105px */
 }
 ```
 
