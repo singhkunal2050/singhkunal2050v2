@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/17603b1a-9c22-4130-817d-37fc149a3257/deploy-status)](https://app.netlify.com/sites/singhkunal2050v2/deploys)
+
 # singhkunal2050
 ### A Personal website/Blog Portal based on eleventy and The **Jamstack**
 ![Website Snap](/docs/home-snap.png "Website Snap")
