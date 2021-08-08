@@ -18,7 +18,7 @@ Are you still writing your css units in pixels and percentages? if you are then 
 
 ## List of Units
 
-<div style="columns:200px 2;">
+<div style="columns:80px;">
 
 1. [px](#px)
 2. [in](#in)
