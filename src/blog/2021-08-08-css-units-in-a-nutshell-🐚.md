@@ -39,10 +39,15 @@ Are you still writing your css units in pixels and percentages? if you are then 
 
 </div>
  
+<br>
+
 <h1 id="px">
-	demo text
+	Pixels
 </h1>
 
-
- 
-
+```css
+/* Used for defining absolute values */
+h1{
+  padding:10px;
+}
+```
