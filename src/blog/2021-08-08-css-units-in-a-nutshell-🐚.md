@@ -62,6 +62,9 @@ h1{
 	Inches
 </h1>
 
+1 Inch =  96px = 2.54cm
+Inch is not so commonly used but it has the same behaviour as px just a different unit of measurement.
+
 ```css
 /* Used for defining absolute values */
 h1{
