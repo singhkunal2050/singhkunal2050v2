@@ -41,7 +41,7 @@ Are you still writing your css units in pixels and percentages? if you are then 
  
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="px">
+<h1 style="scroll-margin-top: 100px;"  id="px">
 	Pixels
 </h1>
 
@@ -58,7 +58,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="in">
+<h1 style="scroll-margin-top: 100px;"  id="in">
 	Inches
 </h1>
 
@@ -74,7 +74,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="mm">
+<h1 style="scroll-margin-top: 100px;"  id="mm">
 	Milimeters
 </h1>
 
@@ -85,7 +85,7 @@ h1{
 }
 ```
 
-<br><br><h1 style="  scroll-margin-top: 50px;"  id="cm">
+<br><br><h1 style="scroll-margin-top: 100px;"  id="cm">
 	Centimeters
 </h1>
 
@@ -98,7 +98,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="pt">
+<h1 style="scroll-margin-top: 100px;"  id="pt">
 	Points | 1pt = 1/72 of 1in
 </h1>
 
@@ -111,7 +111,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="pc">
+<h1 style="scroll-margin-top: 100px;"  id="pc">
 	picas | 1pc = 12pt
 </h1>
 
@@ -124,7 +124,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="percentage">
+<h1 style="scroll-margin-top: 100px;"  id="percentage">
 	Percentage
 </h1>
 
@@ -137,7 +137,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="em">
+<h1 style="scroll-margin-top: 100px;"  id="em">
 	em
 </h1>
 
@@ -150,7 +150,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="rem">
+<h1 style="scroll-margin-top: 100px;"  id="rem">
 	rem
 </h1>
 
@@ -163,7 +163,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="ch">
+<h1 style="scroll-margin-top: 100px;"  id="ch">
 	ch
 </h1>
 
@@ -176,7 +176,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="vh">
+<h1 style="scroll-margin-top: 100px;"  id="vh">
 	vh : View Height
 </h1>
 
@@ -189,7 +189,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="vw">
+<h1 style="scroll-margin-top: 100px;"  id="vw">
 	vw : View Width
 </h1>
 
@@ -202,7 +202,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="vmin">
+<h1 style="scroll-margin-top: 100px;"  id="vmin">
 	vmin : Minimum width out of vw and vh
 </h1>
 
@@ -215,7 +215,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="vmax">
+<h1 style="scroll-margin-top: 100px;"  id="vmax">
 	vmax : Maximum width out of vw and vh
 </h1>
 
@@ -228,7 +228,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="ex">
+<h1 style="scroll-margin-top: 100px;"  id="ex">
 	ex: x-height of current font 
 </h1>
 
@@ -241,7 +241,7 @@ h1{
 
 <br><br>
 
-<h1 style="  scroll-margin-top: 50px;"  id="fr">
+<h1 style="scroll-margin-top: 100px;"  id="fr">
 	fr: Frames used in grid
 </h1>
 
