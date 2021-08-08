@@ -217,6 +217,8 @@ h1{
 }
 ```
 
+<br><br>
+
 <h1 id="ex">
 	ex: x-height of current font 
 </h1>
@@ -227,6 +229,8 @@ h1{
   padding:10px;
 }
 ```
+
+<br><br>
 
 <h1 id="fr">
 	fr: Frames used in grid
