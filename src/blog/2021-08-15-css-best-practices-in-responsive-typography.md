@@ -16,7 +16,7 @@ There are several ways to make your fonts fluid across all resolutions in your w
 
 * [Good old media queries](#media-queries)
 * [Using Relative Units vw, vh, Percentage (%)](#relative-units)
-* [clamp() , calc() & minmax() ](#css-functions)
+* [clamp() & calc()](#css-functions)
 * [Using CSS Variables](#using-css-variables)
 
 Enough talk lets see the code
