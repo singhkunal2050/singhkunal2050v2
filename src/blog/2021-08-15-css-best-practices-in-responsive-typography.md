@@ -25,6 +25,32 @@ Enough talk lets see the code
 
 ## Good Old Media Queries `@media-queries`
 
+```css
+/* 1. With Media Queries */
+.media h2{
+  font-size:2rem;
+}
+.media p{
+  font-size:1.2rem;
+}
+/* Setting breakpoint for changing font size */
+
+@media (max-width:768px) {
+  .media{
+    background:#ededed;
+  }
+  
+  .media h2{
+    font-size:1.5rem;
+  }
+
+  .media p{
+    font-size:.8rem;
+  }
+}
+
+```
+
 
 
 </div>
@@ -33,14 +59,24 @@ Enough talk lets see the code
 
 ## Using Relative Units `vw` `vh` and `%`
 
-
 This method uses relative units like percentage, vw and vh and we can set the font size on the basis of parent container(with %) or we can use the vw/vh unit which is used to get sizes relative to the window. Although this method gives a completely fluid typography it has some pitfalls which we can be covered with funtion like minmax coming up next.
 
+```css
+/* Using Relative % Units */
+
+.relative-units h2{
+  font-size:5vw;
+}
+
+.relative-units p{
+  font-size:2.5vw;
+}
+
+```
 
 </div>
 
-
-# You can check this codepen for live example of all the points covered in this blog 
+# You can check this codepen for live example of all the points covered in this blog
 
 <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="bGWJvXO" data-preview="true" data-user="singhkunal2050" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/singhkunal2050/pen/bGWJvXO">
