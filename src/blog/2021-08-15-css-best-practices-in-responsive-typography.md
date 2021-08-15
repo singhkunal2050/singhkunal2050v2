@@ -31,6 +31,9 @@ Enough talk lets see the code
 
 <div class="relative-units">
 
+## Using Relative Units `vw` `vh` and `%`
+
+
 This method uses relative units like percentage, vw and vh and we can set the font size on the basis of parent container(with %) or we can use the vw/vh unit which is used to get sizes relative to the window. Although this method gives a completely fluid typography it has some pitfalls which we can be covered with funtion like minmax coming up next.
 
 
