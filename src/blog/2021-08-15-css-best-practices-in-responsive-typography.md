@@ -47,10 +47,6 @@ Enough talk lets see the code
 /* Setting breakpoint for changing font size */
 
 @media (max-width:768px) {
-  .media{
-    background:#ededed;
-  }
-  
   .media h2{
     font-size:1.5rem;
   }
@@ -86,3 +82,70 @@ This method uses relative units like percentage, vw and vh and we can set the fo
 ```
 
 </div>
+
+<div class="css-functions">
+
+## Using CSS funtions `clamp()` and `calc()`
+
+The most annoying part of using a relative unit is we can not set any upper/lower limit to the values that we want. This problem is solved with the `clamp()` function and the calc() function comes with its own advantage of allowing us to do mathematic operations with our units like 10vw + 10px , 40%+ 2rem etc
+
+```css
+
+/* Using clamp() , calc() & minmax() */
+/* When this method is combined with relative units it gives the best results */
+
+.css-functions h2{
+  font-size:calc(1.8rem + 2vw);
+  /*  gives max size 👇   */
+  font-size:clamp(1.8rem, 5vw , 2.5rem );
+}
+
+.css-functions p{
+  font-size:clamp(.8rem, 4vw , 1.5rem );
+  /*  does not give max size 👇   */
+  font-size:calc(.7rem + 1vw);        
+}
+
+
+``` 
+
+</div>
+
+<div class="using-css-variables">
+
+## Using CSS Variables 
+Remember how we used media queries to swap font sizes on the basis of `window` width? Using the same technique with css variables gives you the same feature with a little better code maintance option. Lets see how.
+
+```css
+
+
+/* Using CSS Variables */
+
+/* Setting Up Default Font size Variables  */
+:root{
+  --heading-2:2rem;
+  --content:1rem;
+}
+
+/* Overidding Variables with Media Queries   */
+
+@media(max-width:768px){
+  :root{
+    --heading-2:1.54rem;
+    --content:.7rem;
+  }
+}
+
+.css-var h2{
+  font-size:var(--heading-2);
+}
+
+.css-var p{
+  font-size:var(--content);
+}
+
+```
+
+</div>
+
+I hope you learned something new today and You can share this post with your friends who might find this useful. Have any questions? Feel free to connect with me on [LinkedIn](//linkedin.com/in/singhkunal2050) or [Twitter](//twitter.com/singhkunal2050)  [@singhkunal2050](/). You can also write me [here](/#contact)
