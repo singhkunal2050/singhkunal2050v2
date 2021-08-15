@@ -34,7 +34,7 @@ Enough talk lets see the code
 
 ## Good Old Media Queries `@media-queries`
 
-`media-queries` may not be the most fluid of all these methods since it's based on changing the size based on breakpoints of `window` but it does come in handy and gets the job done.
+`media-queries` may not be the most fluid of all these methods since they are based on changing the size based on breakpoints of `window` but they do come in handy and get the job done most of the time.
 
 ```css
 /* 1. With Media Queries */
@@ -63,7 +63,7 @@ Enough talk lets see the code
 
 ## Using Relative Units `vw` `vh` and `%`
 
-This method uses relative units like percentage, vw and vh and we can set the font size on the basis of parent container(with %) or we can use the vw/vh unit which is used to get sizes relative to the window. Although this method gives a completely fluid typography it has some pitfalls which we can be covered with funtion like minmax coming up next.
+This method uses relative units like percentage, vw and vh, we can set the font size on the basis of parent container(with %) or we can use the vw/vh unit which sets the sizes relative to the window. Although this method gives a completely fluid typography it has some pitfalls which we'll cover in the next point.
 
 ```css
 /* Using Relative % Units */
@@ -91,13 +91,13 @@ The most annoying part of using a relative unit is we can not set any upper/lowe
 
 .css-functions h2{
   font-size:calc(1.8rem + 2vw);
-  /*  gives max size 👇   */
+  /*  gives min/max size 👇   */
   font-size:clamp(1.8rem, 5vw , 2.5rem );
 }
 
 .css-functions p{
   font-size:clamp(.8rem, 4vw , 1.5rem );
-  /*  does not give max size 👇   */
+  /*  does not give min/max size 👇   */
   font-size:calc(.7rem + 1vw);        
 }
 ```
