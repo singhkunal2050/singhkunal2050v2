@@ -146,4 +146,4 @@ Remember how we used media queries to swap font sizes on the basis of `window` w
 
 </div>
 
-I hope you learned something new today and You can share this post with your friends who might find this useful. Have any questions? Feel free to connect with me on [LinkedIn](//linkedin.com/in/singhkunal2050) or [Twitter](//twitter.com/singhkunal2050)  [@singhkunal2050](/). You can also write me [here](/#contact)
+I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on [LinkedIn](//linkedin.com/in/singhkunal2050) or [Twitter](//twitter.com/singhkunal2050)  [@singhkunal2050](/). You can also write me [here](/#contact)
