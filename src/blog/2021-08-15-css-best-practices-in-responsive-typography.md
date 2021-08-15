@@ -34,6 +34,8 @@ Enough talk lets see the code
 
 ## Good Old Media Queries `@media-queries`
 
+`media-queries` may not be the most fluid of all these methods since it's based on changing the size based on breakpoints of `window` but it does come in handy and gets the job done.
+
 ```css
 /* 1. With Media Queries */
 .media h2{
