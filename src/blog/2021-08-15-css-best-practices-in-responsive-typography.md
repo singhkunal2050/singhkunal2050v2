@@ -1,7 +1,7 @@
 ---
-title: Responsive Typography in CSS 💧
+title: Fluid Typography in CSS 💧
 author: Kunal Singh
-description: CSS Best Practices in Responsive Typography
+description: CSS Best Practices in Fluid Typography
 tags:
   - post
   - css
@@ -9,9 +9,12 @@ tags:
   - typography
 date: 2021-08-15T15:03:58.197Z
 image: /img/post/responsive-typography.jpeg
-imageAlt: Responsive Typography
+imageAlt: Fluid Typography
 readTime: 2 Minutes ⌚
 ---
+## What is Fluid Typography?
+When your font size changes according to the size of the window then we call it as a fluid typography.
+
 There are several ways to make your fonts fluid across all resolutions in your websites. Here are 5 ways that I use regularly in my projects with examples.
 
 * [Good old media queries](#media-queries)
