@@ -22,6 +22,9 @@ There are several ways to make your fonts fluid across all resolutions in your w
 Enough talk lets see the code
 
 <div id="media-queries">
-## Good Old Media Queries `@media-queries`
+
+## Good Old Media Queries \`@media-queries\`
+
+
 
 </div>
