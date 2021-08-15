@@ -23,7 +23,7 @@ Enough talk lets see the code
 
 <div id="media-queries">
 
-## Good Old Media Queries \`@media-queries\`
+## Good Old Media Queries `@media-queries`
 
 
 
