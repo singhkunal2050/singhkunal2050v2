@@ -1,5 +1,5 @@
 ---
-title: Responsive Typography in CSS 🔠
+title: Responsive Typography in CSS 💧
 author: Kunal Singh
 description: CSS Best Practices in Responsive Typography
 tags:
