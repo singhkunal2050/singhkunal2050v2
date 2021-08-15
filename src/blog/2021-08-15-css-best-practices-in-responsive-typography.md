@@ -55,7 +55,6 @@ Enough talk lets see the code
     font-size:.8rem;
   }
 }
-
 ```
 
 </div>
@@ -76,7 +75,6 @@ This method uses relative units like percentage, vw and vh and we can set the fo
 .relative-units p{
   font-size:2.5vw;
 }
-
 ```
 
 </div>
@@ -88,7 +86,6 @@ This method uses relative units like percentage, vw and vh and we can set the fo
 The most annoying part of using a relative unit is we can not set any upper/lower limit to the values that we want. This problem is solved with the `clamp()` function and the calc() function comes with its own advantage of allowing us to do mathematic operations with our units like 10vw + 10px , 40%+ 2rem etc
 
 ```css
-
 /* Using clamp() , calc() & minmax() */
 /* When this method is combined with relative units it gives the best results */
 
@@ -103,20 +100,17 @@ The most annoying part of using a relative unit is we can not set any upper/lowe
   /*  does not give max size 👇   */
   font-size:calc(.7rem + 1vw);        
 }
-
-
-``` 
+```
 
 </div>
 
 <div id="using-css-variables">
 
-## Using CSS Variables 
+## Using CSS Variables
+
 Remember how we used media queries to swap font sizes on the basis of `window` width? Using the same technique with css variables gives you the same feature with a little better code maintance option. Lets see how.
 
 ```css
-
-
 /* Using CSS Variables */
 
 /* Setting Up Default Font size Variables  */
@@ -141,10 +135,10 @@ Remember how we used media queries to swap font sizes on the basis of `window` w
 .css-var p{
   font-size:var(--content);
 }
-
 ```
 
 </div>
 
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a><a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>
-    
+
+*Happy Coding 👩‍💻!*
