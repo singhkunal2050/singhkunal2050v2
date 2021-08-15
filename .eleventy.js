@@ -17,6 +17,10 @@ module.exports = function(eleventyConfig) {
     return url.split("//")[1]
   });
 
+  //  check if isArticlePage
+  eleventyConfig.addFilter( "isArticlePage", function(url) {
+    return url.split("/").includes('blog')
+  });
   
   // debug filter 
   eleventyConfig.addFilter('console', function(value) {
