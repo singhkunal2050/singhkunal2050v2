@@ -58,11 +58,9 @@ Enough talk lets see the code
 
 ```
 
-
-
 </div>
 
-<div class="relative-units">
+<div id="relative-units">
 
 ## Using Relative Units `vw` `vh` and `%`
 
@@ -83,7 +81,7 @@ This method uses relative units like percentage, vw and vh and we can set the fo
 
 </div>
 
-<div class="css-functions">
+<div id="css-functions">
 
 ## Using CSS funtions `clamp()` and `calc()`
 
@@ -111,7 +109,7 @@ The most annoying part of using a relative unit is we can not set any upper/lowe
 
 </div>
 
-<div class="using-css-variables">
+<div id="using-css-variables">
 
 ## Using CSS Variables 
 Remember how we used media queries to swap font sizes on the basis of `window` width? Using the same technique with css variables gives you the same feature with a little better code maintance option. Lets see how.
@@ -148,4 +146,4 @@ Remember how we used media queries to swap font sizes on the basis of `window` w
 
 </div>
 
-I hope you learned something new today and You can share this post with your friends who might find this useful. Have any questions? Feel free to connect with me on [LinkedIn](//linkedin.com/in/singhkunal2050) or [Twitter](//twitter.com/singhkunal2050)  [@singhkunal2050](/). You can also write me [here](/#contact)
+I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on [LinkedIn](//linkedin.com/in/singhkunal2050) or [Twitter](//twitter.com/singhkunal2050)  [@singhkunal2050](/). You can also write me [here](/#contact)
