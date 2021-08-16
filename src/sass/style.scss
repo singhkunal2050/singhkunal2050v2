@@ -28,13 +28,17 @@ $primary-color: #f07b3f;
 $primary-color-300:#f0a33f;
 $secondary-color: #ffd460;
 $font-col1 :#fffaf5;
+$head-color:lighten($primary-color , 20%);
+$card-hover:lighten($background , 1%);
 
 // $background:#fffaf5;
-// $dark2: #171d25b6;
+// $dark2: #fff6f2;
 // $primary-color: #f07b3f;
 // $primary-color-300:#f0a33f;
 // $secondary-color: #ffd460;
 // $font-col1 : #0C1118;
+// $head-color:darken($primary-color , 20%);
+// $card-hover:darken($background , 20%);
 
 // document.querySelector(':root').style.setProperty('--primary-color', 'red')
 
@@ -140,7 +144,7 @@ blockquote{
 }
 
 .rainbow{
-  color: lighten($primary-color , 20%);
+  color: $head-color;
   font-weight: 700;
 }
 
@@ -490,7 +494,7 @@ nav {
       margin: 20px;
 
       &:hover{
-        background: darken($primary-color , 57%);
+        background: $card-hover;
         box-shadow: 10px 10px 0px 0px rgba($color: $secondary-color, $alpha: .1);
         border-image: linear-gradient(120deg , $primary-color , $secondary-color ) 2% 2% stretch;
       }
