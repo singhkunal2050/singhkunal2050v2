@@ -31,6 +31,7 @@ $font-col1 :#fffaf5;
 $head-color:lighten($primary-color , 20%);
 $card-hover:lighten($background , 1%);
 $code-block:lighten($background,10%);
+$blog-hover:lighten($background , 4%);
 
 // $background:#fffaf5;
 // $dark2: #fff6f2;
@@ -43,7 +44,7 @@ $code-block:lighten($background,10%);
 
 
 // $background:#fff5f5;
-// $dark2: #e8e2ff;
+// $dark2: #f5f2ff;
 // $primary-color: #51299b;
 // $primary-color-300:#9962ff;
 // $secondary-color: #903df0;
@@ -51,6 +52,8 @@ $code-block:lighten($background,10%);
 // $head-color:darken($primary-color , 20%);
 // $card-hover:darken($background , 1%);
 // $code-block:darken($background,5%);
+// $blog-hover:darken($background , 4%);
+
 
 // document.querySelector(':root').style.setProperty('--primary-color', 'red')
 
@@ -691,9 +694,10 @@ nav {
         color: $font-col1;
         font-weight: 700;
         cursor: pointer;
+        transition: 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
 
         &:hover{
-          background: darken($background , 40%) ;
+          background: $blog-hover ;
         }
 
         @media(max-width:$lm){
@@ -946,10 +950,11 @@ $color: $background;
   margin: 20px 0;
   border-radius: 16px;
   border: 2px solid rgba(255, 255, 255, 0.061);
+  transition: 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
 
 
   &:hover{
-    background: rgba(255, 255, 255, 0.061);
+    background: $blog-hover;
   }
 
   &:hover > h1 {
