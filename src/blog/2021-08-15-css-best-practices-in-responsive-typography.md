@@ -86,7 +86,7 @@ This method uses relative units like percentage, vw and vh, we can set the font 
 
 ## Using CSS funtions `clamp()` and `calc()`
 
-The most annoying part of using a relative unit is we can not set any upper/lower limit to the values that we want. This problem is solved with the `clamp()` function and the calc() function comes with its own advantage of allowing us to do mathematic operations with our units like 10vw + 10px , 40%+ 2rem etc
+The most annoying part of using a relative unit is we can not set any upper/lower limit to the values that we want. This problem is solved with the `clamp()` function and the `calc()` function comes with its own advantage of allowing us to do mathematic operations with our units like 10vw + 10px , 40%+ 2rem etc
 
 ```css
 /* Using clamp() , calc() & minmax() */

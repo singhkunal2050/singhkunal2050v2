@@ -30,6 +30,7 @@ $secondary-color: #ffd460;
 $font-col1 :#fffaf5;
 $head-color:lighten($primary-color , 20%);
 $card-hover:lighten($background , 1%);
+$code-block:lighten($background,10%);
 
 // $background:#fffaf5;
 // $dark2: #fff6f2;
@@ -39,6 +40,17 @@ $card-hover:lighten($background , 1%);
 // $font-col1 : #0C1118;
 // $head-color:darken($primary-color , 20%);
 // $card-hover:darken($background , 20%);
+
+
+// $background:#fff5f5;
+// $dark2: #e8e2ff;
+// $primary-color: #51299b;
+// $primary-color-300:#9962ff;
+// $secondary-color: #903df0;
+// $font-col1 : #131f30;
+// $head-color:darken($primary-color , 20%);
+// $card-hover:darken($background , 1%);
+// $code-block:darken($background,5%);
 
 // document.querySelector(':root').style.setProperty('--primary-color', 'red')
 
@@ -138,14 +150,19 @@ blockquote{
 }
 
 .subhead_text {
-  font-size: clamp(1.28rem, 3.5vw, 4rem);
-  opacity: .4;
-  margin-bottom: 5px;
+  font-size: clamp(1.28rem, 2.8vw, 4rem);
+  // opacity: .4;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
 .rainbow{
   color: $head-color;
   font-weight: 700;
+}
+
+.social-svg-icon path{
+  fill:$font-col1;
 }
 
 .handwave{
@@ -230,7 +247,7 @@ blockquote{
   height: 40vh;
   // z-index: 555;
   background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, $secondary-color 0%, $primary-color 95.31%);
-  opacity: 0.56;
+  // opacity: 0.56;
   filter: blur(253px);
   z-index: -1;
 
@@ -432,8 +449,8 @@ nav {
     & .my-title{
       text-transform: uppercase;
       font-weight:600 ;
-      letter-spacing: 12px;
-      opacity: .4;
+      letter-spacing: 15px;
+      // opacity: .4;
       margin: 20px 0 40px 0;
     }
 
@@ -517,7 +534,7 @@ nav {
         & p{
           display: block;
           margin-top: 10px !important;
-          opacity: .4;
+          opacity: .7;
         }
 
       }
@@ -968,7 +985,7 @@ $color: $background;
   }
 
   & p{
-    color: rgba($color: $font-col1 , $alpha: .8);
+    color: $font-col1;
   }
 
   hr{
@@ -1069,8 +1086,8 @@ $color: $background;
   text-align: center;
   // background-image: url(//source.unsplash.com/random);
   background-size: cover;
-  background-color: rgba($color: $background, $alpha: .7);
-  background-blend-mode: multiply;
+  background-color: rgba($color: $background, $alpha: .5);
+  background-blend-mode: color !important;
   padding: 120px 40px;
 
   & h2{
@@ -1192,28 +1209,28 @@ $color: $background;
     }
 
     & a{
-      color: rgba($color: $font-col1, $alpha: .74);
-      background-image: linear-gradient(0, #f07b3f 12%, transparent 20%);
+      color: $font-col1;
+      background-image: linear-gradient(0, $primary-color 12%, transparent 20%);
     }
 
     & ul , & ol{
       margin: 20px 0 20px 40px;
       font-size: 1.15rem;
       line-height: 1.5;
-      color: rgba($color: $font-col1, $alpha: .74);
-      font-weight: 100 !important;
+      color: $font-col1;
+      font-weight: 400 !important;
     }
 
     & li{
-      font-weight: 100 !important;
+      font-weight: 400 !important;
     }
 
     & p{
       margin: 1rem 0;
       font-size: 1.15rem;
       line-height: 1.5;
-      color: rgba($color: $font-col1, $alpha: .74);
-      font-weight: 100 !important;
+      color: $font-col1;
+      font-weight: 400 !important;
     }
 
     & img{
@@ -1232,8 +1249,8 @@ $color: $background;
     & blockquote{
       font-size: 1.15rem;
       line-height: 1.75;
-      color: rgba($color: $font-col1, $alpha: .74);
-      background: lighten($color: $background , $amount: 5);
+      color: $font-col1;
+      background: $card-hover;
     }
 
   }
@@ -1250,7 +1267,7 @@ $color: $background;
 }
 
 :not(pre)>code {
-  background: lighten($background,10%);
+  background: $code-block;
   display: inline-block;
   padding: 0 .5em;
   font-family: monospace;
