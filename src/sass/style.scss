@@ -1122,9 +1122,9 @@ $color: $background;
     & .share-btn-group {
       position: sticky;
       top: 200px;
-      & img{
+      & svg{
         display: block;
-        margin: 20px 0;   
+        margin: 5px 0;   
         max-width: 28px;     
       }
   
@@ -1141,8 +1141,8 @@ $color: $background;
         border-radius: 8px;
         border: 1px solid $primary-color;
 
-        & img{
-          margin: 20px 10px;
+        & svg{
+          margin: 5px 10px;
         }
       }
     }
