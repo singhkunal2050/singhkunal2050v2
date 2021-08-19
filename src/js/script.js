@@ -153,3 +153,4 @@ function changeTheme(){
 }
 
 
+document.addEventListener('click' , changeTheme)

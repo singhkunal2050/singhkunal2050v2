@@ -1332,6 +1332,25 @@ footer {
   }
 }
 
+
+// toggle btn
+
+.toggle-btn{
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 50%;
+  outline:none;
+  border:2px solid var(--secondary-color);
+}
+
+
 // for syntax highlighting
 /**
  * Coldark Theme for Prism.js
