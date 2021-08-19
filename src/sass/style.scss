@@ -33,6 +33,19 @@ $card-hover:lighten($background , 1%);
 $code-block:lighten($background,10%);
 $blog-hover:lighten($background , 4%);
 
+// :root{
+//   --background: #0C1118;
+//   --dark2: #171d25b6;
+//   --primary-color: #f07b3f;
+//   --primary-color-300:#f0a33f;
+//   --secondary-color: #ffd460;
+//   --font-col1 :#fffaf5;
+//   --head-color:lighten(var(--primary-color) , 20%);
+//   --card-hover:lighten(var(--background) , 1%);
+//   --code-block:lighten(var(--background,)10%);
+//   --blog-hover:lighten(var(--background) , 4%);
+// }
+
 // $background:#fffaf5;
 // $dark2: #fff6f2;
 // $primary-color: #f07b3f;
@@ -41,7 +54,6 @@ $blog-hover:lighten($background , 4%);
 // $font-col1 : #0C1118;
 // $head-color:darken($primary-color , 20%);
 // $card-hover:darken($background , 20%);
-
 
 // $background:#fff5f5;
 // $dark2: #f5f2ff;
