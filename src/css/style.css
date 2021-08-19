@@ -32,7 +32,7 @@
   --hightlight:black;
 }
 
-:root {
+.light-theme {
   --background:hsl(0, 100%, 98%);
   --dark2: hsl(254, 100%, 97%);
   --background-light: hsl(0, 67%, 98%);

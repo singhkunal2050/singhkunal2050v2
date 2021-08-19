@@ -57,7 +57,6 @@
 // $code-block:hsl(0, 100%, 90%);
 // $blog-hover:hsl(0, 100%, 94%);
 
-
 :root{
   --background: hsl(215, 33%, 7%);
   --dark2: hsla(214, 23%, 12%, 0.714);
@@ -78,25 +77,25 @@
   --hightlight:black;
 }
 
-// :root{
-//   --background:hsl(0, 100%, 98%);
-//   --dark2: hsl(254, 100%, 97%);
-//   --background-light: hsl(0, 67%, 98%);
-//   --background-o-500: hsla(0, 100%, 98%, 0.507);
-//   --primary-color: hsl(261, 58%, 38%);
-//   --primary-color-800:hsl(261, 58%, 18%);
-//   --primary-color-500:hsl(261, 58%, 34%);
-//   --primary-color-300:hsl(261, 100%, 69%);
-//   --secondary-color: hsl(268, 86%, 59%);
-//   --secondary-color-o-100: hsla(268, 86%, 59%, 0.152);
-//   --font-col1 : hsl(215, 43%, 13%);
-//   --font-col1-o-100 :hsla(214, 42%, 13%, 0.15);
-//   --head-color:hsl(261, 58%, 18%);
-//   --card-hover:hsl(0, 100%, 95%);
-//   --code-block:hsl(0, 100%, 90%);
-//   --blog-hover:hsl(0, 100%, 94%);
-//   --hightlight:white;
-// }
+.light-theme {
+  --background:hsl(0, 100%, 98%);
+  --dark2: hsl(254, 100%, 97%);
+  --background-light: hsl(0, 67%, 98%);
+  --background-o-500: hsla(0, 100%, 98%, 0.507);
+  --primary-color: hsl(261, 58%, 38%);
+  --primary-color-800:hsl(261, 58%, 18%);
+  --primary-color-500:hsl(261, 58%, 34%);
+  --primary-color-300:hsl(261, 100%, 69%);
+  --secondary-color: hsl(268, 86%, 59%);
+  --secondary-color-o-100: hsla(268, 86%, 59%, 0.152);
+  --font-col1 : hsl(215, 43%, 13%);
+  --font-col1-o-100 :hsla(214, 42%, 13%, 0.15);
+  --head-color:hsl(261, 58%, 18%);
+  --card-hover:hsl(0, 100%, 95%);
+  --code-block:hsl(0, 100%, 90%);
+  --blog-hover:hsl(0, 100%, 94%);
+  --hightlight:white;
+}
 
 
 // document.querySelector(':root').style.setProperty('--primary-color', 'red')

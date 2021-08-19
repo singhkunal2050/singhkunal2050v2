@@ -131,3 +131,11 @@ if(document.URL.split('/').includes('blog') ){
  
 }  // if its  the article page
 
+
+// toggle theme 
+
+function changetheme(){
+  document.querySelector('html').classList.toggle('light-theme')
+}
+
+
