@@ -21,36 +21,24 @@
 //   font-display: swap;
 // }
 
-$background: hsl(215, 33%, 7%);
-$dark2: hsla(214, 23%, 12%, 0.714);
-$background-light: hsl(215, 33%, 10%);
-$background-o-500: hsla(215, 33%, 7%, 0.527);
-$primary-color: hsl(20, 86%, 59%);
-$primary-color-800:hsl(20, 86%, 18%);
-$primary-color-500:hsl(20, 86%, 53%);
-$primary-color-300:hsl(34, 86%, 59%);
-$secondary-color: hsl(44, 100%, 69%);
-$secondary-color-o-100: hsla(44, 100%, 69%, 0.157);
-$font-col1 :hsl(30, 100%, 98%);
-$font-col1-o-100 :hsla(30, 100%, 98%, 0.15);
-$head-color: hsl(20, 86%, 79%);
-$card-hover:hsl(215, 33%, 9%);
-$code-block:hsl(215, 33%, 17%);
-$blog-hover:hsl(215, 33%, 12%);
+// $background: hsl(215, 33%, 7%);
+// $dark2: hsla(214, 23%, 12%, 0.714);
+// $background-light: hsl(215, 33%, 10%);
+// $background-o-500: hsla(215, 33%, 7%, 0.527);
+// $primary-color: hsl(20, 86%, 59%);
+// $primary-color-800:hsl(20, 86%, 18%);
+// $primary-color-500:hsl(20, 86%, 53%);
+// $primary-color-300:hsl(34, 86%, 59%);
+// $secondary-color: hsl(44, 100%, 69%);
+// $secondary-color-o-100: hsla(44, 100%, 69%, 0.157);
+// $font-col1 :hsl(30, 100%, 98%);
+// $font-col1-o-100 :hsla(30, 100%, 98%, 0.15);
+// $head-color: hsl(20, 86%, 79%);
+// $card-hover:hsl(215, 33%, 9%);
+// $code-block:hsl(215, 33%, 17%);
+// $blog-hover:hsl(215, 33%, 12%);
 
 
-// :root{
-//   --background: #0C1118;
-//   --dark2: #171d25b6;
-//   --primary-color: #f07b3f;
-//   --primary-color-300:#f0a33f;
-//   --secondary-color: #ffd460;
-//   --font-col1 :#fffaf5;
-//   --head-color:lighten(var(--primary-color) , 20%);
-//   --card-hover:lighten(var(--background) , 1%);
-//   --code-block:lighten(var(--background) ,10%);
-//   --blog-hover:lighten(var(--background) , 4%);
-// }
 
 // $background:hsl(0, 100%, 98%);
 // $dark2: hsl(254, 100%, 97%);
@@ -68,6 +56,47 @@ $blog-hover:hsl(215, 33%, 12%);
 // $card-hover:hsl(0, 100%, 95%);
 // $code-block:hsl(0, 100%, 90%);
 // $blog-hover:hsl(0, 100%, 94%);
+
+
+:root{
+  --background: hsl(215, 33%, 7%);
+  --dark2: hsla(214, 23%, 12%, 0.714);
+  --background-light: hsl(215, 33%, 10%);
+  --background-o-500: hsla(215, 33%, 7%, 0.527);
+  --primary-color: hsl(20, 86%, 59%);
+  --primary-color-800:hsl(20, 86%, 18%);
+  --primary-color-500:hsl(20, 86%, 53%);
+  --primary-color-300:hsl(34, 86%, 59%);
+  --secondary-color: hsl(44, 100%, 69%);
+  --secondary-color-o-100: hsla(44, 100%, 69%, 0.157);
+  --font-col1 :hsl(30, 100%, 98%);
+  --font-col1-o-100 :hsla(30, 100%, 98%, 0.15);
+  --head-color: hsl(20, 86%, 79%);
+  --card-hover:hsl(215, 33%, 9%);
+  --code-block:hsl(215, 33%, 17%);
+  --blog-hover:hsl(215, 33%, 12%);
+  --hightlight:black;
+}
+
+// :root{
+//   --background:hsl(0, 100%, 98%);
+//   --dark2: hsl(254, 100%, 97%);
+//   --background-light: hsl(0, 67%, 98%);
+//   --background-o-500: hsla(0, 100%, 98%, 0.507);
+//   --primary-color: hsl(261, 58%, 38%);
+//   --primary-color-800:hsl(261, 58%, 18%);
+//   --primary-color-500:hsl(261, 58%, 34%);
+//   --primary-color-300:hsl(261, 100%, 69%);
+//   --secondary-color: hsl(268, 86%, 59%);
+//   --secondary-color-o-100: hsla(268, 86%, 59%, 0.152);
+//   --font-col1 : hsl(215, 43%, 13%);
+//   --font-col1-o-100 :hsla(214, 42%, 13%, 0.15);
+//   --head-color:hsl(261, 58%, 18%);
+//   --card-hover:hsl(0, 100%, 95%);
+//   --code-block:hsl(0, 100%, 90%);
+//   --blog-hover:hsl(0, 100%, 94%);
+//   --hightlight:white;
+// }
 
 
 // document.querySelector(':root').style.setProperty('--primary-color', 'red')
@@ -111,7 +140,7 @@ html{
 // near edges cursor issue needs to bn solved
 body {
   overflow-x: hidden;
-  background: $background;
+  background: var(--background);
   cursor: url('../img/cursor1.png') , auto;
 }
 
@@ -140,7 +169,7 @@ blockquote,
 span,
 a,
 li {
-  color: $font-col1;
+  color: var(--font-col1);
 }
 
 li{
@@ -154,11 +183,11 @@ h4,
 h5,
 h6 {
   font-weight: 700;
-  color: $font-col1;
+  color: var(--font-col1);
 }
 
 blockquote{
-  border-left: 3px solid $primary-color;
+  border-left: 3px solid var(--primary-color);
   padding: 10px;
   margin: 20px 0;
 }
@@ -185,12 +214,12 @@ blockquote{
 }
 
 .rainbow{
-  color: $head-color;
+  color: var(--head-color);
   font-weight: 700;
 }
 
 .social-svg-icon path{
-  fill:$font-col1;
+  fill:var(--font-col1);
 }
 
 .handwave{
@@ -208,15 +237,15 @@ blockquote{
   font-weight: 700;
   outline: none;
   border: none;
-  outline: 2px solid $primary-color;
+  outline: 2px solid var(--primary-color);
   margin: 5px 0;
   cursor: pointer;
-  box-shadow: 5px 5px 0px 0px $secondary-color;
-  color: $background;
+  box-shadow: 5px 5px 0px 0px var(--secondary-color);
+  color: var(--background);
   &:active{
     transition: 50ms ease-in-out !important;
     transform: translate(5px,5px);
-    box-shadow: 2px 2px 0px 0px $secondary-color;
+    box-shadow: 2px 2px 0px 0px var(--secondary-color);
   }
 
   @media (max-width:768px) {
@@ -226,40 +255,40 @@ blockquote{
 }
 
 .btn-primary {
-  background: $primary-color;
+  background: var(--primary-color);
   &:hover{
-    background:$primary-color-500;
+    background:var(--primary-color-500);
   }
 }
 
 .btn-outline {
   background: transparent;
-  color: $font-col1; 
+  color: var(--font-col1); 
   &:hover{
-    background:$font-col1;
-    color: $background;
-    outline-color: $font-col1;
+    background:var(--font-col1);
+    color: var(--background);
+    outline-color: var(--font-col1);
   }
 }
 
 .btn-link{
-  display:block; text-align:center; margin-top:40px; color:$primary-color;
+  display:block; text-align:center; margin-top:40px; color:var(--primary-color);
 }
 
 // swal modal 
 
 .swal-modal{
-  background: $dark2;
+  background: var(--dark2);
 
 
   & .swal-text{
-    color: $font-col1 !important;
+    color: var(--font-col1) !important;
   }
 
   & .swal-button{
-    background: $primary-color;
+    background: var(--primary-color);
     &:hover{
-      background: linear-gradient(12deg , $primary-color , $secondary-color);
+      background: linear-gradient(12deg , var(--primary-color) , var(--secondary-color));
     }
   } 
 
@@ -274,7 +303,7 @@ blockquote{
   width: 40vw;
   height: 40vh;
   // z-index: 555;
-  background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, $secondary-color 0%, $primary-color 95.31%);
+  background: radial-gradient(92.55% 92.55% at 60.95% 7.45%, var(--secondary-color) 0%, var(--primary-color) 95.31%);
   // opacity: 0.56;
   filter: blur(253px);
   z-index: -1;
@@ -318,7 +347,7 @@ blockquote{
 }
 
 .preloader{
-  background: $background;
+  background: var(--background);
   position: fixed;
   top:0;
   left: 0;
@@ -334,7 +363,7 @@ blockquote{
     width: 10vh;
     border-radius: 50%;
     padding: 1px;
-    background: linear-gradient(12deg , $primary-color , $secondary-color);
+    background: linear-gradient(12deg , var(--primary-color) , var(--secondary-color));
     z-index: 55;
     animation: pulse ease-in-out;
     animation-duration: 1s;
@@ -354,8 +383,8 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  border-bottom: 1px solid $primary-color-800;
-  background-color: $dark2;
+  border-bottom: 1px solid var(--primary-color-800);
+  background-color: var(--dark2);
   backdrop-filter: blur(40px);
 
   &>div {
@@ -386,8 +415,8 @@ nav {
         flex-direction: column ;
         justify-content: center;
         align-items: center;
-        background:$background;
-        color: $background;
+        background:var(--background);
+        color: var(--background);
         position: fixed;
         top: 0;
         left: 0;
@@ -429,7 +458,7 @@ nav {
       & .line{
         height: 3px;
         width: 35px;
-        background: $font-col1;
+        background: var(--font-col1);
         margin: 8px;   
         display: flex;
         transition: 250ms ease-in-out;
@@ -461,8 +490,6 @@ nav {
 // hero section 
 
 .hero {
-
-  // background: #130e01;
   padding:80px 60px;
   display: flex;
   align-items: center;
@@ -535,13 +562,13 @@ nav {
     & .work-card{
 
       max-width: 350px;
-      border: 1px solid $font-col1-o-100;
+      border: 1px solid var(--font-col1-o-100);
       margin: 20px;
 
       &:hover{
-        background: $card-hover;
-        box-shadow: 10px 10px 0px 0px $secondary-color-o-100;
-        border-image: linear-gradient(120deg , $primary-color , $secondary-color ) 2% 2% stretch;
+        background: var(--card-hover);
+        box-shadow: 10px 10px 0px 0px var(--secondary-color-o-100);
+        border-image: linear-gradient(120deg , var(--primary-color) , var(--secondary-color) ) 2% 2% stretch;
       }
 
       & .work-img{
@@ -622,14 +649,14 @@ nav {
     
     & .testimonial-slide{
       padding: 60px 40px ;
-      background: $dark2;
+      background: var(--dark2);
       position: relative;
       max-width: 800px;
       margin: 10px auto;
       border: 1px transparent solid;
 
       &:hover{
-        border-image: linear-gradient(120deg , $primary-color , $secondary-color) 2% 2% stretch !important;
+        border-image: linear-gradient(120deg , var(--primary-color) , var(--secondary-color) ) 2% 2% stretch !important;
       }
 
       & h4 {
@@ -692,11 +719,11 @@ nav {
           & input{
             flex: 1;
             padding: 10px 20px;
-            background: $background-light;
+            background: var(--background-light);
             outline: none;
-            border: 2px solid $font-col1-o-100;
+            border: 2px solid var(--font-col1-o-100);
             margin: 5px;
-            color: $font-col1;
+            color: var(--font-col1);
           }
         }
 
@@ -704,24 +731,24 @@ nav {
           padding: 10px 20px;
           margin: 5px;
           outline: none;
-          color: $font-col1;
-          border: 2px solid $font-col1-o-100;
-          background: $background-light;
+          color: var(--font-col1);
+          border: 2px solid var(--font-col1-o-100);
+          background: var(--background-light);
         }
 
       }
 
       button{
-        background: $background-light;
+        background: var(--background-light);
         outline: none;
-        border: 2px solid $font-col1-o-100;
-        color: $font-col1;
+        border: 2px solid var(--font-col1-o-100);
+        color: var(--font-col1);
         font-weight: 700;
         cursor: pointer;
         transition: 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
 
         &:hover{
-          background: $blog-hover ;
+          background: var(--blog-hover) ;
         }
 
         @media(max-width:$lm){
@@ -741,14 +768,14 @@ nav {
 }
 
 footer {
-  background: $dark2;
+  background: var(--dark2);
   padding: 40px 20px !important;
 
   & .footer-content {
     & p {
       text-align: center;
       & .highlight {
-        color: $primary-color;
+        color: var(--primary-color);
       }
     }
 
@@ -775,7 +802,7 @@ footer {
   z-index: 50;
   display: grid;
   place-items: center;
-  background: $background;
+  background: var(--background);
   text-align: center;
   transform: translateY(-100%);
   transition: 250ms ease-in-out;
@@ -796,7 +823,7 @@ footer {
     position: fixed;
     top: 50px;
     right: 50px;
-    color: $font-col1;
+    color: var(--font-col1);
     font-size: 5rem;
     transform: rotate(45deg);
     cursor: url('../img/cursor2.png') , pointer!important;
@@ -810,25 +837,30 @@ footer {
 
 
 // begin longshadow
-$color: $background;
+// $color: grey;
 
-@function makelongshadow($color) {
-  $val: 0px 0px $color;
-  @for $i from 1 through 200 {
-    $val: #{$val}, #{$i}px #{$i}px #{$color};
-  }
-  @return $val;
-}
-@mixin longshadow($color) {
-  text-shadow: makelongshadow($color);
-}
+// @function makelongshadow($color) {
+//   $val: 0px 0px $color;
+//   @for $i from 1 through 200 {
+//     $val: #{$val}, #{$i}px #{$i}px #{$color};
+//   }
+//   @return $val;
+// }
+// @mixin longshadow($color) {
+//   text-shadow: makelongshadow($color);
+// }
+// .long-shadow {
+//   @include longshadow(darken($color, 11% ));
+//   // background: $color;
+//   color: var(--font-col1);
+//   overflow: hidden;
+// }
+
 .long-shadow {
-  @include longshadow(darken($color, 11% ));
-  // background: $color;
-  color: $font-col1;
+  text-shadow: 0px 0px var(  --hightlight), 1px 1px var(  --hightlight), 2px 2px var(  --hightlight), 3px 3px var(  --hightlight), 4px 4px var(  --hightlight), 5px 5px var(  --hightlight), 6px 6px var(  --hightlight), 7px 7px var(  --hightlight), 8px 8px var(  --hightlight), 9px 9px var(  --hightlight), 10px 10px var(  --hightlight), 11px 11px var(  --hightlight), 12px 12px var(  --hightlight), 13px 13px var(  --hightlight), 14px 14px var(  --hightlight), 15px 15px var(  --hightlight), 16px 16px var(  --hightlight), 17px 17px var(  --hightlight), 18px 18px var(  --hightlight), 19px 19px var(  --hightlight), 20px 20px var(  --hightlight), 21px 21px var(  --hightlight), 22px 22px var(  --hightlight), 23px 23px var(  --hightlight), 24px 24px var(  --hightlight), 25px 25px var(  --hightlight), 26px 26px var(  --hightlight), 27px 27px var(  --hightlight), 28px 28px var(  --hightlight), 29px 29px var(  --hightlight), 30px 30px var(  --hightlight), 31px 31px var(  --hightlight), 32px 32px var(  --hightlight), 33px 33px var(  --hightlight), 34px 34px var(  --hightlight), 35px 35px var(  --hightlight), 36px 36px var(  --hightlight), 37px 37px var(  --hightlight), 38px 38px var(  --hightlight), 39px 39px var(  --hightlight), 40px 40px var(  --hightlight), 41px 41px var(  --hightlight), 42px 42px var(  --hightlight), 43px 43px var(  --hightlight), 44px 44px var(  --hightlight), 45px 45px var(  --hightlight), 46px 46px var(  --hightlight), 47px 47px var(  --hightlight), 48px 48px var(  --hightlight), 49px 49px var(  --hightlight), 50px 50px var(  --hightlight), 51px 51px var(  --hightlight), 52px 52px var(  --hightlight), 53px 53px var(  --hightlight), 54px 54px var(  --hightlight), 55px 55px var(  --hightlight), 56px 56px var(  --hightlight), 57px 57px var(  --hightlight), 58px 58px var(  --hightlight), 59px 59px var(  --hightlight), 60px 60px var(  --hightlight), 61px 61px var(  --hightlight), 62px 62px var(  --hightlight), 63px 63px var(  --hightlight), 64px 64px var(  --hightlight), 65px 65px var(  --hightlight), 66px 66px var(  --hightlight), 67px 67px var(  --hightlight), 68px 68px var(  --hightlight), 69px 69px var(  --hightlight), 70px 70px var(  --hightlight), 71px 71px var(  --hightlight), 72px 72px var(  --hightlight), 73px 73px var(  --hightlight), 74px 74px var(  --hightlight), 75px 75px var(  --hightlight), 76px 76px var(  --hightlight), 77px 77px var(  --hightlight), 78px 78px var(  --hightlight), 79px 79px var(  --hightlight), 80px 80px var(  --hightlight), 81px 81px var(  --hightlight), 82px 82px var(  --hightlight), 83px 83px var(  --hightlight), 84px 84px var(  --hightlight), 85px 85px var(  --hightlight), 86px 86px var(  --hightlight), 87px 87px var(  --hightlight), 88px 88px var(  --hightlight), 89px 89px var(  --hightlight), 90px 90px var(  --hightlight), 91px 91px var(  --hightlight), 92px 92px var(  --hightlight), 93px 93px var(  --hightlight), 94px 94px var(  --hightlight), 95px 95px var(  --hightlight), 96px 96px var(  --hightlight), 97px 97px var(  --hightlight), 98px 98px var(  --hightlight), 99px 99px var(  --hightlight), 100px 100px var(  --hightlight), 101px 101px var(  --hightlight), 102px 102px var(  --hightlight), 103px 103px var(  --hightlight), 104px 104px var(  --hightlight), 105px 105px var(  --hightlight), 106px 106px var(  --hightlight), 107px 107px var(  --hightlight), 108px 108px var(  --hightlight), 109px 109px var(  --hightlight), 110px 110px var(  --hightlight), 111px 111px var(  --hightlight), 112px 112px var(  --hightlight), 113px 113px var(  --hightlight), 114px 114px var(  --hightlight), 115px 115px var(  --hightlight), 116px 116px var(  --hightlight), 117px 117px var(  --hightlight), 118px 118px var(  --hightlight), 119px 119px var(  --hightlight), 120px 120px var(  --hightlight), 121px 121px var(  --hightlight), 122px 122px var(  --hightlight), 123px 123px var(  --hightlight), 124px 124px var(  --hightlight), 125px 125px var(  --hightlight), 126px 126px var(  --hightlight), 127px 127px var(  --hightlight), 128px 128px var(  --hightlight), 129px 129px var(  --hightlight), 130px 130px var(  --hightlight), 131px 131px var(  --hightlight), 132px 132px var(  --hightlight), 133px 133px var(  --hightlight), 134px 134px var(  --hightlight), 135px 135px var(  --hightlight), 136px 136px var(  --hightlight), 137px 137px var(  --hightlight), 138px 138px var(  --hightlight), 139px 139px var(  --hightlight), 140px 140px var(  --hightlight), 141px 141px var(  --hightlight), 142px 142px var(  --hightlight), 143px 143px var(  --hightlight), 144px 144px var(  --hightlight), 145px 145px var(  --hightlight), 146px 146px var(  --hightlight), 147px 147px var(  --hightlight), 148px 148px var(  --hightlight), 149px 149px var(  --hightlight), 150px 150px var(  --hightlight), 151px 151px var(  --hightlight), 152px 152px var(  --hightlight), 153px 153px var(  --hightlight), 154px 154px var(  --hightlight), 155px 155px var(  --hightlight), 156px 156px var(  --hightlight), 157px 157px var(  --hightlight), 158px 158px var(  --hightlight), 159px 159px var(  --hightlight), 160px 160px var(  --hightlight), 161px 161px var(  --hightlight), 162px 162px var(  --hightlight), 163px 163px var(  --hightlight), 164px 164px var(  --hightlight), 165px 165px var(  --hightlight), 166px 166px var(  --hightlight), 167px 167px var(  --hightlight), 168px 168px var(  --hightlight), 169px 169px var(  --hightlight), 170px 170px var(  --hightlight), 171px 171px var(  --hightlight), 172px 172px var(  --hightlight), 173px 173px var(  --hightlight), 174px 174px var(  --hightlight), 175px 175px var(  --hightlight), 176px 176px var(  --hightlight), 177px 177px var(  --hightlight), 178px 178px var(  --hightlight), 179px 179px var(  --hightlight), 180px 180px var(  --hightlight), 181px 181px var(  --hightlight), 182px 182px var(  --hightlight), 183px 183px var(  --hightlight), 184px 184px var(  --hightlight), 185px 185px var(  --hightlight), 186px 186px var(  --hightlight), 187px 187px var(  --hightlight), 188px 188px var(  --hightlight), 189px 189px var(  --hightlight), 190px 190px var(  --hightlight), 191px 191px var(  --hightlight), 192px 192px var(  --hightlight), 193px 193px var(  --hightlight), 194px 194px var(  --hightlight), 195px 195px var(  --hightlight), 196px 196px var(  --hightlight), 197px 197px var(  --hightlight), 198px 198px var(  --hightlight), 199px 199px var(  --hightlight), 200px 200px var(  --hightlight);
+  color: var(--font-col1);
   overflow: hidden;
 }
-
 
 .rotate {
   display: inline-block;
@@ -849,7 +881,7 @@ $color: $background;
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: $primary-color-300 $background;
+    scrollbar-color: var(--primary-color-300) var(--background);
   }
 
   /* Chrome, Edge, and Safari */
@@ -858,13 +890,13 @@ $color: $background;
   }
 
   *::-webkit-scrollbar-track {
-    background: $background;
+    background: var(--background);
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: $primary-color-300;
+    background-color: var(--primary-color-300);
     border-radius: 10px;
-    border: 0px solid $font-col1;
+    border: 0px solid var(--font-col1);
   }
 
 
@@ -895,7 +927,7 @@ $color: $background;
     & .about-hero-image{
       max-width: 400px;
       border-radius: 16px;
-      box-shadow: 10px 10px $primary-color;
+      box-shadow: 10px 10px var(--primary-color);
       & img{
         max-width: 100%;
         border-radius: 16px;
@@ -904,7 +936,7 @@ $color: $background;
         }
       }
       &:hover{
-        box-shadow: 10px 5px $primary-color-300;
+        box-shadow: 10px 5px var(--primary-color-300);
       }
 
     }
@@ -917,7 +949,7 @@ $color: $background;
 
 .blogs-hero{
   padding: 60px 20px;
-  background: $dark2;
+  background: var(--dark2);
 
   & h1{
     text-align: center;
@@ -952,14 +984,14 @@ $color: $background;
     & a{
       margin: 10px 5px;
       padding: 10px 15px;
-      background: $background-light;
-      color: $primary-color;
+      background: var(--background-light);
+      color: var(--primary-color);
       font-weight: bold;
     }
 
     // current page
     a[aria-current="page"]{
-      border: 1px solid $primary-color;
+      border: 1px solid var(--primary-color);
     }
 
   }
@@ -973,12 +1005,12 @@ $color: $background;
   padding:20px;
   margin: 20px 0;
   border-radius: 16px;
-  border: 2px solid $font-col1-o-100;
+  border: 2px solid var(--font-col1-o-100);
   transition: 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
 
 
   &:hover{
-    background: $blog-hover;
+    background: var(--blog-hover);
   }
 
   &:hover > h1 {
@@ -987,7 +1019,7 @@ $color: $background;
 
   & h1{
     margin-bottom: 5px;
-    color: $primary-color;
+    color: var(--primary-color);
     opacity: 1;
   }
 
@@ -997,16 +1029,16 @@ $color: $background;
 
     & p{
       margin: 5px;
-      color: $font-col1;
-      background: $background;
+      color: var(--font-col1);
+      background: var(--background);
       padding: 5px;
       border-radius: 4px;
-      border: 1px solid $font-col1-o-100 ;
+      border: 1px solid var(--font-col1-o-100 );
       display: inline-block;
       font-size: .75rem;
 
       &:hover{
-        color: $primary-color;
+        color: var(--primary-color);
       }
 
     }
@@ -1014,11 +1046,11 @@ $color: $background;
   }
 
   & p{
-    color: $font-col1;
+    color: var(--font-col1);
   }
 
   hr{
-    background: $primary-color;
+    background: var(--primary-color);
   }
 
   & .blog-details{
@@ -1052,7 +1084,7 @@ $color: $background;
   text-align: center;
   // background-image: url(//source.unsplash.com/random);
   background-size: cover;
-  background-color: $background-o-500;
+  background-color: var(--background-o-500);
   background-blend-mode: color !important;
   padding: 120px 40px;
 
@@ -1066,17 +1098,17 @@ $color: $background;
 
     & a{
       margin: 5px;
-      color: $font-col1;
-      color: $font-col1;
-      background: $background;
+      color: var(--font-col1);
+      color: var(--font-col1);
+      background: var(--background);
       padding: 5px;
       border-radius: 4px;
-      border: 1px solid $font-col1-o-100 ;
+      border: 1px solid var(--font-col1-o-100 );
       display: inline-block;
       font-size: .75rem;
 
       &:hover{
-        color: $primary-color;
+        color: var(--primary-color);
       }
 
     }
@@ -1120,9 +1152,9 @@ $color: $background;
         right: -2px;
         bottom: 20px;
         top: unset;
-        background: $background;
+        background: var(--background);
         border-radius: 8px;
-        border: 1px solid $primary-color;
+        border: 1px solid var(--primary-color);
 
         & svg{
           margin: 5px 10px;
@@ -1170,20 +1202,20 @@ $color: $background;
 
     & li{
       list-style: unset;
-      color: $font-col1;
+      color: var(--font-col1);
       margin: 2px 0;
     }
 
     & a{
-      color: $font-col1;
-      background-image: linear-gradient(0, $primary-color 12%, transparent 20%);
+      color: var(--font-col1);
+      background-image: linear-gradient(0, var(--primary-color) 12%, transparent 20%);
     }
 
     & ul , & ol{
       margin: 20px 0 20px 40px;
       font-size: 1.15rem;
       line-height: 1.5;
-      color: $font-col1;
+      color: var(--font-col1);
       font-weight: 400 !important;
     }
 
@@ -1195,7 +1227,7 @@ $color: $background;
       margin: 1rem 0;
       font-size: 1.15rem;
       line-height: 1.5;
-      color: $font-col1;
+      color: var(--font-col1);
       font-weight: 400 !important;
     }
 
@@ -1215,15 +1247,15 @@ $color: $background;
     & blockquote{
       font-size: 1.15rem;
       line-height: 1.75;
-      color: $font-col1;
-      background: $card-hover;
+      color: var(--font-col1);
+      background: var(--card-hover);
     }
 
   }
 }
 
 .blog-indicator{
-  background: linear-gradient(12deg , $primary-color , $secondary-color);
+  background: linear-gradient(12deg , var(--primary-color)  , var(--secondary-color) );
   height: 3px;
   width: 105vw;
   position: fixed;
@@ -1233,7 +1265,7 @@ $color: $background;
 }
 
 :not(pre)>code {
-  background: $code-block;
+  background: var(--code-block);
   display: inline-block;
   padding: 0 .5em;
   font-family: monospace;
@@ -1249,7 +1281,7 @@ $color: $background;
 //-------- latest-blog-strip-container---------------
 
 .latest-blog-strip-container{
-  background: $background;
+  background: var(--background);
   border:1px solid transparent;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -1257,7 +1289,7 @@ $color: $background;
   position: fixed;
   right: 0;
   bottom: 0;
-  border-image: linear-gradient(120deg , $primary-color , $secondary-color ) 2% 2% stretch;
+  border-image: linear-gradient(120deg , var(--primary-color) , var(--secondary-color) ) 2% 2% stretch;
   transform: translateY(100%);
   transition: 400ms ease-in-out;
 
@@ -1293,7 +1325,7 @@ $color: $background;
 
 .latest-blog-strip-container #blog-strip-link{
   display: block;
-  color: $primary-color;
+  color: var(--primary-color);
   font-weight: bold;
   margin-top: 10px;
   @media (max-width:$md) {
