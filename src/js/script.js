@@ -153,4 +153,4 @@ function changeTheme(){
 }
 
 
-document.addEventListener('click' , changeTheme)
+document.querySelector('.toggle-btn').addEventListener('click' , changeTheme)
