@@ -134,8 +134,22 @@ if(document.URL.split('/').includes('blog') ){
 
 // toggle theme 
 
-function changetheme(){
+function checkTheme(){
+  if(localStorage.theme=="light-theme"){
+    document.querySelector('html').classList.toggle('light-theme')
+  }else if(!localStorage.theme){
+    document.querySelector('html').classList.remove('light-theme')
+  }
+}
+
+checkTheme()
+
+function changeTheme(){
   document.querySelector('html').classList.toggle('light-theme')
+  if(localStorage.theme=="light-theme")
+    localStorage.removeItem("theme")
+  else
+    localStorage.theme = "light-theme";
 }
 
 
