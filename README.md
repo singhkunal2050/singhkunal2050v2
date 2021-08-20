@@ -2,13 +2,13 @@
 
 # singhkunal2050
 ### A Personal website/Blog Portal based on eleventy and The **Jamstack**
-![Website Snap](/docs/home-snap.png "Website Snap")
+![Website Snap](/docs/home-snap-3.png "Website Snap")
 
 #### Dark Mode
-![Website Snap](/docs/home-snap-2.png "Website Snap 2")
+![Website Snap](/docs/home-snap-4.png "Website Snap 2")
 
 ### SEO Score
-![Google SEO Audit Score](/docs/test.png "Google SEO Audit Score")
+![Google SEO Audit Score](/docs/test-2.png "Google SEO Audit Score")
 ### Key Points
 
 - Jamstack
