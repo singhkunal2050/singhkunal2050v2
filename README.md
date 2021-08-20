@@ -3,6 +3,7 @@
 # singhkunal2050
 ### A Personal website/Blog Portal based on eleventy and The **Jamstack**
 ![Website Snap](/docs/home-snap.png "Website Snap")
+![Website Snap](/docs/home-snap-2.png "Website Snap 2")
 
 ### SEO Score
 ![Google SEO Audit Score](/docs/test.png "Google SEO Audit Score")
