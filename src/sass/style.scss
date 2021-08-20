@@ -14,6 +14,10 @@
   font-display: swap;
 }
 
+*{
+  transition: background 500ms ease ,  color 500ms ease;
+}
+
 // @font-face {
 //   font-family: 'Josefin Sans';
 //   src:  url('../fonts/static/JosefinSans-Bold.ttf') format('truetype');
