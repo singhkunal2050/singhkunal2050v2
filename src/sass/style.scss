@@ -42,8 +42,6 @@
 // $code-block:hsl(215, 33%, 17%);
 // $blog-hover:hsl(215, 33%, 12%);
 
-
-
 // $background:hsl(0, 100%, 98%);
 // $dark2: hsl(254, 100%, 97%);
 // $background-light: hsl(0, 67%, 98%);
@@ -80,6 +78,27 @@
   --blog-hover:hsl(215, 33%, 12%);
   --hightlight:black;
 }
+
+// :root{
+  
+//   --background: hsl(0, 0%, 0%);
+//   --dark2: hsla(0, 0%, 0%, 0.714);
+//   --background-light: hsl(215, 63%, 7%);
+//   --background-o-500: hsla(214, 54%, 3%, 0.527);
+//   --primary-color: hsl(0, 0%, 100%);
+//   --primary-color-800:hsl(20, 100%, 98%);
+//   --primary-color-500:hsl(20, 100%, 83%);
+//   --primary-color-300:hsl(34, 100%, 81%);
+//   --secondary-color: hsl(80, 100%, 85%);
+//   --secondary-color-o-100: hsla(105, 100%, 81%, 0.157);
+//   --font-col1 :hsl(30, 100%, 84%);
+//   --font-col1-o-100 :hsla(30, 100%, 98%, 0.15);
+//   --head-color: hsl(20, 86%, 79%);
+//   --card-hover:hsl(215, 33%, 9%);
+//   --code-block:hsl(215, 33%, 17%);
+//   --blog-hover:hsl(215, 33%, 12%);
+//   --hightlight:black;
+// }
 
 .light-theme {
   --background:hsl(0, 100%, 98%);
