@@ -15,7 +15,7 @@ readTime: 5 Minutes ⌚
 ---
 ## CSS Logical Properties 
 
-### - What are logical properties 
+### What are logical properties 
 CSS logical properties are properties which are used to design element on the basis of a particular logic. This logic is related to the writing-mode/language of the content etc.
 
 According to MDN Docs
