@@ -15,7 +15,7 @@ readTime: 5 Minutes ⌚
 ---
 ## CSS Logical Properties 
 
-### - What are logical properties 
+### What are logical properties 
 CSS logical properties are properties which are used to design element on the basis of a particular logic. This logic is related to the writing-mode/language of the content etc.
 
 According to MDN Docs
@@ -24,9 +24,11 @@ According to MDN Docs
 To go further you have to understand the two types of flow we have in CSS.
 
 1. Block Flow 
+
 Block flow is perpendicular to the flow of the text. Usually [for English] it is the vertical flow. So when you use ```display:block``` the element takes up the entire width and renders the next element on below. 
 
 2. Inline Flow 
+
 Inline flow is parallel to the flow of the text. Usually [for English] it is the horizontal flow. So when you use ```display:inline``` the element takes the minimum width and the next element is rendered adjacent to it.
 
 The box model will give you a good idea of this 
