@@ -47,8 +47,7 @@ If that went over your head I have another simpler example for you 😁. We all 
 
 In summary if you start using logical properties in your css. You will have a more accessible UI which works across different languages and writing modes.
 
-
-<p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="html,result" data-slug-hash="bGWJvXO" data-preview="true" data-user="singhkunal2050" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="RwgmowR" data-user="singhkunal2050" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/singhkunal2050/pen/RwgmowR">
   Logical Properties CSS Examples</a> by Kunal SIngh  (<a href="https://codepen.io/singhkunal2050">@singhkunal2050</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
