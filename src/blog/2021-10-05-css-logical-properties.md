@@ -23,11 +23,11 @@ According to MDN Docs
 
 To go further you have to understand the two types of flow we have in CSS.
 
-1. Block Flow 
+#### 1. Block Flow 
 
 Block flow is perpendicular to the flow of the text. Usually [for English] it is the vertical flow. So when you use ```display:block``` the element takes up the entire width and renders the next element on below. 
 
-2. Inline Flow 
+#### 2. Inline Flow 
 
 Inline flow is parallel to the flow of the text. Usually [for English] it is the horizontal flow. So when you use ```display:inline``` the element takes the minimum width and the next element is rendered adjacent to it.
 
@@ -36,7 +36,7 @@ The box model will give you a good idea of this
 ![CSS Box Model](https://web-dev.imgix.net/image/VbAJIREinuYvovrBzzvEyZOpw5w1/GezxDZXkJgkMevkKg39M.png?auto=format&w=845)
 
 
-### - Why CSS Logical Properties
+### Why CSS Logical Properties
 The more you use logical properties the more you will realise how easy ,inituitive and robust your UI has become after adding them 🚀. 
 
 Okay enough theory let me share an example with you.
