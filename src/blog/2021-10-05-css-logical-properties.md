@@ -15,7 +15,7 @@ readTime: 5 Minutes ⌚
 ---
 ## CSS Logical Properties 
 
-### What are logical properties 
+### - What are logical properties 
 CSS logical properties are properties which are used to design element on the basis of a particular logic. This logic is related to the writing-mode/language of the content etc.
 
 According to MDN Docs
@@ -115,98 +115,52 @@ In summary if you start using logical properties in your css. You will have a mo
 
 Here you just have to remember the rules for block and inline flow. These are paired up with start and end. When you use something like   ```margin-block-start``` or   ```margin-block-end```. You can also use  ```margin-block``` which adds  margin to the start and end of the block, same applies for inline flow aswell.
 
-```min-height``` 
-
-```max-height``` 
-
-```min-width``` 
-
-```max-width``` 
-
-```border-block```
-
-```border-block-color```
-
-```border-block-end```
-
-```border-block-end-color```
-
-```border-block-end-style```
-
-```border-block-end-width```
-
-```border-block-start```
-
-```border-block-start-color```
-
-```border-block-start-style```
-
-```border-block-start-width```
-
-```border-block-style```
-
-```border-block-width```
-
-```border-color```
-
-```border-inline```
-
-```border-inline-color```
-
-```border-inline-end```
-
-```border-inline-end-color```
-
-```border-inline-end-style```
-
-```border-inline-end-width```
-
-```border-inline-start```
-
-```border-inline-start-color```
-
-```border-inline-start-style```
-
-```border-inline-start-width```
-
-```border-inline-style```
-
-```border-inline-width```
-
-```border-start-start-radius```
-
-```border-start-end-radius```
-
-```border-end-start-radius```
-
-```border-end-end-radius```
-
-```border-style```
-
-```border-width```
-
-```margin-block```
-
-```margin-block-end```
-
-```margin-block-start```
-
-```margin-inline```
-
-```margin-inline-end```
-
-```margin-inline-start```
-
-```padding-block```
-
-```padding-block-end```
-
-```padding-block-start```
-
-```padding-inline```
-
-```padding-inline-end```
-
+```min-height```  ,
+```max-height```  ,
+```min-width```  ,
+```max-width```  ,
+```border-block``` ,
+```border-block-color``` ,
+```border-block-end``` ,
+```border-block-end-color``` ,
+```border-block-end-style``` ,
+```border-block-end-width``` ,
+```border-block-start``` ,
+```border-block-start-color``` ,
+```border-block-start-style``` ,
+```border-block-start-width``` ,
+```border-block-style``` ,
+```border-block-width``` ,
+```border-color``` ,
+```border-inline``` ,
+```border-inline-color``` ,
+```border-inline-end``` ,
+```border-inline-end-color``` ,
+```border-inline-end-style``` ,
+```border-inline-end-width``` ,
+```border-inline-start``` ,
+```border-inline-start-color``` ,
+```border-inline-start-style``` ,
+```border-inline-start-width``` ,
+```border-inline-style``` ,
+```border-inline-width``` ,
+```border-start-start-radius``` ,
+```border-start-end-radius``` ,
+```border-end-start-radius``` ,
+```border-end-end-radius``` ,
+```border-style``` ,
+```border-width``` ,
+```margin-block``` ,
+```margin-block-end``` ,
+```margin-block-start``` ,
+```margin-inline``` ,
+```margin-inline-end``` ,
+```margin-inline-start``` ,
+```padding-block``` ,
+```padding-block-end``` ,
+```padding-block-start``` ,
+```padding-inline``` ,
+```padding-inline-end``` ,
 ```padding-inline-start```
 
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
