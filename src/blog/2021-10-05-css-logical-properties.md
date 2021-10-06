@@ -9,7 +9,7 @@ tags:
   - css
   - html
 date: 2021-10-05T14:09:46.169Z
-image: /img/post/download.png
+image: /img/post/pexels-photo-6190327.jpeg
 imageAlt: CSS Logical Properties
 readTime: 5 Minutes ⌚
 ---
@@ -17,17 +17,37 @@ readTime: 5 Minutes ⌚
 
 ### What are logical properties
 
-CSS logical properties are properties which are used to design element on the basis of a particular logic. This logic is related to the writing-mode/language of the content etc.
+CSS logical properties are properties which are used to design element on the basis of a particular logic. This logic is usually related to the writing-mode/language of the content etc.
 
 According to MDN Docs
 
 > CSS Logical Properties and Values is a module of CSS introducing logical properties and values that provide the ability to control layout through logical, rather than physical, direction and dimension mappings.
 
+#### Example 
+
+```css
+
+/* Physical Dimensions */
+section{
+ margin-top:2px solid; 
+ margin-bottom:2px solid; 
+}
+
+/* Logical Directions */ 
+section{
+ margin-block:2px solid; 
+}
+```
+
+
+
+
+
 To go further you have to understand the two types of flow we have in CSS.
 
 #### 1. Block Flow
 
-Block flow is perpendicular to the flow of the text. Usually \[for English] it is the vertical flow. So when you use `display:block` the element takes up the entire width and renders the next element on below. 
+Block flow is perpendicular to the flow of the text. Usually \[for English] it is the vertical flow. So when you use `display:block` the element takes up the entire width and renders the next element below. 
 
 #### 2. Inline Flow
 
@@ -37,15 +57,35 @@ The box model will give you a good idea of this
 
 ![CSS Box Model](/img/post/group-1.png)
 
+```css
+
+/* The logical properties can be used with margin padding width height border etc */ 
+
+section{
+ margin-block:10px; /* shorthand for margin  block start and end */ 
+ margin-inline:20px; /* shorthand for margin inline start and end */
+ /* 
+ For explicity selecting single dimension use : 
+
+margin-block-start | margin-block-end | margin-inline-start | margin-inline-end
+*/    
+}
+
+/* similarly for all other properties */
+
+```
+
 ### Why CSS Logical Properties
 
-The more you use logical properties the more you will realise how easy ,inituitive and robust your UI has become after adding them 🚀. 
+The more you use logical properties the more you will realize how easy ,intuitive and robust your UI has become after adding them 🚀. 
 
 Okay enough theory let me share an example with you.
 
-Consider a paragraph with which has a margin left of 20px. Now if you were to make the website multilingual and had converted it into Arabic\[right to left language] or Japanese\[top to bottom language] not only will this margin cause the UI to break but also make the user experience teribble.
+Consider a paragraph with which has a margin left of 20px. Now if you were to make the website multilingual and had converted it into Arabic\[right to left language] or Japanese\[top to bottom language] not only will this margin cause the UI to break but also make the user experience terrible.
 
-If that went over your head I have another simpler example for you 😁. We all had a margin in the left side of the note-book since we write in English\[left to right]. Now if someone is writing in Arabic\[right to left] this margin is useless. So what css logical properties suggest says, Why use `margin-left` when you can use `margin-inline-start`. When the writing starts from left the margin will be added to left and when the language starts from right the margin is added to right. Same for Top to bottom languages aswell.  
+I know it can be difficult getting your head around these new properties let alone using them in your projects 😁. Lets consider an even simpler example. 
+
+We all had a margin in the left side of the note-book since we write in English\[left to right]. Now if someone is writing in Arabic\[right to left] this margin is useless. css logical properties simply suggests us to use `margin-inline-start` instead of `margin-left` , So when the writing starts from  ◀left the margin will be added to ◀left and when the language starts from right▶ the margin is added to right▶. Same for Top🔝 to bottom bottom languages as well.  
 
 In summary if you start using logical properties in your css. You will have a more accessible UI which works across different languages and writing modes.
 
@@ -58,7 +98,7 @@ In summary if you start using logical properties in your css. You will have a mo
 
 ## Example of CSS Logical Properties
 
-Here you just have to remember the rules for block and inline flow. These are paired up with start and end. When you use something like   `margin-block-start` or   `margin-block-end`. You can also use  `margin-block` which adds  margin to the start and end of the block, same applies for inline flow aswell.
+Here you just have to remember the rules for block and inline flow. These are paired up with start and end. When you use something like   `margin-block-start` or   `margin-block-end`. You can also use  `margin-block` which adds  margin to the start and end of the block, same applies for inline flow as well.
 
 `min-height`  ,
 `max-height`  ,
