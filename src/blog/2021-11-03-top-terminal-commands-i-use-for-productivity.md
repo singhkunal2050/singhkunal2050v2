@@ -20,7 +20,7 @@ The whole point of development is solving problems. But very often we *Developer
 Use Terminal can drastically improve your performance and workflow. Once you're comfortable you will never look back to the old way of opening a folder, deleting a file etc.
 Okay enough talk let me share the top 10 commands I use for improving my productivity as a Developer. Many of them might seem obvious while some are new and might help you in your workflow.
 
-### 1] pwd , cd , mkdir , rmdir , ls 
+### 1] pwd , cd , mkdir , rmdir , ls
 
 These are regular commands for regular operations which we normally do with a File Explorer 
 
@@ -29,8 +29,8 @@ These are regular commands for regular operations which we normally do with a Fi
 `cd folder_name` -  Change Current Directory
 `mkdir folder_name` - Make New Directory
 `rmdir folder_name` - Remove Directory
-`cp source/file.name ../destination/folder ` - Copy File 
-`mv source/file.name ../destination/folder ` - Move File 
+`cp source/file.name ../destination/folder` - Copy File 
+`mv source/file.name ../destination/folder` - Move File 
 
 ### 2] The code command (For VS Code Users)
 
@@ -40,11 +40,11 @@ Opening a file in VS Code
 `code .` or `code filepath/project`
 Opening current folder or specific folder in Vs Code 
 
-
 ### 3] ipconfig
+
 Used to get the local ip address to test the current w
 
-```
+```cpp
  Admin@Kunal  O:  Practicals    
 ❯ ipconfig
 
@@ -81,16 +81,10 @@ Wireless LAN adapter Wi-Fi:
    Subnet Mask . . . . . . . . . . . : 255.255.245.0
    Default Gateway . . . . . . . . . : fe80::ac24:54ff:fec6:817f%13
                                        192.148.012.14
-
 ```
 
-
-
-
 I will keep adding to the list as I explore new commands that can help in daily productivity.
-
 
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
 
 *Happy Coding 👩‍💻!*
-
