@@ -42,7 +42,7 @@ Opening current folder or specific folder in Vs Code
 
 ### 3] ipconfig
 
-Used to get the local ip address to test the current w
+Used to get the local ip address which i use to test my apps on other devices on the same network like mobile/tablets.
 
 ```cpp
  Admin@Kunal  O:  Practicals    
