@@ -29,7 +29,7 @@ This little problem is what we can solve for our users who for some reason can n
 To skip the menu for `keyboard` users we can add a `button` which only pops up when we `focus` on it with the `tab` key. Once the user hits `enter` they can skip the menu and jump to the main content without going through long nested menu items.
 This little `accessibility` `button` can help save a lot of time for the users which are not using their `mouse` and may have accessibility related problems.
 
-This trick is seen in most of the modern web applications we use
+This trick is seen in most of the modern web applications we use.
 
 ```html
 <!-- index.html  -->
@@ -68,44 +68,6 @@ This trick is seen in most of the modern web applications we use
 
 ```css
 /* Style.css */ 
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:Arial;
-  padding:0;
-  margin: 0;
-}
-
-nav{
-  border-bottom:2px solid;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
-  padding-inline:20px;
-  background:#efefef;
-}
-
-main{
-  padding:20px
-}
-
-ul{
-  display:flex;
-  list-style:none;
-  padding-left:0;
-}
-
-li{
-  padding-inline:10px;
-}
-
-img{
-  max-width:100%:
-}
 
 /* hide btn by default */
 .skip-menu-btn{
