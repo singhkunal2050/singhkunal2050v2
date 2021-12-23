@@ -123,12 +123,6 @@ img{
   transform:translateY(0);
 }
 
-.warning{
-  background-color: red;
-  font-weight: bold;
-  display:inline-block;
-  padding: 20px 30px;
-}
 ```
 
 
