@@ -69,6 +69,8 @@ This trick is seen in most of the modern web applications we use
 
 
 ```css
+/* Style.css */ 
+
 html{
   scroll-behavior:smooth;
 }
