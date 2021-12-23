@@ -26,7 +26,7 @@ This little problem is what we can solve for our users who for some reason can n
 
 ![](/img/post/web-accessibilty-skip-menu-btn.gif)
 
-To skip the menus for `keyboard`users we can add a `button`which only pops up when we `focus`on it with the `tab`key. Once the user hits `enter`they can skip the menu and jump to the main content without going through long nested menu items.
+To skip the menu for `keyboard`users we can add a `button`which only pops up when we `focus`on it with the `tab`key. Once the user hits `enter`they can skip the menu and jump to the main content without going through long nested menu items.
 This little `accessibility button`can help save a lot of time for the users which are not using their `mouse`and may have accessibility related problems.
 
 This trick is seen in most of the modern web applications we use
@@ -65,8 +65,6 @@ This trick is seen in most of the modern web applications we use
     </main>
   </body>
 ```
-
-
 
 ```css
 /* Style.css */ 
@@ -124,10 +122,7 @@ img{
 .skip-menu-btn:focus{
   transform:translateY(0);
 }
-
 ```
-
-
 
 Check live example at <a href="https://tvrd7.csb.app/" target="_blank">https://tvrd7.csb.app/</a>
 
