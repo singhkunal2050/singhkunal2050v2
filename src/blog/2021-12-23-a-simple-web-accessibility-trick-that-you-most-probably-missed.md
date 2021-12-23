@@ -12,7 +12,7 @@ tags:
   - user-experience
 date: 2021-12-23T08:39:29.418Z
 image: /img/post/accessibilty.png
-imageAlt: Web Accessibilty
+imageAlt: "Web Accessibilty "
 readTime: 2 Minutes ⌚
 ---
 At regular users we tend to ignore the problems which we do not come across, one such problem can be related to accessibility. I was approached by a visually disabled individual who had a feedback for a website that we recently built. The guy was working in the same organization as a Sales Associate and was a good friend. 
