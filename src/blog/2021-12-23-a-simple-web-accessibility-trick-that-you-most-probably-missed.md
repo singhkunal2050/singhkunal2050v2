@@ -96,6 +96,73 @@ This trick is seen in most of the modern web applications we use
   </body>
 ```
 
+
+
+```css
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial;
+  padding:0;
+  margin: 0;
+}
+
+nav{
+  border-bottom:2px solid;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  padding-inline:20px;
+  background:#efefef;
+}
+
+main{
+  padding:20px
+}
+
+ul{
+  display:flex;
+  list-style:none;
+  padding-left:0;
+}
+
+li{
+  padding-inline:10px;
+}
+
+img{
+  max-width:100%:
+}
+
+/* hide btn by default */
+.skip-menu-btn{
+  background:black;
+  color:white;
+  padding:1.25rem 1rem;
+  position:absolute;
+  left:45%;
+  transform:translateY(-120%);
+  transition:300ms ease-in-out;
+}
+
+/* show on focus with {tab)*/
+.skip-menu-btn:focus{
+  transform:translateY(0);
+}
+
+.warning{
+  background-color: red;
+  font-weight: bold;
+  display:inline-block;
+  padding: 20px 30px;
+}
+```
+
+
+
 Check live example at <a href="https://tvrd7.csb.app/" target="_blank">https://tvrd7.csb.app/</a>
 
 <iframe src="https://codesandbox.io/embed/zealous-blackburn-tvrd7?fontsize=14&hidenavigation=1&theme=dark"
