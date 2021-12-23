@@ -55,42 +55,12 @@ This trick is seen in most of the modern web applications we use
     </nav>
 
     <main>
-      Imagine that you cannot use the mouse and try navigating with the
-      keyboard.
-      <p class="warning">DO NOT USE THE MOUSE</p>
-      <h4>Use <code>tab</code> key to navigate</h4>
-
-      <blockquote>
-        To skip the menus for keyboard users we can add a button which only pops
-        up when we focus on it with the (tab) key. Once the user hits enter they
-        can skip the menu and jump to the main content without going through
-        long nested menu items.
-      </blockquote>
-
-      <p>
-        This little accessibilty button can help save alot of time for the users
-        which are not using their mouse and may have accessibilty related
-        problems.
-      </p>
-
-      <h2>This trick is seen in most of the modern web applications we use</h2>
-
+     
       <img src="//source.unsplash.com/1200x600?accessibility" alt="" />
     
       <!-- main content   -->
       <section id="main-content">
-        <blockquote>
-          To skip the menus for keyboard users we can add a button which only
-          pops up when we focus on it with the (tab) key. Once the user hits
-          enter they can skip the menu and jump to the main content without
-          going through long nested menu items.
-        </blockquote>
-
-        <p>
-          Check the
-          <a target="_blank" href="https://www.a11yproject.com/">a11ty</a>
-          project to know more about web-accessibilty
-        </p>
+        <!-- main content   -->
       </section>
     </main>
   </body>
