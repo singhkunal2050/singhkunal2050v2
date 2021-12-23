@@ -31,6 +31,8 @@ This trick is seen in most of the modern web applications we use
 
 ![](/img/post/web-accessibilty-skip-menu-btn.gif)
 
+Check live example at <a href="https://tvrd7.csb.app/" target="_blank">https://tvrd7.csb.app/</a>
+
 <iframe src="https://codesandbox.io/embed/zealous-blackburn-tvrd7?fontsize=14&hidenavigation=1&theme=dark"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
      title="zealous-blackburn-tvrd7"
