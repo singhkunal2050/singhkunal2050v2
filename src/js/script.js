@@ -125,7 +125,7 @@ if(document.URL.split('/').includes('blog') ){
   document.addEventListener('scroll' , (e)=>{
   let percentage =   (Number(window.scrollY)) / (Number(totalHeight) - 100) * 100
    percentage = (percentage + 7.8) % 100 - 100
-   console.log(percentage);
+  //  console.log(percentage);
    header.style.transform= `translateX(${percentage}vw)` ;
  });
  

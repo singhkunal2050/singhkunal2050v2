@@ -63,5 +63,45 @@ layout: 'base.njk'
       {{ content | safe }}
 
     </div>
+
+    <div class="blog-single-recommendations">
+
+      <h2 class=headline>Recommendations</h2> 
+    {# <script> 
+            let cuurenttags = console.log({{ tags  | console | safe }} )
+    </script>  #}
+
+         {%- for post in collections.post | reverse -%}
+  
+          {% if title !== post.data.title %}
+
+            <a href="{{ post.url | url }}" class="blog-link">
+            <div class="blog-card">
+                <h1 class="blog-title">{{ post.data.title}}</h1>
+              <div class="blog-hashtags">
+                {% set comma = joiner() %}
+                {% for tag in post.data.tags -%}
+                  {% if tag !== 'post' %}
+                    {{ comma() }}
+                    <p href="#">#{{ tag }}</p>
+                  {% endif %}
+                {%- endfor %}
+              </div>
+              <p class="blog-description">{{post.data.description | truncate(80)}}</p>
+              {# <p class="blog-length"> {{ post.data.readTime  }} </p> #}
+              <div class="blog-details">
+                {# <a href="{{ post.url | url }}" class="blog-link">Read  Article >> </a> #}
+                <p class="blog-date">{{ post.data.date | postDate }}</p>
+              </div>
+            </div>
+            </a>
+         {%- endif -%}
+
+     
+     {%- endfor -%}
+
+
+    </div>
+
   </section>
 </main>

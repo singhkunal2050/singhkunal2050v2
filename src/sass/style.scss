@@ -1142,12 +1142,12 @@ footer {
 .blog-single-container{
   padding:60px 80px;
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 10% 60% 30%;
 
-  @media(max-width:$md){
+  @media(max-width:$lm){
     padding:60px 20px;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 
   & .blog-social-share{
@@ -1165,7 +1165,7 @@ footer {
         max-width: 28px;     
       }
   
-      @media(max-width:$md){
+      @media(max-width:$lm){
         // margin-top: 20px;
         // display: flex;
         // // flex-direction: row;
@@ -1275,6 +1275,19 @@ footer {
 
   }
 }
+
+.blog-single-recommendations{
+
+  @media (min-width:$lm) {
+    padding: 20px;
+    position: sticky;
+    top: 80px;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+ 
+}
+  
 
 .blog-indicator{
   background: linear-gradient(12deg , var(--primary-color)  , var(--secondary-color) );
