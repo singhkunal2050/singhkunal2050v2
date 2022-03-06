@@ -41,12 +41,9 @@ listItems.forEach(function(listItem){
 </script>
 ```
 
-
-
 Event Delegation **Delegates** the event to the common ancestor of the elements for which we need the same event listeners. Let's look at the solution to the above problem.
 
 ```javascript
-
 // Handling same case with Event Delegation with 
 // Single Event Listener to the common ancestor
 
@@ -62,12 +59,16 @@ list.addEventListener('click', function(event){
 function hightlight(targetElement){
   targetElement.classList.toggle('active')
 }
-
 ```
 
-
-
 Check out the codepen link for the live example <https://codepen.io/singhkunal2050/pen/QWOoBPM?editors=0110>
+
+<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="QWOoBPM" data-user="singhkunal2050" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/singhkunal2050/pen/QWOoBPM">
+  Event Delegation in JS</a> by Kunal SIngh  (<a href="https://codepen.io/singhkunal2050">@singhkunal2050</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on [LinkedIn](https://linkedin.com/in/singhkunal2050) [Twitter](https://twitter.com/singhkunal2050) [@singhkunal2050](https://singhkunal2050.dev/). You can also write me [here](https://singhkunal2050.dev/#contact).
 
