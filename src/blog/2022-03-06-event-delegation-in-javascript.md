@@ -10,7 +10,7 @@ tags:
   - web
   - performance
 date: 2022-03-06T16:15:13.464Z
-image: /img/post/javascript-logo-banner.webp
+image: /img/post/javascript-logo-banner-1-.webp
 imageAlt: Event Delegation in Javascript
 readTime: 2 Minutes ⌚
 ---
