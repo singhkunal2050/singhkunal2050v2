@@ -34,7 +34,10 @@
 # refs 
 
 https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html
+
 https://www.belter.io
+
+https://codersblock.com/blog/
 
 ### using debugger 
 
