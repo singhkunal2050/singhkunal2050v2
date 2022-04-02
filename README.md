@@ -2,36 +2,58 @@
 
 # singhkunal2050
 ### A Personal website/Blog Portal based on eleventy and The **Jamstack**
-![Website Snap](/docs/home-snap-3.png "Website Snap")
+![Website Snap](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/home-snap-3.png "Website Snap")
 
 #### Dark Mode
-![Website Snap](/docs/home-snap-4.png "Website Snap 2")
+![Website Snap](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/home-snap-4.png "Website Snap 2")
 
 ### SEO Score
-![Google SEO Audit Score](/docs/test-2.png "Google SEO Audit Score")
-### Key Points
+![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
 
-- Jamstack
-- Custom Cursor
-- Jelly Scroll
-- Animate on scroll
-- Semantic HTML
-- og meta tags
-- typewriter 
-- text highlight 
-- forms 
-- blogs
-- hover on unicorn => quote
-- shine js for glass cards
-- pwa
-- modal popup on time delay greeting the user 
-- max score on lighthouse and share on eleventy hashtag
-- gradient border using border-image
-- tags specific collections
-- Switch for color mode
-- 404 page added
+### Surprise on First VIsit 🥳
+![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
 
-# refs 
+### 404 ![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
+
+### Surprise on First VIsit 🥳
+![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
+
+### 404 
+
+
+![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
+
+### Surprise on First VIsit 🥳
+![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
+
+### 404 
+
+
+### Keypoints or Features
+
+![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
+
+### Surprise on First VIsit 🥳
+![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
+
+### 404 🤔
+![404](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/404.png?raw=true "404")
+
+
+### Keypoints or Features
+
+- Jamstack Architecture based on Eleventy and Netlify CMS 🤠
+- Backend data Hosted on Github at /posts 😎
+- Custom Cursor ,  Jelly Scroll ,  Semantic HTML 🎀
+- og meta tags for sharing on Social Platformss ✨
+- Contact form 📞
+- Blogs 📖 
+- Surprise Modal popup on First visit after a time delay greeting the user. 🥳 
+- Max score on Lighthouse ⚡
+- Switch Color Modes 🎨
+- 404 page added 🤔
+
+# References 
 
 https://rphunt.github.io/eleventy-walkthrough/partials-and-include.html
 
@@ -39,7 +61,7 @@ https://www.belter.io
 
 https://codersblock.com/blog/
 
-### using debugger 
+### Using Debugger
 
   ```
    <script> 
@@ -54,7 +76,6 @@ https://codersblock.com/blog/
 - embedded videos
 - social share 
 - tags 
-
 
 
 ### Todos
@@ -72,3 +93,7 @@ https://codersblock.com/blog/
 - Create updated resume and update it across all platforms 
 - pwa notifications on new blog posts
 - add site main domain to site.json 
+- shine js for glass cards
+- pwa
+- Share on eleventy hashtag
+- tags specific collections
