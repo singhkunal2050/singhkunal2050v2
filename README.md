@@ -2,20 +2,6 @@
 
 # singhkunal2050
 ### A Personal website/Blog Portal based on eleventy and The **Jamstack**
-![Website Snap](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/home-snap-3.png "Website Snap")
-
-#### Dark Mode
-![Website Snap](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/home-snap-4.png "Website Snap 2")
-
-### SEO Score
-![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
-
-### Surprise on First VIsit 🥳
-![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
-
-### 404 🤔
-![404](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/404.png?raw=true "404")
-
 
 ### Keypoints or Features
 
@@ -29,6 +15,20 @@
 - Max score on Lighthouse ⚡
 - Switch Color Modes 🎨
 - 404 page added 🤔
+
+![Website Snap](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/home-snap-3.png "Website Snap")
+
+#### Dark Mode
+![Website Snap](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/home-snap-4.png "Website Snap 2")
+
+### SEO Score
+![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
+
+### Surprise on First VIsit 🥳
+![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
+
+### 404 🤔
+![404](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/404.png?raw=true "404")
 
 # References 
 
