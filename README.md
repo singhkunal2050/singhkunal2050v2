@@ -13,29 +13,6 @@
 ### Surprise on First VIsit 🥳
 ![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
 
-### 404 ![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
-
-### Surprise on First VIsit 🥳
-![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
-
-### 404 
-
-
-![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
-
-### Surprise on First VIsit 🥳
-![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
-
-### 404 
-
-
-### Keypoints or Features
-
-![Google SEO Audit Score](https://github.com/singhkunal2050/singhkunal2050v2/raw/master/docs/test-2.png "Google SEO Audit Score")
-
-### Surprise on First VIsit 🥳
-![Surprise on First VIsit](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/surprise-modal.png?raw=true "Surprise on First Visit")
-
 ### 404 🤔
 ![404](https://github.com/singhkunal2050/singhkunal2050v2/blob/master/docs/404.png?raw=true "404")
 
