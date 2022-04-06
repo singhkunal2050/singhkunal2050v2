@@ -1,5 +1,5 @@
 ---
-title: "# Add Google Fonts to Your TailwindCSS Project"
+title: Add Google Fonts to Your React + TailwindCSS Project
 author: Kunal Singh
 description: Use Google Fonts in Your TailwindCSS Projects
 tags:
