@@ -47,10 +47,9 @@ CDN link can be taken from <a href="https://fonts.google.com/" target="_blank">G
 </html>
 ```
 
-For NextJS we need to create a new file `_document.js` under the `pages` directory and add the following code
+For NextJS we need to create a new file `_document.js` under the `pages` directory and add the following code Refer <https://nextjs.org/docs/basic-features/font-optimization>
 
 ```jsx
-
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
@@ -75,9 +74,7 @@ class MyDocument extends Document {
 }
 
 export default MyDocument;
-
 ```
-
 
 2. Modify You Tailwind Config File to Create a new class name for our new font 
 
