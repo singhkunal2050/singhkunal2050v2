@@ -1,5 +1,5 @@
 ---
-title: Add Google Fonts to Your React + TailwindCSS Project
+title: Add Google Fonts to Your React & NextJS + TailwindCSS Project
 author: Kunal Singh
 description: Use Google Fonts in Your TailwindCSS Projects
 tags:
@@ -46,6 +46,38 @@ CDN link can be taken from <a href="https://fonts.google.com/" target="_blank">G
   </body>
 </html>
 ```
+
+For NextJS we need to create a new file `_document.js` under the `pages` directory and add the following code
+
+```jsx
+
+import Document, { Html, Head, Main, NextScript } from "next/document";
+
+class MyDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
+  }
+
+  render() {
+    return (
+      <Html>
+        <Head>
+          <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet"/>
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
+}
+
+export default MyDocument;
+
+```
+
 
 2. Modify You Tailwind Config File to Create a new class name for our new font 
 
