@@ -11,7 +11,7 @@ tags:
   - tailwind
   - design
 date: 2022-04-06T06:40:36.253Z
-image: /img/post/font.png
+image: /img/post/css-units-cover.jpeg
 imageAlt: Using Google Fonts with TailwindCSS
 readTime: 2 Minutes ⌚
 ---
