@@ -17,7 +17,7 @@ readTime: 2 Minutes ⌚
 ---
 Tailwind makes it super easy to use and import google fonts in our projects.
 
-## Just Follow these 4 steps
+## Just Follow these 3 steps
 
 1. Get the cdn and insert in the `<head>` section of the entry point 
    file for eg `index.html`.
