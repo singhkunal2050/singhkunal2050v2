@@ -125,8 +125,6 @@ Alright so we got the files. Next we need to create a Component for our files.
   }
 ```
 
-
-
 All we are trying to do here is simply is.
 
 1. Pass the File JSON to our Component as props.
@@ -137,11 +135,14 @@ All we are trying to do here is simply is.
 6. Now comes the part when we need the recursion. Now while we are rendering the data we just need to check if the current file is a folder and if it is then simple call the `<FileExplorer/>` Component with the corresponding folder in the data.
 7. And thats how it is done.
 
-
-
-### Check out this Codesandbox Example  
+### Check out this Codesandbox Example
 
 <iframe src="https://codesandbox.io/embed/recursive-folder-react-component-007pb?fontsize=14&hidenavigation=1&theme=dark"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="zealous-blackburn-tvrd7"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 
 
