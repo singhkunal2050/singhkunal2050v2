@@ -16,8 +16,6 @@ Lets Create a Recursive React Component for our File Explorer or Folders.
 
 ![Recursive Folder Structure Component Using React](/img/post/chrome-capture-5-.gif "Recursive Folder Structure Component Using React")
 
-
-
 Lets Get a Sample JavaScript Variable for our Filesystem first. You can use API data or import a JSON if you wish to.
 
 ```javascript
@@ -85,15 +83,11 @@ let Files = {
       },
     ],
   };
-
 ```
 
 Alright so we got the files. Next we need to create a Component for our files.
 
-
-
 ```jsx
-
   function FileExplorer({ files }) {
     const [expanded, setExpanded] = useState(false);
     if (files.type === "folder") {
@@ -119,7 +113,16 @@ Alright so we got the files. Next we need to create a Component for our files.
       return <div>{files.name}</div>;
     }
   }
+```
 
+```jsx
+  export default function App() {
+    return (
+      <div className="App">
+        <FileExplorer files={Files} />
+      </div>
+    );
+  }
 ```
 
 
@@ -140,8 +143,6 @@ All we are trying to do here is simply is.
 
 7. And thats how it is done.
 
-
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
 
 *Happy Coding 👩‍💻!*
-
