@@ -137,6 +137,14 @@ All we are trying to do here is simply is.
 6. Now comes the part when we need the recursion. Now while we are rendering the data we just need to check if the current file is a folder and if it is then simple call the `<FileExplorer/>` Component with the corresponding folder in the data.
 7. And thats how it is done.
 
+
+
+### Check out this Codesandbox Example  
+
+<iframe src="https://codesandbox.io/embed/recursive-folder-react-component-007pb?fontsize=14&hidenavigation=1&theme=dark"
+
+
+
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
 
 *Happy Coding 👩‍💻!*
