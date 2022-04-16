@@ -129,18 +129,12 @@ Alright so we got the files. Next we need to create a Component for our files.
 
 All we are trying to do here is simply is.
 
-1] Pass the File JSON to our Component as props.
-
-2] Inside the component check if the file passed is a folder or a file 
-
-3] If its a file just render it and do nothing 
-
-4] But if its a folder 📁📁 that's when the fun part begins. 
-
-5] If its a folder then first show the label of the folder and below it render the `data` part of the folder. Here to toggle the data part we are using state in our component called as `expanded`.
-
-6] Now comes the part when we need the recursion. Now while we are rendering the data we just need to check if the current file is a folder and if it is then simple call the `<FileExplorer/>` Component with the corresponding folder in the data.
-
+1. Pass the File JSON to our Component as props.
+2. Inside the component check if the file passed is a folder or a file 
+3. If its a file just render it and do nothing 
+4. But if its a folder 📁📁 that's when the fun part begins. 
+5. If its a folder then first show the label of the folder and below it render the `data` part of the folder. Here to toggle the data part we are using state in our component called as `expanded`.
+6. Now comes the part when we need the recursion. Now while we are rendering the data we just need to check if the current file is a folder and if it is then simple call the `<FileExplorer/>` Component with the corresponding folder in the data.
 7. And thats how it is done.
 
 I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
