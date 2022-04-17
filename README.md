@@ -84,3 +84,8 @@ https://codersblock.com/blog/
 - pwa
 - Share on eleventy hashtag
 - tags specific collections
+
+projects=> Update Project Listing and Create Page for Each Project	
+		Add MERN Projects in Website 
+		Mention Stack of Project with Scope of work u have done 
+
