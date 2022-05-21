@@ -95,4 +95,8 @@ Here is the Codepen example in case you need to try it
   CSS Tricks Recreating Fancy Blog Grid</a> by Kunal SIngh  (<a href="https://codepen.io/singhkunal2050">@singhkunal2050</a>)
   on <a href="https://codepen.io">CodePen</a>.
 </iframe>
-.
+
+I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
+
+*Happy Coding 👩‍💻!*
+
