@@ -16,7 +16,7 @@ readTime: 2 Minutes ⌚
 ---
 So while I was exploring the internet for ideas, I came across this cool grid effect which caught my attention. I have been planning to create a section in my blog for recreation of interesting UI and UX  So here we go :)
 
-![CSS Tricks Fancy Grid Layout](/img/post/CSS Tricks Fancy Grid Compressed.gif)
+<img src="/img/post/CSS Tricks Fancy Grid Compressed.gif" >
 
 So here the interesting part is how the current element rotates a little on hover and all the leading card elements slide ahead to give the current card some breathing space. This effect is where <a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank"> CSS Combinators </a> can be used. \
 \
