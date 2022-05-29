@@ -1418,7 +1418,7 @@ footer {
  pre[class*="language-"] {
    color: #e3eaf2;
    background: none;
-   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+   font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
    text-align: left;
    white-space: pre;
    word-spacing: normal;
@@ -1467,6 +1467,10 @@ footer {
    white-space: normal;
  }
  
+.token{
+  font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace !important;
+}
+
  .token.comment,
  .token.prolog,
  .token.doctype,
