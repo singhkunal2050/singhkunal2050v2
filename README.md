@@ -84,6 +84,7 @@ https://codersblock.com/blog/
 - pwa
 - Share on eleventy hashtag
 - tags specific collections
+- Add 5+ Color Schemes
 
 projects=> Update Project Listing and Create Page for Each Project	
 		Add MERN Projects in Website 
