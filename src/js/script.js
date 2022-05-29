@@ -135,22 +135,37 @@ if(document.URL.split('/').includes('blog') ){
 // toggle theme 
 
 function checkTheme(){
-  if(localStorage.theme=="light-theme"){
-    document.querySelector('html').classList.toggle('light-theme')
-  }else if(!localStorage.theme){
-    document.querySelector('html').classList.remove('light-theme')
+  if(localStorage.theme){
+    document.querySelector('html').classList.add(localStorage.theme)
+  }else{
+    document.querySelector('html').classList.add('default')
   }
 }
 
 checkTheme()
 
-function changeTheme(){
-  document.querySelector('html').classList.toggle('light-theme')
-  if(localStorage.theme=="light-theme")
-    localStorage.removeItem("theme")
-  else
-    localStorage.theme = "light-theme";
+function changeTheme(targetTheme){
+  document.querySelector('html').classList = [ targetTheme ]
+  localStorage.theme = targetTheme;
+}
+
+function toggleColorContainer(){
+  document.querySelector('.theme-selector-container').classList.toggle('active')
 }
 
 
-document.querySelector('.toggle-btn').addEventListener('click' , changeTheme)
+document.body.addEventListener('click', (e)=>{
+    if(e.target.matches('.set-theme')){
+      let targetTheme = e.target.closest('.theme-pallete-wrapper').id
+      console.log(targetTheme)
+      changeTheme(targetTheme)
+    }else if(e.target.matches('.close-theme-selector') || e.target.matches('.toggle-btn')){
+      toggleColorContainer()
+    }
+})
+
+
+// document.querySelector('.toggle-btn').addEventListener('click' , changeTheme)
+// document.querySelector('.close-theme-selector').addEventListener('click' , toggleColorContainer)
+// document.querySelector('.toggle-btn').addEventListener('click' , toggleColorContainer)
+
