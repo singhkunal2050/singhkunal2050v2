@@ -31,7 +31,6 @@ The normal way of handling the same Events for multiple elements is by adding Ev
 ```
 
 ```javascript
-<script>
   
 let listItems = document.querySelectorAll('li');
 listItems.forEach(function(listItem){
@@ -40,7 +39,6 @@ listItems.forEach(function(listItem){
   });
 });
   
-</script>
 ```
 
 Event Delegation **Delegates** the event to the common ancestor of the elements for which we need the same event listeners. Let's look at the solution to the above problem.
