@@ -28,7 +28,9 @@ The normal way of handling the same Events for multiple elements is by adding Ev
   <li>LIST ITEM 2</li>
   <li>LIST ITEM 3</li>
 </ul>
+```
 
+```javascript
 <script>
   
 let listItems = document.querySelectorAll('li');
