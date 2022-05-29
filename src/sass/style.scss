@@ -958,32 +958,35 @@ footer {
     }
   }
 
-  .pagination{
-    margin: 50px 0;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    
-    & p{
-      color: #6b6b6b;
-    }
+}
 
-    & a{
-      margin: 10px 5px;
-      padding: 10px 15px;
-      background: var(--background-light);
-      color: var(--primary-color);
-      font-weight: bold;
-    }
 
-    // current page
-    a[aria-current="page"]{
-      border: 1px solid var(--primary-color);
-    }
+.pagination{
+  margin: 50px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+  & p{
+    color: #6b6b6b;
+  }
 
+  & a{
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background: var(--background-light);
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+
+  // current page
+  a[aria-current="page"]{
+    border: 1px solid var(--primary-color);
   }
 
 }
+
+
 
 // blog card
 

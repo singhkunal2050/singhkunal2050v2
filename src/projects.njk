@@ -1,0 +1,55 @@
+---
+title: Projects
+description: Collection of my Professional and Personal Projects .
+layout: 'base.njk'
+pagination:
+  data: collections.work
+  size: 10
+  alias: projects
+---
+
+<main>
+  
+  <section class="blogs-hero">
+      <h1 class="head_text" style="text-align: center; padding-bottom: 40px;">Selected <span
+          class="rainbow head_text">Projects</span></h1>
+  </section>
+
+    <section class="work container" style="padding-block:60px;">
+
+      <div class="work-container">
+
+        {%- for work in projects | reverse -%}
+        <a href="{{ work.data.workUrl | url }}" target="_blank">
+          <div class="work-card">
+            <div class="work-img">
+              <img src="{{ work.data.image | url }}" loading="lazy" width="333" height="177"
+                alt="{{ work.data.imageAlt }}">
+            </div>
+            <div class="work-content">
+              <h1>{{ work.data.title }}</h1>
+              <p>{{ work.data.workUrl | urlClean }}</p>
+            </div>
+          </div>
+        </a>
+        {%- endfor -%}
+
+
+      </div>
+
+
+      <div class="pagination">
+          <p>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><<</a>{% else %}<<{% endif %}</p>
+      {%- for pageEntry in pagination.pages %}
+            <p><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a></p>
+      {%- endfor %}
+          <p>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">>></a>{% else %}>>{% endif %}</p>
+      </div>
+
+
+      <a target="_blank" href="http://github.com/singhkunal2050" class="btn-link">All Projects >> </a>
+
+    </section>
+
+
+</main>
