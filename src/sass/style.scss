@@ -70,7 +70,7 @@
   --background: #efefef;
   --dark2:  default;
   --background-light:  default;
-  --background-o-500:  default;
+  --background-o-500:  #efefefa8;
   --primary-color:  #bebebe;
   --primary-color-800: rgb(44, 44, 44);
   --primary-color-500: default;
@@ -1354,16 +1354,16 @@ footer {
 // THeme pallete container 
 
 .theme-selector-container{
-  background: white;
   position: fixed;
   padding: 40px;
   inset: 75px 0 0 0 ;
   transform: translate3d(100%,50%,0);
   transition: 400ms transform ease-in-out;
-  background:var(--background);
+  background:var(--background-o-500);
   display: flex;
   justify-content: center;
   align-items: center;
+  backdrop-filter: blur(10px);
 
     &.active{
     transform: translate3d(0,0,0);
@@ -1375,6 +1375,8 @@ footer {
     right: 25px;
     top: 25px;
     z-index: 10;
+    transform: rotate(45deg);
+    cursor: url('../img/cursor2.png') , pointer!important;
   }
 
   & .color-schemes{
