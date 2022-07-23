@@ -24,11 +24,7 @@ We are doing these using simple css filter effects and javscript events. Lets un
 </div>
 ```
 
-
-
 We are having two identical images placed inside a wrapper here. We will be stacking both of them using position relative to wrapper and absolute to both the images.
-
-
 
 ```css
 .wrapper{
@@ -50,7 +46,6 @@ We are having two identical images placed inside a wrapper here. We will be stac
 .wrapper img:nth-child(2){
       opacity:0;
 }
-
 ```
 
 This will make both the images stack and make only one image visible which is in the bottom with \`grayscale\` effect. The top image is having \`opacity:0\`, Hence we can listen for events on top that image to apply clip-path based on the cursor location and also make its \`opacity;1\`.
@@ -76,6 +71,8 @@ document.querySelectorAll('img')[1].addEventListener('mouseleave' , function(e){
 })
 ```
 
-
-
 Andd thats it!! Hope this helped :)
+
+I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
+
+*Happy Coding 👩‍💻!*
