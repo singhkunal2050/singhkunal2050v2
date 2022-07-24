@@ -1,9 +1,9 @@
 ---
-title: Febina Infotech
-workUrl: https://m.febinainfotech.com/
-description: Febina Infotech Website built with Wordpress
+title: Headless Ecommerce
+workUrl: https://hcommerce.vercel.app/
+description: Headless Ecommerce Application built using Nextjs and Shopify Storefront API.
 tags:
   - work
-image: /img/post/finfotech.webp
-imageAlt: Febina Infotech
+image: /img/post/headless-commerce.png
+imageAlt: Headless Ecommerce
 ---
