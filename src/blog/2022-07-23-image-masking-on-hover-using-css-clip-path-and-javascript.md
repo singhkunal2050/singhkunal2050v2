@@ -5,6 +5,9 @@ description: Image Masking can be used to add fancy hover highlight effects to
   images for making them more interactive
 tags:
   - post
+  - javscript
+  - css
+  - html
 date: 2022-07-23T16:47:02.436Z
 image: /img/post/image-masking-effect.png
 imageAlt: CSS-Image-Masking-Effect
