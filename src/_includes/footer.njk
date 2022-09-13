@@ -2,9 +2,8 @@
 
   <div class="footer-content">
 
-    <p style="margin-bottom: 20px;">Made  with <span class="heart">❤</span> using <img style="display: inline-block; max-width: 1rem;" src={{"/img/eleventy.jpg" | url}} alt="eleventy"  width="25px" > </p>
-
-    <p>Copyright &copy; 2021 <a href="//linkedin.com/in/singhkunal2050" target="_blank" class="highlight">singhkunal2050</a></p>
+    <p style="margin-bottom: 10px;">Made  with <span class="heart">❤</span> using <img style="display: inline-block; max-width: 1rem;" src={{"/img/eleventy.jpg" | url}} alt="eleventy"  width="25px" > </p>
+    <p style="margin-bottom: 20px;">Copyright &copy; <span id="copyright-year">2021</span>  <a href="//linkedin.com/in/singhkunal2050" target="_blank" class="highlight">singhkunal2050</a></p>
 
     <div class="footer-socials">
       <a href="https://www.linkedin.com/in/singhkunal2050" target="_blank">
@@ -39,6 +38,9 @@
         </svg>
       </a>
     </div>
+
+    <p style="margin-bottom: 20px;" >Have a feedback? You can report it <a href="https://github.com/singhkunal2050/singhkunal2050v2/issues/new" target="_blank" class="highlight">here</a></p>
+
   </div>
 
 </footer>
@@ -63,6 +65,10 @@
       }
     });
   }
+
+  let d = new Date;
+  document.querySelector('#copyright-year').innerText = d.getFullYear(); 
+
 </script>
 
 </html>

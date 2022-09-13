@@ -90,3 +90,15 @@ projects=> Update Project Listing and Create Page for Each Project
 		Add MERN Projects in Website 
 		Mention Stack of Project with Scope of work u have done 
 
+## Important Points for updates 
+- Work on good user experience of blog single page 
+  - Loader issue when too many iframes are part of body templateContent
+  - Social share for mobile needs work
+  - Work on top progress indicator bugs for blog complete case 
+- Update projects in portfolio 
+  - detailed page for projects if possible and maybe video descriptions (Why not!!)
+  - update latest projects and remove old ones
+- About page with more about me and things I do (Can be a good place for creativity and animations )
+- tags based filtering 
+- pagination ordering issue
+- 
