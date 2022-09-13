@@ -14,10 +14,6 @@ image: /img/post/numbers-banner.png
 imageAlt: Numbers Formatting
 readTime: 2 Minutes ⌚
 ---
-
-
-
-
 W﻿hen working with numbers, one of the many problems we have to work with is formatting. This can be formatting dates, date-time, numbers and so on. The `Intl` API helps solve exactly this problem. Be it formatting a date in the right way or formatting a number. 
 
 A﻿ Simple example you can think of is formatting a number into a currency format. 
@@ -77,6 +73,10 @@ B﻿rowser support
 
 ![Intl Browser Support](/img/post/intl-browser-support.png)
 
-
-
 F﻿or more details you can check the official docs at MDN [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl)
+
+
+
+I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
+
+*Happy Coding 👩‍💻!*
