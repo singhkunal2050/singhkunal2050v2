@@ -122,4 +122,13 @@ To understand this example a little better, I have created a codesandbox example
 
 ### L﻿ive Example 
 
-<﻿iframe src="https://stackblitz.com/edit/react-ts-k3ioh6?embed=1&file=components/UncontrolledForm.tsx"></iframe>
+
+<iframe src="https://stackblitz.com/edit/react-ts-k3ioh6?embed=1"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+   ></iframe>
+
+
+
+I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on     <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a>  <a href="/" target="_blank">@singhkunal2050</a>. You can also write me <a href="/#contact" target="_blank">here</a>.
+
+*Happy Coding 👩‍💻!*
