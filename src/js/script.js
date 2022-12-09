@@ -83,10 +83,10 @@ const update = () => {
 	requestAnimationFrame(update);
 }
 
-if(window.innerWidth>748){
-  if(!document.URL.split('/').includes('blog') )  // if its not the article page
-    update(); // execute animation only on desktop
-}
+// if(window.innerWidth>748){
+//   if(!document.URL.split('/').includes('blog') )  // if its not the article page
+//     update(); // execute animation only on desktop
+// }
 
 // preloader
 
