@@ -61,8 +61,6 @@ document.querySelector('.close-blog-strip').addEventListener('click' , ()=>{
   setCookie('latest-blog-shown',true,1);
 })
 
-
-
 // skew on scroll
 
 const section = document.querySelectorAll('section');
