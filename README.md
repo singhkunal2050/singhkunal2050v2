@@ -17,7 +17,7 @@
 
 - Jamstack Architecture based on Eleventy and Netlify CMS 🤠
 - Backend data Hosted on Github at /posts 😎
-- Custom Cursor ,  Jelly Scroll ,  Semantic HTML 🎀
+- Custom Cursor,  Semantic HTML 🎀
 - og meta tags for sharing on Social Platformss ✨
 - Contact form 📞
 - Blogs 📖 
