@@ -1414,6 +1414,9 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  & .highlight {
+    color: var(--primary-color);
+  }
 }
 
 
