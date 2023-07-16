@@ -67,7 +67,8 @@ https://codersblock.com/blog/
 
 ### Todos
 
-- Can work on a eleventy plugin with npm to create a simple 404 page 
+- Add a new collection for posts which support single and multi image carousal that can be view just a like social media for all your image content
+-  Can work on a eleventy plugin with npm to create a simple 404 page 
 - Add Styling for inline code
 - Added /uses inspired by https://github.com/wesbos/awesome-uses/
 - Add Sitemap.xml and robots.txt
