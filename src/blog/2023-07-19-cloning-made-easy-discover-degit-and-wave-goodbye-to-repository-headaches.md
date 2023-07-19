@@ -70,3 +70,21 @@ No more cloning entire repositories, no more wasting precious disk space. degit 
 ```shell
 degit https://github.com/GoogleChrome/chrome-extensions-samples/functional-samples/sample.page-redder
 ```
+
+
+
+Could I BE any happier if you found this post helpful? 😄
+
+![Chandler-bing-dancing GIFs - Get the best GIF on GIPHY](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExa3Q3Ynh2dnU2M2NzdXhzc2Z5endicnFjeGc2OGlzeDl4czBrZjcxMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/fA81FF4mdE6lgeoJwb/giphy.gif)
+
+
+
+
+
+ If you learned something new today, share it with your pals who could benefit from it too! 
+
+Got any questions? Let's connect on LinkedIn, tweet me on Twitter, or simply drop me a line. I'll be there for you, like a reliable npm package! 
+
+Connect with me on <a href="//linkedin.com/in/singhkunal2050" target="_blank">LinkedIn</a> | Tweet me at <a href="//twitter.com/singhkunal2050" target="_blank">Twitter</a> | Visit <a href="/" target="_blank">@singhkunal2050</a> | Write me <a href="/#contact" target="_blank">here</a>.
+
+Happy Coding!!
