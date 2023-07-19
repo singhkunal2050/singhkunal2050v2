@@ -1,5 +1,5 @@
 ---
-title: "Cloning Made Easy: Discover degit and Wave Goodbye to Repository Headaches!"
+title: "Cloning Made Easy: Try degit and Clone Directories within Repos."
 author: Kunal Singh
 description: Have you ever faced the dilemma of wanting just a small portion of
   a repository, but ended up cloning the whole thing? Well, worry no more!
