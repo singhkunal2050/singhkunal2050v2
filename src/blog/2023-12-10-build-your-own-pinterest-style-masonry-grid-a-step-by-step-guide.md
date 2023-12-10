@@ -49,6 +49,13 @@ To solve this problem we can use a different approach of css `grid`. Here we use
   grid-template-columns: repeat(auto-fill, 280px);
   grid-auto-rows: 10px;
 }
+
+/* this will avoid overflow of images in the grid */
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 ```
 
 Here
