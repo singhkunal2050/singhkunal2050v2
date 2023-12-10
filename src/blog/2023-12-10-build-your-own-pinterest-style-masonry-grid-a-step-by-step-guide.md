@@ -114,7 +114,7 @@ function getCurrentSizeClass(i) {
 
 With some fine tuning we can get a final result which is almost as good as the pinterest masonry layout. This can handle pagination and logical flow of data in the DOM.
 
-<iframe height="300" style="width: 100%;" scrolling="no" title="masonary-grid-with-left-to-right-flow" src="https://codepen.io/singhkunal2050/embed/vYbPVNd?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
+<iframe height="300" style="width: 100% !important;" scrolling="no" title="masonary-grid-with-left-to-right-flow" src="https://codepen.io/singhkunal2050/embed/vYbPVNd?default-tab=html%2Cresult" frameborder="no" loading="lazy" allowtransparency="true" allowfullscreen="true">
   See the Pen <a href="https://codepen.io/singhkunal2050/pen/vYbPVNd">
   masonary-grid-with-left-to-right-flow</a> by Kunal SIngh  (<a href="https://codepen.io/singhkunal2050">@singhkunal2050</a>)
   on <a href="https://codepen.io">CodePen</a>.
