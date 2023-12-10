@@ -5,6 +5,9 @@ description: Create a masonary grid layout with left to right content flow,
   supporting pagination and resposive layouts.
 tags:
   - post
+  - css
+  - web
+  - layout
 date: 2023-12-10T08:56:42.929Z
 image: /img/post/masonry.jfif
 imageAlt: Masonry Grid Layout with CSS Grid
