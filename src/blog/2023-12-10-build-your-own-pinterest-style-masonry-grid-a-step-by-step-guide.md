@@ -15,6 +15,10 @@ readTime: 2 Minutes ⌚
 ---
 So I have been trying to create a grid which has a masonry structure and was trying to find a simple way to create it without having any `DOM` related heavy lifting, ie wihout any javascript. I wanted to use CSS to do this and I thought it might be simple but it's not the simplest of things to achieve with CSS alone.
 
+![Final Masonry Layout with Infinite Scroll](/img/post/masonry-grid-layout-infinite-scroll-1-.gif)
+
+
+
 It's very simple to achieve a column layout with pure masonry but the catch is your content flows from top to bottom and then to the next column
 
 ![Masonry Wall Layout](/img/post/image-275.png)
