@@ -31,7 +31,7 @@ It's very simple to achieve a column layout with pure masonry but the catch is y
 
 Just this one line can give you a masonry structure, but AT WHAT COST?
 
-![At what cost ](blob:https://singhkunal2050.dev/f1af0653-bb2b-481e-8755-1004079245e8)
+![At what cost ](https://media1.tenor.com/m/dW-Pb6qvsq8AAAAd/thanos-infinity-war.gif)
 
 You will have a layout that will not support pagination, This means when ever new content is added, the last column will have more children and the last row that user expects to be populated with new childrens will not be working as expected.
 
