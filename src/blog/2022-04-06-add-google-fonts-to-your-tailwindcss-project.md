@@ -15,85 +15,118 @@ image: /img/post/css-units-cover.jpeg
 imageAlt: Using Google Fonts with TailwindCSS
 readTime: 2 Minutes ⌚
 ---
-Tailwind makes it super easy to use and import google fonts in our projects.
+## Using Google Fonts in Next.js
+Next.js provides a convenient way to handle font imports, whether they are Google Fonts or local fonts. This guide will walk you through the process of installing and using Google Fonts in a Next.js project.
 
-## Just Follow these 3 steps
+### Step 1: Choose a Google Font
+Visit the Google Fonts website and choose the font you want to use. For this example, we'll use the "Farro" font.
 
-1. Get the cdn and insert in the `<head>` section of the entry point 
-   file for eg `index.html`.
-
-![](/img/post/google-fonts.png)
-
-CDN link can be taken from <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
-
-```html
-<!-- index.html -->
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/jpg" href="//source.unsplash.com/20x20?smiley" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet">
-    <title>FriendList</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
-```
-
-For NextJS we need to create a new file `_document.js` under the `pages` directory and add the following code Refer <https://nextjs.org/docs/basic-features/font-optimization>
+### Step 2: Import and Use the Font in `_app.js`/`layout.js` depending upon your Next Version
+Open your _app.js (or _app.jsx for JSX) file in the pages directory, and use the `Farro` font as an example:
 
 ```jsx
-import Document, { Html, Head, Main, NextScript } from "next/document";
+// pages/_app.js
+import { Farro} from 'next/font/google';
+import '../styles/globals.css'; // Import your global styles here
 
-class MyDocument extends Document {
-  static async getInitialProps(ctx) {
-    const initialProps = await Document.getInitialProps(ctx);
-    return { ...initialProps };
-  }
+const farro = Farro({
+  subsets: ['latin'],
+  // define weights are other configurations if needed
+  // weight: ['400', '700'],
+  // style: ['normal', 'italic'],
+  // display: 'swap',
+});
 
-  render() {
-    return (
-      <Html>
-        <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap" rel="stylesheet"/>
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
-        </body>
-      </Html>
-    );
-  }
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <main className={farro.className}>
+      <Component {...pageProps} />
+    </main>
+  );
 }
-
-export default MyDocument;
 ```
 
-2. Modify You Tailwind Config File to Create a new class name for our new font 
+Replace 'Farro' with the name of the Google Font you have chosen. Adjust the subsets and other options as needed.
 
-```js
-// tailwind.config.js
+Now, the "Farro" font will be applied globally to your entire application.
 
-module.exports = {
-  theme: {
-    extend: {
-      fontFamily: {
-        'rubrik': ['"Rubik Moonrocks"', 'cursive']
-      }
-    }
-  }
-};
+### Step 3: Use the Font in Specific Components or Pages
+You can use the font in specific components or pages by applying the font's className. For example, in pages/index.js:
+
+```jsx
+// pages/index.js
+
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+});
+
+export default function Home() {
+  return (
+    <div className={inter.className}>
+      <p>Hello World</p>
+    </div>
+  );
+}
 ```
 
-3. Restart Server and You are ready with the new Classes
+### Step 4: Specifying a Subset (Optional)
+Google Fonts are automatically subset, reducing the font file size for better performance. You can specify the subsets you want to preload. Add the subset to the function call:
 
-![font-classes select tailwind](/img/post/font.png)
+```jsx
+const inter = Inter({ subsets: ['latin'] });
+```
 
-<p>I hope you learned something new today if you did then please share this post with your friends who might find this useful aswell. Have any questions? Feel free to connect with me on&nbsp;<a href="https://linkedin.com/in/singhkunal2050">LinkedIn</a>&nbsp;<a href="https://twitter.com/singhkunal2050">Twitter</a>&nbsp;<a href="https://singhkunal2050.dev/">@singhkunal2050</a>. You can also write me&nbsp;<a href="https://singhkunal2050.dev/#contact">here</a>.</p>
+### Step 5: Using Multiple Fonts
+You can import and use multiple fonts by creating utility functions. For example:
+
+```jsx
+// app/fonts.js
+
+import { Inter, Roboto_Mono } from 'next/font/google';
+
+export const inter = Inter({
+  subsets: ['latin'],
+});
+
+export const roboto_mono = Roboto_Mono({
+  subsets: ['latin'],
+});
+```
+
+Then, use them in your application:
+
+```jsx
+// pages/_app.js
+
+import { inter, roboto_mono } from '../app/fonts';
+// ...
+
+```
+
+### Step 6: With Tailwind CSS
+If you're using Tailwind CSS, you can integrate the font with your styles:
+
+```jsx
+// pages/_app.js
+
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+});
+
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <main className={`${inter.variable} font-sans`}>
+      <Component {...pageProps} />
+    </main>
+  );
+}
+```
+
+Then, add the CSS variable to your Tailwind CSS config.
+
+That's it! You've successfully installed and used Google Fonts in your Next.js project. Feel free to customize the fonts, weights, and styles according to your design preferences.
