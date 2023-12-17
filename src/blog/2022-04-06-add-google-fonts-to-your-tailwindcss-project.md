@@ -16,12 +16,15 @@ imageAlt: Using Google Fonts with TailwindCSS
 readTime: 2 Minutes ⌚
 ---
 ## Using Google Fonts in Next.js
+
 Next.js provides a convenient way to handle font imports, whether they are Google Fonts or local fonts. This guide will walk you through the process of installing and using Google Fonts in a Next.js project.
 
 ### Step 1: Choose a Google Font
+
 Visit the Google Fonts website and choose the font you want to use. For this example, we'll use the "Farro" font.
 
 ### Step 2: Import and Use the Font in `_app.js`/`layout.js` depending upon your Next Version
+
 Open your _app.js (or _app.jsx for JSX) file in the pages directory, and use the `Farro` font as an example:
 
 ```jsx
@@ -50,7 +53,12 @@ Replace 'Farro' with the name of the Google Font you have chosen. Adjust the sub
 
 Now, the "Farro" font will be applied globally to your entire application.
 
+![](/img/post/font-example-next-js.webp)
+
+
+
 ### Step 3: Use the Font in Specific Components or Pages
+
 You can use the font in specific components or pages by applying the font's className. For example, in pages/index.js:
 
 ```jsx
@@ -72,6 +80,7 @@ export default function Home() {
 ```
 
 ### Step 4: Specifying a Subset (Optional)
+
 Google Fonts are automatically subset, reducing the font file size for better performance. You can specify the subsets you want to preload. Add the subset to the function call:
 
 ```jsx
@@ -79,6 +88,7 @@ const inter = Inter({ subsets: ['latin'] });
 ```
 
 ### Step 5: Using Multiple Fonts
+
 You can import and use multiple fonts by creating utility functions. For example:
 
 ```jsx
@@ -102,10 +112,10 @@ Then, use them in your application:
 
 import { inter, roboto_mono } from '../app/fonts';
 // ...
-
 ```
 
 ### Step 6: With Tailwind CSS
+
 If you're using Tailwind CSS, you can integrate the font with your styles:
 
 ```jsx
