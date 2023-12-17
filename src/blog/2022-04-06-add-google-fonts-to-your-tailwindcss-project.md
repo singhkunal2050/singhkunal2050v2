@@ -1,5 +1,5 @@
 ---
-title: Add Google Fonts to Your React & NextJS + TailwindCSS Project
+title: Add Google Fonts to Your React & NextJS + TailwindCSS Project (Next 14)
 author: Kunal Singh
 description: Use Google Fonts in Your TailwindCSS Projects
 tags:
