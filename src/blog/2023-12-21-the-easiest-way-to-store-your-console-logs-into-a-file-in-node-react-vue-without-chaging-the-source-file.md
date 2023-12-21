@@ -1,6 +1,5 @@
 ---
-title: The easiest way to store your console logs into a file in node/react/vue,
-  WITHOUT chaging the source file
+title: Easiest way to store your logs in a file WITHOUT chaging the source file(node)
 author: Kunal Singh
 description: Often, developers face challenges when dealing with a flood of logs
   in the console, making it difficult to locate specific information. Integrated
