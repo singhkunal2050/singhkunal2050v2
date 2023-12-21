@@ -9,7 +9,7 @@ tags:
   - post
   - productivity
 date: 2023-12-21T17:05:46.582Z
-image: /img/post/group-48.png
+image: /img/post/error-logs.png
 imageAlt: Logging node logs to file without changing source code
 readTime: 2 Minutes ⌚
 ---
