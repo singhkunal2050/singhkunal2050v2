@@ -43,4 +43,8 @@ Assuming you have an npm script named dev in your Node.js project, you can captu
 npm run dev > log.txt
 ```
 
+![](/img/post/output.gif)
+
+
+
 This command directly redirects the output of the npm run dev script to a file named log.txt. This way, you can easily review the logged information without modifying your source code.
