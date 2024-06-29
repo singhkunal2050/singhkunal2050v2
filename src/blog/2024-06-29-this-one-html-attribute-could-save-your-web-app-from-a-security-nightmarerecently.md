@@ -9,6 +9,9 @@ description: Web security is a critical concern for developers, yet some of the
   malicious code injection.
 tags:
   - post
+  - web-security
+  - cdn
+  - web
 date: 2024-06-29T03:05:36.570Z
 image: /img/post/cover-redesign-websecurityvulnerabilities-luke_newsletter.png
 imageAlt: Web Security with script Integrity
