@@ -1,6 +1,5 @@
 ---
-title: This One HTML Attribute Could Save Your Web App from a Security
-  NightmareRecently
+title: This One HTML Attribute Could Save Your Web App from a Security Nightmare
 author: Kunal Singh
 description: Web security is a critical concern for developers, yet some of the
   most effective protective measures are often overlooked. This post explores
