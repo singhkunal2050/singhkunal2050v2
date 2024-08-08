@@ -17,9 +17,7 @@ readTime: 2 Minutes ⌚
 ---
 In the vast and ever-evolving digital landscape, finding the right information can be a daunting task. But fear not, for there is a powerful tool at your disposal - Google Dorking.
 
-
-
-![](/img/post/thief-sreenivasan.gif)
+![](/img/post/thief-sreenivasan-ezgif.com-crop.gif)
 
 This advanced search technique allows you to harness the full potential of Google’s search engine, enabling you to uncover a wealth of valuable data that may otherwise remain hidden. Google Dorking, also known as Google hacking, is the art of using specialized search operators to refine and filter your search results. By leveraging these techniques, you can delve deeper into the internet, uncovering insights, uncovering security vulnerabilities, and even gathering competitive intelligence. Let’s explore the 16 powerful Google Dorking techniques you can wield:
 
