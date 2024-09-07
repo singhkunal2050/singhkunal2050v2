@@ -19,7 +19,7 @@ module.exports = function(eleventyConfig) {
 
   //  check if isArticlePage
   eleventyConfig.addFilter( "isArticlePage", function(url) {
-    return url.split("/").includes('blog')
+    return url.split("/").includes('blog') || url.split("/").includes('snippet');
   });
   
   // debug filter 
