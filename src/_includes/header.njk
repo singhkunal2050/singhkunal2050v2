@@ -53,6 +53,19 @@
     if ("serviceWorker" in navigator)
       navigator.serviceWorker.register("/js/service-worker.js");
   </script> 
+
+  {# This script helps in setting the appropriate theme setting to the html node before dom renders which solves the theme flash issue when we run it post dom render #}
+  <script>
+    function checkTheme(){
+      if(localStorage.theme){
+        document.querySelector('html').classList.add(localStorage.theme)
+      }else{
+        document.querySelector('html').classList.add('default')
+      }
+    }
+
+    checkTheme()
+  </script>
 </head>
 
 <body>

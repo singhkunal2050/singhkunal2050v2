@@ -132,16 +132,6 @@ if(document.URL.split('/').includes('blog') ){
 
 // toggle theme 
 
-function checkTheme(){
-  if(localStorage.theme){
-    document.querySelector('html').classList.add(localStorage.theme)
-  }else{
-    document.querySelector('html').classList.add('default')
-  }
-}
-
-checkTheme()
-
 function changeTheme(targetTheme){
   document.querySelector('html').classList = [ targetTheme ]
   localStorage.theme = targetTheme;
