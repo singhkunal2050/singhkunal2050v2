@@ -35,7 +35,7 @@ collections:
       - { label : "Featured Image" , name : "image" , widget : "image" }
       - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
 
-   - name: "snippet"
+  - name: "snippet"
     label: "Snippet"
     folder: "src/snippet"
     create: true
