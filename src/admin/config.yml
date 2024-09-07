@@ -44,7 +44,7 @@ collections:
       - { label : "Title" , name : "title" , widget : "string" }
       - { label : "Author" , name : "author" , widget : "string" }
       - { label : "Description" , name : "description" , widget : "string" }
-      - { label : "Tags" , name : "tags" , widget : "list" , default : ["post"] }
+      - { label : "Tags" , name : "tags" , widget : "list" , default : ["snippet"] }
       - { label : "Date" , name : "date" , widget : "datetime" }
       - { label : "Featured Image" , name : "image" , widget : "image" }
       - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
