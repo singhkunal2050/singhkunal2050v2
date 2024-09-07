@@ -9,7 +9,7 @@ layout: 'base.njk'
       {{ title }}
      </h1>
     <h2 class="subhead_text">{{ author }}</h2>
-    {# <div class="blog-hashtags">
+    <div class="blog-hashtags">
       {% set comma = joiner() %}
       {% for tag in tags -%}
         {% if tag !== 'snippet' %}
@@ -17,7 +17,7 @@ layout: 'base.njk'
           <a href="#">#{{ tag }}</a>
         {% endif %}
       {%- endfor %}
-    </div> #}
+    </div>
     <p style="margin-top: 20px;" class="blog-date rainbow">{{ date | postDate }}</p>
   </section>
 
@@ -81,9 +81,9 @@ layout: 'base.njk'
                 {%- endfor %}
               </div>
               <p class="blog-description">{{snippet.data.description | truncate(80)}}</p>
-              {# <p class="blog-length"> {{ snippet.data.readTime  }} </p> #}
+              <p class="blog-length"> {{ snippet.data.readTime  }} </p>
               <div class="blog-details">
-                {# <a href="{{ snippet.url | url }}" class="blog-link">Read  Article >> </a> #}
+                <a href="{{ snippet.url | url }}" class="blog-link">Read  Article >> </a>
                 <p class="blog-date">{{ snippet.data.date | postDate }}</p>
               </div>
             </div>
