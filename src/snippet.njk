@@ -1,0 +1,62 @@
+---
+title: Snippets
+description: Short Snippets that I come across and find interesting
+layout: 'base.njk'
+pagination:
+  data: collections.snippet
+  size: 40
+  alias: snippets
+---
+
+<main>
+  
+  <section class="blogs-hero">
+    
+    <h1 class="head_text long-shadow"> <span class="head_text rainbow">Snippets</span></h1>
+
+  </section>
+
+  <section class="blog-list-section container">
+    <div class="blog-list-container ">
+
+      {%- for snippet in snippets | reverse -%}
+
+          <a href="{{ snippet.url | url }}" class="blog-link">
+          <div class="blog-card">
+              <h1 class="blog-title subhead_text">{{ snippet.data.title}}</h1>
+            <div class="blog-hashtags">
+              {% set comma = joiner() %}
+              {% for tag in snippet.data.tags -%}
+                {% if tag !== 'snippet' %}
+                  {{ comma() }}
+                  <p href="#">#{{ tag }}</p>
+                {% endif %}
+              {%- endfor %}
+            </div>
+            <p class="blog-description">{{snippet.data.description}}</p>
+            <div class="blog-details">
+              {# <a href="{{ snippet.url | url }}" class="blog-link">Check Snippet </a> #}
+              <p class="blog-date">{{ snippet.data.date | snippetDate }}</p>
+            </div>
+          </div>
+          </a>
+
+     
+     {%- endfor -%}
+ 
+
+    {# <div class="pagination">
+      <a href=""><< Previous</a><a href="">Next >> </a> 
+    </div> #}
+
+    <div class="pagination">
+        <p>{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}"><<</a>{% else %}<<{% endif %}</p>
+    {%- for pageEntry in pagination.pages %}
+          <p><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}> {{ loop.index }}</a></p>
+    {%- endfor %}
+        <p>{% if pagination.href.next %}<a href="{{ pagination.href.next }}">>></a>{% else %}>>{% endif %}</p>
+    </div>
+
+    </section>
+
+</main>
