@@ -127,6 +127,7 @@ html{
 // near edges cursor issue needs to bn solved
 body {
   overflow-x: hidden;
+  word-wrap: break-word;
   background: var(--background);
   cursor: url('../img/cursor1.png') , auto;
 }
