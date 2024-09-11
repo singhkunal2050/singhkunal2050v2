@@ -1,6 +1,5 @@
 ---
-title: Using document.createDocumentFragment for Batch updating DOMs without the
-  wrapper div
+title: document.createDocumentFragment for Batch DOM updates
 author: Kunal Singh
 description: The DocumentFragment is an interface that represents a temporary
   container for holding a group of DOM nodes. It acts like a mini-document but
