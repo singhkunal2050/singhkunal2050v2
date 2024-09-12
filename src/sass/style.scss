@@ -128,6 +128,50 @@
   --hightlight:default;
 }
 
+.cyberpunk-theme,#cyberpunk-theme {
+  --background: hsl(260, 40%, 12%);
+  --dark2: hsl(260, 40%, 15%);
+  --background-light: hsl(260, 40%, 14%);
+  --background-o-500: hsla(260, 40%, 12%, 0.507);
+  --primary-color: hsl(315, 100%, 60%);
+  --primary-color-800: hsl(315, 100%, 30%);
+  --primary-color-500: hsl(315, 100%, 50%);
+  --primary-color-300: hsl(315, 100%, 70%);
+  --secondary-color: hsl(180, 100%, 50%);
+  --secondary-color-o-100: hsla(180, 100%, 50%, 0.152);
+  --font-col1: hsl(180, 100%, 90%);
+  --font-col1-o-100: hsla(180, 100%, 90%, 0.15);
+  --head-color: hsl(315, 100%, 70%);
+  --card-hover: hsl(260, 40%, 16%);
+  --code-block: hsl(260, 40%, 20%);
+  --blog-hover: hsl(260, 40%, 18%);
+  --highlight: hsl(180, 100%, 50%);
+  --accent-yellow: hsl(60, 100%, 50%);
+}
+
+
+.forest-theme,#forest-theme {
+  --background: hsl(150, 30%, 15%);
+  --dark2: hsl(150, 30%, 18%);
+  --background-light: hsl(150, 30%, 17%);
+  --background-o-500: hsla(150, 30%, 15%, 0.507);
+  --primary-color: hsl(80, 60%, 45%);
+  --primary-color-800: hsl(80, 60%, 25%);
+  --primary-color-500: hsl(80, 60%, 40%);
+  --primary-color-300: hsl(80, 60%, 60%);
+  --secondary-color: hsl(35, 80%, 60%);
+  --secondary-color-o-100: hsla(35, 80%, 60%, 0.152);
+  --font-col1: hsl(60, 30%, 90%);
+  --font-col1-o-100: hsla(60, 30%, 90%, 0.15);
+  --head-color: hsl(80, 60%, 70%);
+  --card-hover: hsl(150, 30%, 20%);
+  --code-block: hsl(150, 30%, 25%);
+  --blog-hover: hsl(150, 30%, 22%);
+  --highlight: hsl(35, 80%, 80%);
+  --accent-blue: hsl(200, 80%, 60%);
+}
+
+
 // document.querySelector(':root').style.setProperty('--primary-color', 'red')
 
 // breakpoints 
