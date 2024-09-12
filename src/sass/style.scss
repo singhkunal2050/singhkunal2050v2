@@ -65,6 +65,28 @@
   --hightlight: hsl(200, 30%, 5%)
 }
 
+.christmas-theme,#christmas-theme {
+  --background: hsl(30, 20%, 98%);
+  --dark2: hsl(170, 20%, 95%);
+  --background-light: hsl(30, 20%, 96%);
+  --background-o-500: hsla(30, 20%, 98%, 0.507);
+  --primary-color: hsl(350, 60%, 55%);
+  --primary-color-800: hsl(350, 60%, 35%);
+  --primary-color-500: hsl(350, 60%, 50%);
+  --primary-color-300: hsl(350, 60%, 70%);
+  --secondary-color: hsl(150, 40%, 50%);
+  --secondary-color-o-100: hsla(150, 40%, 50%, 0.152);
+  --font-col1: hsl(215, 30%, 20%);
+  --font-col1-o-100: hsla(215, 30%, 20%, 0.15);
+  --head-color: hsl(350, 60%, 40%);
+  --card-hover: hsl(30, 20%, 96%);
+  --code-block: hsl(30, 20%, 92%);
+  --blog-hover: hsl(30, 20%, 94%);
+  --highlight: hsl(30, 20%, 100%);
+  --accent-gold: hsl(45, 70%, 60%);
+  --accent-silver: hsl(0, 0%, 85%);
+}
+
 .light-theme , #light-theme{
   --background:hsl(0, 100%, 98%);
   --dark2: hsl(254, 100%, 97%);
