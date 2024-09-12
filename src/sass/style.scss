@@ -577,7 +577,11 @@ nav {
         & p{
           display: block;
           margin-top: 10px !important;
-          opacity: .7;
+          opacity: .7;;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          width: 80%;
         }
 
       }
