@@ -963,8 +963,14 @@ footer {
         font-weight: 200;
     }
     & .blog-date {
-      opacity: .6;
-    }
+          position: absolute;
+          background: var(--secondary-color-o-100);
+          bottom: 0;
+          right: 0;
+          opacity: 1 !important;
+          padding: 10px;
+          border-radius: 16px 0;
+      }
   }
 
 }
@@ -1006,6 +1012,7 @@ footer {
   border-radius: 16px;
   border: 2px solid var(--font-col1-o-100);
   transition: 200ms cubic-bezier(0.215, 0.610, 0.355, 1);
+  position: relative;
 
 
   &:hover{
