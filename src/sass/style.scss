@@ -957,6 +957,14 @@ footer {
     @media(max-width:$sm){
       padding: 0 0 !important;
     }
+
+    & .blog-description {
+        line-height: 1.4;
+        font-weight: 200;
+    }
+    & .blog-date {
+      opacity: .6;
+    }
   }
 
 }
