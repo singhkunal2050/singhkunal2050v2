@@ -45,6 +45,26 @@
   --hightlight:black;
 }
 
+.oceanic,#oceanic {
+  --background: hsl(200, 30%, 10%);
+  --dark2: hsla(200, 25%, 15%, 0.714);
+  --background-light: hsl(200, 30%, 13%);
+  --background-o-500: hsla(200, 30%, 10%, 0.527);
+  --primary-color: hsl(190, 80%, 50%);
+  --primary-color-800: hsl(190, 80%, 15%);
+  --primary-color-500: hsl(190, 80%, 45%);
+  --primary-color-300: hsl(200, 80%, 55%);
+  --secondary-color: hsl(160, 90%, 60%);
+  --secondary-color-o-100: hsla(160, 90%, 60%, 0.157);
+  --font-col1: hsl(180, 20%, 95%);
+  --font-col1-o-100: hsla(180, 20%, 95%, 0.15);
+  --head-color: hsl(190, 80%, 75%);
+  --card-hover: hsl(200, 30%, 12%);
+  --code-block: hsl(200, 30%, 20%);
+  --blog-hover: hsl(200, 30%, 15%);
+  --hightlight: hsl(200, 30%, 5%)
+}
+
 .light-theme , #light-theme{
   --background:hsl(0, 100%, 98%);
   --dark2: hsl(254, 100%, 97%);
