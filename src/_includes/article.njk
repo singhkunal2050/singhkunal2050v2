@@ -14,7 +14,7 @@ layout: 'base.njk'
       {% for tag in tags -%}
         {% if tag !== 'post' %}
           {{ comma() }}
-          <a href="#">#{{ tag }}</a>
+          <a class="tag" href="#">#{{ tag }}</a>
         {% endif %}
       {%- endfor %}
     </div>
