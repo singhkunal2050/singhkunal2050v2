@@ -29,7 +29,7 @@ pagination:
               {% for tag in snippet.data.tags -%}
                 {% if tag !== 'snippet' %}
                   {{ comma() }}
-                  <p class="tag" href="#">#{{ tag }}</p>
+                  <p class="post-tag" href="#">#{{ tag }}</p>
                 {% endif %}
               {%- endfor %}
             </div>

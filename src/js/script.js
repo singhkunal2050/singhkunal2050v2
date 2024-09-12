@@ -172,7 +172,7 @@ function stringToColor(str) {
 }
 
 // Get the content of the DOM node or its attribute value
-const element = document.querySelectorAll('.tag');
+const element = document.querySelectorAll('.post-tag');
 Array.from(element).forEach(e => {
   const color = stringToColor(e.textContent || e.getAttribute('data-color'));
   e.style.backgroundColor = color + '50';
