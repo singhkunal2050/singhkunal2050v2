@@ -18,6 +18,16 @@ readTime: 4 Minutes ⌚
 ---
 Publishing your first npm package can be an exciting and rewarding experience. In this blog post, we'll walk through the process of creating and publishing a simple yet fun package called _"Rainbow Highlight"_ that adds colorful effects to text, along with some additional utilities.
 
+#﻿# Example of Usage 
+
+<iframe src="https://codesandbox.io/embed/nk7ttj?view=editor+%2B+preview"
+     style="width:100%; height: 500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="Using Rainbow Hightlight NPM Library"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
+
 ## What We'll Build
 
 Our _"Rainbow Highlight"_ package will include several functions:
