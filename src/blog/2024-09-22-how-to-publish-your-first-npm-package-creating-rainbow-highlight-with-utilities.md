@@ -96,7 +96,7 @@ Before we begin, make sure you have the following installed:
      let result = '';
      for (let i = 0; i < text.length; i++) {
        const color = rainbow[i % rainbow.length];
-       result += `<span style="background-color: ${color};">${text[i]}</span>`;
+       result += `<span style="color: ${color};">${text[i]}</span>`;
      }
      return result;
    }
@@ -112,7 +112,7 @@ Before we begin, make sure you have the following installed:
          'indigo',
          'violet',
        ]);
-       return `<span style="background-color: ${randomColor};">${char}</span>`;
+       return `<span style="color: ${randomColor};">${char}</span>`;
      }).join('');
    }
 
@@ -129,7 +129,7 @@ Before we begin, make sure you have the following installed:
 
 3. Create a README.md file to describe your package:
 
-   ````markdown
+   `````markdown
    # Rainbow Highlight
 
    A package to add colorful highlights to text, with additional utilities.
@@ -161,7 +161,11 @@ Before we begin, make sure you have the following installed:
    - `randomHighlight`: Adds random color highlights to each character.
    - `stripHighlight`: Removes highlight spans from the text.
    ````
-   ````
+   `````
+
+   ```
+
+   ```
 
 ## Step 3: Test Your Package Locally
 
