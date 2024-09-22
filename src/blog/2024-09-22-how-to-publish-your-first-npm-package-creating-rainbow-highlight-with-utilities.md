@@ -64,9 +64,9 @@ Before we begin, make sure you have the following installed:
      "keywords": ["rainbow", "highlight", "text", "color"],
      "author": "Your Name",
      "license": "MIT",
-"dependencies": {
-    "lodash": "^4.17.21"
-  }
+     "dependencies": {
+        "lodash": "^4.17.21"
+     }
    }
    ```
 
