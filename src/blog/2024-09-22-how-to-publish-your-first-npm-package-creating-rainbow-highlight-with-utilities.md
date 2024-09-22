@@ -65,7 +65,7 @@ Before we begin, make sure you have the following installed:
      "author": "Your Name",
      "license": "MIT",
      "dependencies": {
-        "lodash": "^4.17.21"
+       "lodash": "^4.17.21"
      }
    }
    ```
@@ -129,7 +129,7 @@ Before we begin, make sure you have the following installed:
 
 3. Create a README.md file to describe your package:
 
-   ```markdown
+   ````markdown
    # Rainbow Highlight
 
    A package to add colorful highlights to text, with additional utilities.
@@ -140,7 +140,7 @@ Before we begin, make sure you have the following installed:
 
    ## Usage
 
-   ```javascript
+   ````javascript
    const { rainbowHighlight, randomHighlight, stripHighlight } = require('@yourusername/rainbow-highlight');
 
    // Rainbow highlight
@@ -160,8 +160,8 @@ Before we begin, make sure you have the following installed:
    - `rainbowHighlight`: Adds a rainbow color effect to the text.
    - `randomHighlight`: Adds random color highlights to each character.
    - `stripHighlight`: Removes highlight spans from the text.
-
-   ```
+   ````
+   ````
 
 ## Step 3: Test Your Package Locally
 
