@@ -1530,13 +1530,13 @@ footer {
 
 
 
-.blog-single-content > pre {
+.blog-single-content  pre {
   border-radius: 6px;
   padding-top: 45px !important;
   position: relative;
 }
 
-.blog-single-content > pre::before {
+.blog-single-content  pre::before {
   content: '';
   position: absolute;
   top: 0;
@@ -1548,7 +1548,7 @@ footer {
   border-top-right-radius: 6px;
 }
 
-.blog-single-content > pre::after {
+.blog-single-content  pre::after {
   content: '';
   position: absolute;
   top: 12px;
