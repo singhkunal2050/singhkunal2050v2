@@ -47,7 +47,7 @@ Before we begin, make sure you have the following installed:
 
 2. Initialize a new npm package:
 
-   ```
+   ```bash
    npm init -y
    ```
 
@@ -71,7 +71,7 @@ Before we begin, make sure you have the following installed:
 
 1. First, let's install lodash as a dependency:
 
-   ```
+   ```bash
    npm install lodash
    ```
 
@@ -185,7 +185,7 @@ Before we begin, make sure you have the following installed:
 
 2. Run the test file:
 
-   ```
+   ```bash
    node test.js
    ```
 
@@ -197,13 +197,13 @@ Before we begin, make sure you have the following installed:
 
 2. Log in to your npm account in the terminal:
 
-   ```
+   ```bash
    npm login
    ```
 
 3. Publish your package:
 
-   ```
+   ```bash
    npm publish --access=public
    ```
 
@@ -215,7 +215,7 @@ Now that your package is published, you can install and use it in any project:
 
 1. Install the package:
 
-   ```
+   ```bash
    npm install @yourusername/rainbow-highlight
    ```
 
