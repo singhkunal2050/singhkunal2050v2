@@ -40,7 +40,7 @@ Before we begin, make sure you have the following installed:
 
 1. Create a new directory for your project:
 
-   ```
+   ```bash
    mkdir rainbow-highlight
    cd rainbow-highlight
    ```
