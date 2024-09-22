@@ -1229,7 +1229,8 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-   
+    z-index: 11111;
+    
     & .share-btn-group {
       position: sticky;
       top: 200px;
