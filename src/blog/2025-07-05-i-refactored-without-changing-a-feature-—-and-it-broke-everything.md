@@ -12,7 +12,7 @@ tags:
   - SoftwareEngineering
   - CleanCode
 date: 2025-07-05T08:51:31.591Z
-image: /img/post/download-4-.png
+image: /img/post/download-5-.png
 imageAlt: Hyrums Law
 readTime: 4 Minutes ⌚
 ---
