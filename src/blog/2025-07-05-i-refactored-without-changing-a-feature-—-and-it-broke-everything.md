@@ -18,7 +18,7 @@ readTime: 4 Minutes ⌚
 ---
 
 
-A few weeks ago, I was working on a large refactor of our backend business logic. The idea was simple: clean up the code, remove some duplication, and make things easier to maintain.
+A few weeks ago, I was working on a large refactor of our business logic. The idea was simple: clean up the code, remove some duplication, and make things easier to maintain.
 
 I wasn’t changing any feature.
 
