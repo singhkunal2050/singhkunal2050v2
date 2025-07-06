@@ -38,7 +38,7 @@ We wanted to:
 
 ## 📄 Database Schema (Prisma)
 
-```prisma
+```js
 model FeatureFlag {
   id        String   @id @default(uuid())
   flagKey   String
