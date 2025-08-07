@@ -6,6 +6,7 @@ description: Learn how to build a custom MCP server that lets Claude publish and
   manage blog posts directly to your GitHub repository. Complete with source
   code and step-by-step setup instructions.
 tags:
+  - post
   - MCP
   - Claude
   - Automation
