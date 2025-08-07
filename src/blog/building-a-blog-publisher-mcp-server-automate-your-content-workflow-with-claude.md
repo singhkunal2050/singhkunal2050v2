@@ -97,7 +97,7 @@ Create a `tsconfig.json` file:
 
 Create a `.env` file with your GitHub credentials:
 
-```env
+```bash
 GITHUB_TOKEN=your_github_personal_access_token
 REPO_OWNER=your_github_username
 REPO_NAME=your_blog_repo_name
