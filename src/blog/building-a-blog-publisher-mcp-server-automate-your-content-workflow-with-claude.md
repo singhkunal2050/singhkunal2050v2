@@ -1,6 +1,10 @@
 ---
-title: Building a Blog Publisher MCP Server to Automate Your Content Workflow with Claude
-description: Learn how to build a custom MCP server that lets Claude publish and manage blog posts directly to your GitHub repository. Complete with source code and step-by-step setup instructions.
+title: Building a Blog Publisher MCP Server to Automate Your Content Workflow
+  with Claude
+author: Kunal Singh
+description: Learn how to build a custom MCP server that lets Claude publish and
+  manage blog posts directly to your GitHub repository. Complete with source
+  code and step-by-step setup instructions.
 tags:
   - MCP
   - Claude
@@ -11,6 +15,8 @@ tags:
   - Tutorial
   - AI Tools
 date: 2025-08-07T14:12:00.175Z
+image: /img/post/images.jpeg
+imageAlt: MCP Server
 readTime: 15 Minutes ⌚
 ---
 # Building a Blog Publisher MCP Server: Automate Your Content Workflow with Claude
