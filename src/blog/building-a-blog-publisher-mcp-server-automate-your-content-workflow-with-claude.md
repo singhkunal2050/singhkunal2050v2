@@ -55,10 +55,11 @@ The MCP server is built with TypeScript and uses the GitHub API to interact with
 ### Prerequisites
 
 Before we start, you'll need:
-- Node.js 18 or higher
-- A GitHub Personal Access Token
-- A blog repository on GitHub
-- Claude Desktop application
+
+* Node.js 18 or higher
+* A GitHub Personal Access Token
+* A blog repository on GitHub
+* Claude Desktop application
 
 ### Step 1: Project Setup
 
@@ -116,8 +117,9 @@ REPO_NAME=your_blog_repo_name
 
 1. Go to GitHub.com → Settings → Developer settings → Personal access tokens
 2. Generate a new token (classic) with these permissions:
-   - `repo` (Full control of private repositories)
-   - `public_repo` (Access public repositories)
+
+   * `repo` (Full control of private repositories)
+   * `public_repo` (Access public repositories)
 3. Copy the token and add it to your `.env` file
 
 ### Step 6: The Main Server Code
@@ -630,12 +632,15 @@ This is where the magic happens. Add your MCP server to Claude Desktop's configu
 Once everything is set up, using the blog publisher is incredibly intuitive. Here are some example conversations you can have with Claude:
 
 **Publishing a new post**:
+
 > "Can you publish a blog post titled 'Getting Started with MCP' with content about building MCP servers?"
 
 **Listing existing posts**:
+
 > "Show me all my current blog posts"
 
 **Updating a post**:
+
 > "Update my post 'getting-started-with-mcp.md' to include a section about troubleshooting"
 
 ## Behind the Scenes: The Technical Details
@@ -654,7 +659,7 @@ The MCP server handles several important aspects automatically:
 
 Your blog repository should have a `blogs/` folder where posts will be stored:
 
-```
+```markdown
 your-blog-repo/
 ├── blogs/
 │   ├── getting-started-with-mcp.md
@@ -681,11 +686,11 @@ After using this MCP server for a few weeks, I've noticed several improvements t
 
 The current version includes core functionality, but there are many ways to extend it:
 
-- **Image Upload Support**: Handle image uploads and optimize them for web
-- **Draft Management**: Create and manage draft posts before publishing
-- **Template System**: Use predefined templates for different post types
-- **Category Organization**: Organize posts into folders by category
-- **Bulk Operations**: Perform operations on multiple posts at once
+* **Image Upload Support**: Handle image uploads and optimize them for web
+* **Draft Management**: Create and manage draft posts before publishing
+* **Template System**: Use predefined templates for different post types
+* **Category Organization**: Organize posts into folders by category
+* **Bulk Operations**: Perform operations on multiple posts at once
 
 ## Troubleshooting Common Issues
 
@@ -702,11 +707,12 @@ The current version includes core functionality, but there are many ways to exte
 This blog publisher MCP represents something bigger than just a blogging tool. It's a glimpse into how AI assistants will integrate more deeply with our development workflows. Instead of being isolated chat interfaces, they're becoming active participants in our creative and technical processes.
 
 As MCP adoption grows, we'll likely see similar integrations for:
-- Social media management
-- Documentation generation
-- Code deployment
-- Data analysis pipelines
-- Content optimization
+
+* Social media management
+* Documentation generation
+* Code deployment
+* Data analysis pipelines
+* Content optimization
 
 ## Getting Started Today
 
@@ -718,10 +724,10 @@ Ready to automate your blogging workflow? Give it a try and let me know how it w
 
 ## Resources
 
-- [MCP Documentation](https://docs.anthropic.com/claude/docs/mcp)
-- [GitHub API Documentation](https://docs.github.com/en/rest)
-- [Claude Desktop Setup Guide](https://docs.anthropic.com/claude/docs/claude-desktop)
+* [MCP Documentation](https://docs.anthropic.com/claude/docs/mcp)
+* [GitHub API Documentation](https://docs.github.com/en/rest)
+* [Claude Desktop Setup Guide](https://docs.anthropic.com/claude/docs/claude-desktop)
 
----
+- - -
 
 *This blog post was published using the very MCP server described in the article! Meta, right?*
