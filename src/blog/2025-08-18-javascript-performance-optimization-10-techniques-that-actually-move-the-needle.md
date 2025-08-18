@@ -1,5 +1,5 @@
 ---
-title: JavaScript Performance Optimization: 10 Techniques That Actually Move the Needle
+title: JavaScript Performance Optimization, 10 Techniques That Actually Move the Needle
 author: Kunal Singh
 description: Discover 10 JavaScript performance optimization techniques that deliver real, measurable improvements to your web applications. From debouncing and virtual scrolling to Web Workers and memoization, learn practical strategies that will make your users notice the difference.
 tags:
