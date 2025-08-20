@@ -1,5 +1,5 @@
 ---
-title: Building a Cross-Repository Test Automation Pipeline: From Manual QA Nightmares to Automated Excellence
+title: "Building a Cross-Repository Test Automation Pipeline: From Manual QA Nightmares to Automated Excellence"
 author: Kunal Singh
 description: Learn how to build a cross-repository test automation pipeline that reduced our SDK testing time by 80% and eliminated release-blocking bugs. A complete guide with code examples and implementation patterns.
 tags:
