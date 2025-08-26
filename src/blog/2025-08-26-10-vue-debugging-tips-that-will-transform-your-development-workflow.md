@@ -18,20 +18,6 @@ readTime: 8 Minutes ⌚
 
 Debugging Vue.js applications can be frustrating, especially when you're staring at undefined values in computed properties or mysterious reactivity issues. After researching real-world debugging techniques from developers on Stack Overflow, Reddit, and Vue community discussions, I've compiled 10 battle-tested tips that will revolutionize how you debug Vue apps.
 
-## The Problem Every Vue Developer Faces
-
-Picture this: You have a computed property that returns an array with 33 `undefined` values, but when you check `this.npsCampaignList` in DevTools, the data is clearly there with all the right properties. Sound familiar? This exact scenario led me down a rabbit hole of Vue debugging techniques that changed how I approach troubleshooting.
-
-```javascript
-npsCampaignDropdownItems () {
-  return this.npsCampaignList.map(campaign => ({
-    label: campaign.name,
-    value: campaign._id
-  }))
-}
-// Returns: [undefined, undefined, undefined...] × 33
-```
-
 ## 1. Master $vm0 Console Access (The Game Changer)
 
 This is the debugging technique that separates junior from senior Vue developers. Instead of hunting through DOM elements or adding console.log statements everywhere, you can directly access any component instance.
