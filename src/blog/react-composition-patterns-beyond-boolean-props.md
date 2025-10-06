@@ -1,6 +1,6 @@
 ---
-title: React Composition Patterns: Beyond Boolean Props
-description: Learn how React compound components and composition patterns can help you escape prop hell and build maintainable, scalable component APIs.
+title: "React Composition Patterns: Beyond Boolean Props"
+description: "Learn how React compound components and composition patterns can help you escape prop hell and build maintainable, scalable component APIs."
 tags:
   - React
   - JavaScript
