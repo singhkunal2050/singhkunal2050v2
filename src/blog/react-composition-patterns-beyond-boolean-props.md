@@ -12,7 +12,7 @@ date: 2025-10-06T15:26:12.203Z
 ---
 # React Composition Patterns: Beyond Boolean Props
 
-I recently watched Michael Paulson's excellent talk on React composition patterns, and it crystallized something I've struggled with for years: the gradual descent into prop hell that seems inevitable as React codebases scale.
+I recently watched Fernando Rojo's excellent talk on React composition patterns, and it crystallized something I've struggled with for years: the gradual descent into prop hell that seems inevitable as React codebases scale.
 
 ## The Familiar Pattern
 
@@ -282,4 +282,4 @@ If you haven't watched the full talk, I highly recommend it. Michael's examples 
 
 ---
 
-**Watch the full talk**: [React Composition Patterns with Compound Components](https://www.youtube.com/watch?v=4KvbVq3Eg5w) by Michael Paulson
+**Watch the full talk**: [React Composition Patterns with Compound Components](https://www.youtube.com/watch?v=4KvbVq3Eg5w) by Fernando Rojo
