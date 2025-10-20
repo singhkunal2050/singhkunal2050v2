@@ -1,6 +1,6 @@
 ---
-title: Understanding CRDTs: The Magic Behind Collaborative Editing
-description: A friendly deep dive into CRDTs and how they power real-time collaborative applications like Google Docs, Figma, and Notion.
+title: "Understanding CRDTs: The Magic Behind Collaborative Editing"
+description: "A friendly deep dive into CRDTs and how they power real-time collaborative applications like Google Docs, Figma, and Notion."
 tags:
   - CRDT
   - Collaborative Editing
