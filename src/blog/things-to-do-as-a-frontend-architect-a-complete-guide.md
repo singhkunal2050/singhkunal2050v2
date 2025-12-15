@@ -1,5 +1,5 @@
 ---
-title: Things to Do as a Frontend Architect: A Complete Guide
+title: "Things to Do as a Frontend Architect: A Complete Guide"
 description: A comprehensive guide to the responsibilities, tasks, and best practices for Frontend Architects - from technical vision to team leadership.
 tags:
   - Frontend
