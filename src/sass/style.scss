@@ -983,8 +983,7 @@ footer {
 
 
 .about-hero{
- 
- 
+
   & .about-hero-container {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -1020,7 +1019,23 @@ footer {
     }
   
   }
-  
+
+  & .about-hero-content{
+    max-width: 640px;
+
+    .about-hero-title{
+      font-size: clamp(1.4rem, 2vw, 2rem);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .about-hero-lead{
+      font-size: clamp(1rem, 1.4vw, 1.15rem);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+  }
+
 }
 
 // -----------------------BLOGS PAGE--------------------------
