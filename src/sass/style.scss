@@ -1190,6 +1190,17 @@ footer {
     box-shadow: 0 10px 18px rgba(0,0,0,0.35);
   }
 
+  & .about-journey-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    object-fit: contain;
+    background: var(--background);
+    border: 1px solid var(--font-col1-o-100);
+    padding: 4px;
+    margin-bottom: 10px;
+  }
+
   // timeline marker
   & .about-journey-item::before{
     content: "";
@@ -1207,7 +1218,6 @@ footer {
   & .about-journey-item:nth-child(odd){
     margin-left: 0;
     margin-right: auto;
-    text-align: right;
 
     &::before{
       right: -7px;
