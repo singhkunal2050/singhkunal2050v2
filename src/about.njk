@@ -26,8 +26,76 @@ eleventyExcludeFromCollections: true
         </div>
       </div>
       <div class="about-hero-image">
-        {# You can replace this with a collage image that mixes talks, football, and team photos #}
-        <img src="{{ '/img/singhkunal2050.jpg' | url }}" alt="Kunal Singh | singhkunal2050">
+        {# Static image on load, swapped to a GIF on hover via JS #}
+        <img
+          src="{{ '/img/singhkunal2050.jpg' | url }}"
+          data-static-src="{{ '/img/singhkunal2050.jpg' | url }}"
+          data-hover-src="{{ 'https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExd3VhNzN0a3Zia280MDV3em4xOXhzeXA2Yjd3OXdtYTk2NTM1bjF3byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IRFQYGCokErS0/giphy.gif' | url }}"
+          alt="Kunal Singh | singhkunal2050">
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Journey -->
+  <section class="about-journey">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        Career <span class="rainbow head_text">Journey</span>
+      </h2>
+
+      <div class="about-journey-list">
+        <article class="about-journey-item">
+          <div class="about-journey-card">
+            <h3 class="subhead_text">Senior Software Engineer – Frontend @ CleverTap</h3>
+            <p><strong>Oct 2024 – Present · Mumbai (Hybrid)</strong></p>
+            <p style="margin: 8px 0 12px;">
+              Leading the CleverTap Web SDK and web experiences that power product analytics for thousands of customers.
+            </p>
+            <ul>
+              <li>Own the Web SDK used by 3000+ customers, impacting 10M+ users daily.</li>
+              <li>Designed and shipped Advanced Delivery Preferences for campaign deliveries, refactoring legacy flows without breaking existing users.</li>
+              <li>Hardened SDK security with XSS fixes, sandboxing, postMessage isolation, and encryption.</li>
+              <li>Set up CI/CD and Playwright automation to cut release time and reduce bugs, improving stability and release cadence.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="about-journey-item">
+          <div class="about-journey-card">
+            <h3 class="subhead_text">Senior Software Engineer – Frontend @ Freshworks</h3>
+            <p><strong>Aug 2022 – Oct 2024 · Bangalore (Remote)</strong></p>
+            <p style="margin: 8px 0 12px;">
+              Worked on the Developer Platform and Marketplace, building tools that help thousands of developers extend Freshworks products.
+            </p>
+            <ul>
+              <li>Built the Freddy Copilot VS Code extension, showcased at Freshworks Dev Summit 2023.</li>
+              <li>Shipped features for the Developer Portal and Marketplace, and contributed to the Crayons design system in open source.</li>
+              <li>Won a company hackathon for a major FDK CLI feature and received 8+ recognitions in 12 months.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="about-journey-item">
+          <div class="about-journey-card">
+            <h3 class="subhead_text">JavaScript Developer @ Uplers</h3>
+            <p><strong>Jan 2022 – Aug 2022 · Ahmedabad (Remote)</strong></p>
+            <ul>
+              <li>Built React and Next.js features including listings, pagination, and third‑party API integrations.</li>
+              <li>Worked across TailwindCSS, Redux Toolkit, and REST APIs for client projects.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="about-journey-item">
+          <div class="about-journey-card">
+            <h3 class="subhead_text">Web Developer @ Antriksh</h3>
+            <p><strong>Oct 2020 – Dec 2021 · Pune</strong></p>
+            <ul>
+              <li>Developed faceted search, deep linking, and pagination for real‑estate listings.</li>
+              <li>Worked across HTML, CSS, JavaScript, React, Node.js, TailwindCSS, MySQL, and MongoDB.</li>
+            </ul>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -42,7 +110,7 @@ eleventyExcludeFromCollections: true
       <div class="about-life-board">
         <article class="about-life-card">
           <div class="about-life-pin">
-            <span class="about-life-pin-head"></span>
+\            <span class="about-life-pin-head"></span>
             <figure>
               {# Replace with a real photo: you playing football #}
               <img src="{{ '/img/work/1.jpg' | url }}" alt="Playing football">
@@ -194,62 +262,6 @@ eleventyExcludeFromCollections: true
             psychological safety, and shared wins.
           </p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Career Journey -->
-  <section class="about-journey">
-    <div class="container">
-      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
-        Career <span class="rainbow head_text">Journey</span>
-      </h2>
-
-      <div class="about-journey-list">
-        <article class="about-journey-item">
-          <h3 class="subhead_text">Senior Software Engineer – Frontend @ CleverTap</h3>
-          <p><strong>Oct 2024 – Present · Mumbai (Hybrid)</strong></p>
-          <p style="margin: 8px 0 12px;">
-            Leading the CleverTap Web SDK and web experiences that power product analytics for thousands of customers.
-          </p>
-          <ul>
-            <li>Own the Web SDK used by 3000+ customers, impacting 10M+ users daily.</li>
-            <li>Designed and shipped Advanced Delivery Preferences for campaign deliveries, refactoring legacy flows without breaking existing users.</li>
-            <li>Hardened SDK security with XSS fixes, sandboxing, postMessage isolation, and encryption.</li>
-            <li>Set up CI/CD and Playwright automation to cut release time and reduce bugs, improving stability and release cadence.</li>
-          </ul>
-        </article>
-
-        <article class="about-journey-item">
-          <h3 class="subhead_text">Senior Software Engineer – Frontend @ Freshworks</h3>
-          <p><strong>Aug 2022 – Oct 2024 · Bangalore (Remote)</strong></p>
-          <p style="margin: 8px 0 12px;">
-            Worked on the Developer Platform and Marketplace, building tools that help thousands of developers extend Freshworks products.
-          </p>
-          <ul>
-            <li>Built the Freddy Copilot VS Code extension, showcased at Freshworks Dev Summit 2023.</li>
-            <li>Shipped features for the Developer Portal and Marketplace, and contributed to the Crayons design system in open source.</li>
-            <li>Won a company hackathon for a major FDK CLI feature and received 8+ recognitions in 12 months.</li>
-          </ul>
-        </article>
-
-        <article class="about-journey-item">
-          <h3 class="subhead_text">JavaScript Developer @ Uplers</h3>
-          <p><strong>Jan 2022 – Aug 2022 · Ahmedabad (Remote)</strong></p>
-          <ul>
-            <li>Built React and Next.js features including listings, pagination, and third‑party API integrations.</li>
-            <li>Worked across TailwindCSS, Redux Toolkit, and REST APIs for client projects.</li>
-          </ul>
-        </article>
-
-        <article class="about-journey-item">
-          <h3 class="subhead_text">Web Developer @ Antriksh</h3>
-          <p><strong>Oct 2020 – Dec 2021 · Pune</strong></p>
-          <ul>
-            <li>Developed faceted search, deep linking, and pagination for real‑estate listings.</li>
-            <li>Worked across HTML, CSS, JavaScript, React, Node.js, TailwindCSS, MySQL, and MongoDB.</li>
-          </ul>
-        </article>
       </div>
     </div>
   </section>

@@ -177,3 +177,18 @@ Array.from(element).forEach(e => {
   const color = stringToColor(e.textContent || e.getAttribute('data-color'));
   e.style.backgroundColor = color + '50';
 })
+
+// About hero image hover swap (static -> gif)
+const aboutHeroImg = document.querySelector('.about-hero-image img[data-hover-src]');
+if (aboutHeroImg) {
+  const staticSrc = aboutHeroImg.getAttribute('data-static-src');
+  const hoverSrc = aboutHeroImg.getAttribute('data-hover-src');
+
+  aboutHeroImg.addEventListener('mouseenter', () => {
+    if (hoverSrc) aboutHeroImg.src = hoverSrc;
+  });
+
+  aboutHeroImg.addEventListener('mouseleave', () => {
+    if (staticSrc) aboutHeroImg.src = staticSrc;
+  });
+}
