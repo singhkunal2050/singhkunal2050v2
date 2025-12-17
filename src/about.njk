@@ -6,21 +6,425 @@ eleventyExcludeFromCollections: true
 
 <main>
 
-
+  <!-- About Hero (Personal / Sales) -->
   <section class="about-hero">
-
     <div class="about-hero-container container">
       <div class="about-hero-content">
+        <h2 class="subhead_text">👋 Hey, I’m Kunal</h2>
         <h1 class="head_text">
-          Hi 👋 I’m <br> Kunal Singh <br> from Pune
+          I ship products,
+          <br>
+          teach what I learn,
+          <br>
+          and still make time for football.
         </h1>
+        <p style="margin: 20px 0; max-width: 640px;">
+          I’m a senior frontend engineer who loves turning ideas into shipped products — from SDKs at CleverTap
+          and tools at Freshworks to indie launches like Mailglider. When I’m not building for the web,
+          you’ll usually find me on a football field or hanging out with my cat.
+        </p>
+        <div style="margin-top: 10px;">
+          <a href="{{ '/#contact' | url }}" class="btn btn-primary">Let’s Work Together</a>
+          <a href="https://drive.google.com/file/d/1VePLNaDdFw4lFSSD8q-apqPBodb3Eha1/view?usp=sharing"
+             target="_blank"
+             class="btn btn-outline">
+            View Resume
+          </a>
+        </div>
       </div>
       <div class="about-hero-image">
+        {# You can replace this with a collage image that mixes talks, football, and team photos #}
         <img src="{{ '/img/singhkunal2050.jpg' | url }}" alt="Kunal Singh | singhkunal2050">
       </div>
     </div>
-
   </section>
 
+  <!-- Life Snapshots Gallery -->
+  <section class="about-life">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        Life <span class="rainbow head_text">Snapshots</span>
+      </h2>
+
+      <div class="about-life-grid">
+        <article class="about-life-card">
+          <div class="about-life-image">
+            {# Replace with a real photo: you playing football #}
+            <img src="{{ '/img/work/1.jpg' | url }}" alt="Playing football">
+          </div>
+          <h3 class="subhead_text">Playing Football</h3>
+          <p>
+            Football keeps me honest about teamwork, feedback, and getting better a little every day.
+          </p>
+        </article>
+
+        <article class="about-life-card">
+          <div class="about-life-image">
+            {# Replace with a real photo: you with your cat #}
+            <img src="{{ '/img/work/2.jpg' | url }}" alt="With my cat">
+          </div>
+          <h3 class="subhead_text">With My Cat</h3>
+          <p>
+            Most late‑night debugging sessions end here — with a cat on my lap and a stubborn bug on screen.
+          </p>
+        </article>
+
+        <article class="about-life-card">
+          <div class="about-life-image">
+            {# Replace with a real photo: college awards / stage #}
+            <img src="{{ '/img/work/3.jpg' | url }}" alt="Winning awards at college">
+          </div>
+          <h3 class="subhead_text">Winning Awards at College</h3>
+          <p>
+            In college I chased every competition I could find — it taught me to prepare hard and enjoy the spotlight.
+          </p>
+        </article>
+
+        <article class="about-life-card">
+          <div class="about-life-image">
+            {# Replace with a real photo: giving a tech talk #}
+            <img src="{{ '/img/work/4.jpg' | url }}" alt="Giving tech talks at events">
+          </div>
+          <h3 class="subhead_text">Giving Tech Talks</h3>
+          <p>
+            I like turning hard‑won lessons into talks and demos — recently at the Cursor AI Meetup in Mumbai.
+          </p>
+        </article>
+
+        <article class="about-life-card">
+          <div class="about-life-image">
+            {# Replace with a real photo: team / remote standup screenshot #}
+            <img src="{{ '/img/work/5.jpg' | url }}" alt="Leading teams at product companies">
+          </div>
+          <h3 class="subhead_text">Leading Product Teams</h3>
+          <p>
+            I’ve led projects and SDKs at CleverTap and Freshworks, focusing on clear ownership and calm delivery.
+          </p>
+        </article>
+
+        <article class="about-life-card">
+          <div class="about-life-image">
+            {# Replace with a real screenshot of Mailglider #}
+            <img src="{{ '/img/work/6.jpg' | url }}" alt="Launching Mailglider">
+          </div>
+          <h3 class="subhead_text">Launching Mailglider</h3>
+          <p>
+            My latest indie launch is Mailglider — “Canva for emails” — shipped with a tiny team and a lot of late nights.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I'm Optimising For -->
+  <section class="about-now">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 20px;">
+        What I’m <span class="rainbow head_text">Optimising For</span> Right Now
+      </h2>
+      <div class="about-now-grid">
+        <div class="about-now-card">
+          <h3 class="subhead_text">Developer Tools & SDKs</h3>
+          <p>
+            I’m excited about building and scaling tools that make other developers more effective — from web SDKs
+            and CLIs to editor extensions and MCP servers.
+          </p>
+        </div>
+        <div class="about-now-card">
+          <h3 class="subhead_text">Owning Product Slices End‑to‑End</h3>
+          <p>
+            I like taking a slice from idea → UX → frontend → backend glue → rollout, and then iterating based on
+            real‑world usage and data.
+          </p>
+        </div>
+        <div class="about-now-card">
+          <h3 class="subhead_text">Shipping Small, Opinionated Products</h3>
+          <p>
+            Projects like Mailglider and my Blog Publisher MCP Server keep me close to users, markets,
+            and the realities of launching and growing products.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why People Like Working With Me -->
+  <section class="about-trust">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 20px;">
+        Why People <span class="rainbow head_text">Like Working</span> With Me
+      </h2>
+      <div class="about-trust-grid">
+        <div class="about-trust-card">
+          <h3 class="subhead_text">I Ship</h3>
+          <p>
+            I focus on getting a clear v1 out, learning from it, and then iterating — whether it’s an SDK, a feature,
+            or a side project.
+          </p>
+        </div>
+        <div class="about-trust-card">
+          <h3 class="subhead_text">I Bring My Own Tools</h3>
+          <p>
+            Testing, CI/CD, automation, and AI tools are part of my default toolkit, so teams can move faster
+            without sacrificing quality.
+          </p>
+        </div>
+        <div class="about-trust-card">
+          <h3 class="subhead_text">I Communicate Clearly</h3>
+          <p>
+            I lean on docs, async updates, and honest conversations so designers, PMs, and engineers always know
+            what’s going on.
+          </p>
+        </div>
+        <div class="about-trust-card">
+          <h3 class="subhead_text">I Care About Humans</h3>
+          <p>
+            I want the product to feel good for users and the process to feel good for the team — sustainable pace,
+            psychological safety, and shared wins.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Career Journey -->
+  <section class="about-journey">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        Career <span class="rainbow head_text">Journey</span>
+      </h2>
+
+      <div class="about-journey-list">
+        <article class="about-journey-item">
+          <h3 class="subhead_text">Senior Software Engineer – Frontend @ CleverTap</h3>
+          <p><strong>Oct 2024 – Present · Mumbai (Hybrid)</strong></p>
+          <p style="margin: 8px 0 12px;">
+            Leading the CleverTap Web SDK and web experiences that power product analytics for thousands of customers.
+          </p>
+          <ul>
+            <li>Own the Web SDK used by 3000+ customers, impacting 10M+ users daily.</li>
+            <li>Designed and shipped Advanced Delivery Preferences for campaign deliveries, refactoring legacy flows without breaking existing users.</li>
+            <li>Hardened SDK security with XSS fixes, sandboxing, postMessage isolation, and encryption.</li>
+            <li>Set up CI/CD and Playwright automation to cut release time and reduce bugs, improving stability and release cadence.</li>
+          </ul>
+        </article>
+
+        <article class="about-journey-item">
+          <h3 class="subhead_text">Senior Software Engineer – Frontend @ Freshworks</h3>
+          <p><strong>Aug 2022 – Oct 2024 · Bangalore (Remote)</strong></p>
+          <p style="margin: 8px 0 12px;">
+            Worked on the Developer Platform and Marketplace, building tools that help thousands of developers extend Freshworks products.
+          </p>
+          <ul>
+            <li>Built the Freddy Copilot VS Code extension, showcased at Freshworks Dev Summit 2023.</li>
+            <li>Shipped features for the Developer Portal and Marketplace, and contributed to the Crayons design system in open source.</li>
+            <li>Won a company hackathon for a major FDK CLI feature and received 8+ recognitions in 12 months.</li>
+          </ul>
+        </article>
+
+        <article class="about-journey-item">
+          <h3 class="subhead_text">JavaScript Developer @ Uplers</h3>
+          <p><strong>Jan 2022 – Aug 2022 · Ahmedabad (Remote)</strong></p>
+          <ul>
+            <li>Built React and Next.js features including listings, pagination, and third‑party API integrations.</li>
+            <li>Worked across TailwindCSS, Redux Toolkit, and REST APIs for client projects.</li>
+          </ul>
+        </article>
+
+        <article class="about-journey-item">
+          <h3 class="subhead_text">Web Developer @ Antriksh</h3>
+          <p><strong>Oct 2020 – Dec 2021 · Pune</strong></p>
+          <ul>
+            <li>Developed faceted search, deep linking, and pagination for real‑estate listings.</li>
+            <li>Worked across HTML, CSS, JavaScript, React, Node.js, TailwindCSS, MySQL, and MongoDB.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do Best -->
+  <section class="about-skills">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        What I <span class="rainbow head_text">Do Best</span>
+      </h2>
+      <div class="about-skills-grid">
+        <div class="about-skill-card">
+          <h3 class="subhead_text">Product & UX Engineering</h3>
+          <p>
+            I like working where product, design, and engineering meet.
+            I’ve shipped campaign delivery flows, developer portals, and marketplaces
+            with a focus on clarity, speed, and measurable outcomes.
+          </p>
+        </div>
+        <div class="about-skill-card">
+          <h3 class="subhead_text">Frontend & Developer Experience</h3>
+          <p>
+            My core stack is React, TypeScript, Next.js, Vue, Tailwind, and modern tooling.
+            I care about performance, accessibility, and developer experience—from SDK ergonomics
+            to smooth onboarding for new contributors.
+          </p>
+        </div>
+        <div class="about-skill-card">
+          <h3 class="subhead_text">Systems, Testing & Automation</h3>
+          <p>
+            I’m comfortable across the stack with Node.js, REST APIs, MongoDB/MySQL, AWS, and CI/CD.
+            I invest in testing and automation (Vitest, Jest, Playwright, Puppeteer, Jenkins, GitHub Actions)
+            so shipping is fast, boring, and reliable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected Highlights -->
+  <section class="about-highlights">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        Selected <span class="rainbow head_text">Highlights</span>
+      </h2>
+
+      <div class="about-highlights-grid">
+        <article class="about-highlight-card">
+          <h3 class="subhead_text">CleverTap Web SDK</h3>
+          <p>
+            Lead engineer for the CleverTap Web SDK, powering analytics for 3000+ customers
+            and 10M+ users every day.
+          </p>
+          <p>
+            Worked on custom IDs, security hardening, delivery preferences, CI/CD, and cross‑repo
+            Playwright automation to make releases safer and faster.
+          </p>
+          <a href="https://www.npmjs.com/package/clevertap-web-sdk" target="_blank" class="btn-link">
+            View SDK on npm >>
+          </a>
+        </article>
+
+        <article class="about-highlight-card">
+          <h3 class="subhead_text">Freddy Copilot VS Code Extension</h3>
+          <p>
+            Built a Copilot‑style VS Code extension for Freshworks developers, showcased at
+            Freshworks Dev Summit 2023.
+          </p>
+          <a href="https://www.linkedin.com/posts/singhkunal2050_freddycopilot-freshworksdevelopment-freshworksdevelopersummit2023-activity-7078581682286567424-pSjY"
+             target="_blank"
+             class="btn-link">
+            See Dev Summit highlight >>
+          </a>
+        </article>
+
+        <article class="about-highlight-card">
+          <h3 class="subhead_text">Blog Publisher MCP Server</h3>
+          <p>
+            Created a Blog Publisher MCP Server so AI agents like Cursor and Claude can publish
+            blogs directly to my site.
+          </p>
+          <p>
+            I’ve used it to ship multiple posts and gave a talk at the Cursor AI Meetup Mumbai 2025.
+          </p>
+          <a href="https://singhkunal2050.dev/blog/building-a-blog-publisher-mcp-server-automate-your-content-workflow-with-claude/"
+             target="_blank"
+             class="btn-link">
+            Read the story >>
+          </a>
+        </article>
+
+        <article class="about-highlight-card">
+          <h3 class="subhead_text">Mailglider – “Canva for Emails”</h3>
+          <p>
+            Built and launched Mailglider, a no‑code email templates editor and marketplace with
+            6000+ customizable templates.
+          </p>
+          <p>
+            Used Next.js, MongoDB, and Puppeteer for fast rendering and automated previews, and
+            launched on Peerlist with a top‑15 rank among 250+ products.
+          </p>
+          <a href="https://mailglider.com" target="_blank" class="btn-link">
+            Visit Mailglider >>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- How I Work -->
+  <section class="about-how-i-work">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        How I <span class="rainbow head_text">Work</span>
+      </h2>
+      <div class="about-how-grid">
+        <div class="about-how-card">
+          <h3 class="subhead_text">Product‑minded & Outcome‑driven</h3>
+          <p>
+            I try to connect every task to a customer or developer outcome—fewer bugs,
+            faster onboarding, better analytics, or a smoother experience.
+          </p>
+        </div>
+        <div class="about-how-card">
+          <h3 class="subhead_text">Automation & Tooling First</h3>
+          <p>
+            I reach for testing, CI/CD, and scripts early so teams can ship often without fear.
+            Stable pipelines free up time for real problem‑solving.
+          </p>
+        </div>
+        <div class="about-how-card">
+          <h3 class="subhead_text">Mentorship & Documentation</h3>
+          <p>
+            I write SOPs, SDK docs, and onboarding guides, and I enjoy mentoring junior engineers
+            and reviewing design and architecture, not just code.
+          </p>
+        </div>
+        <div class="about-how-card">
+          <h3 class="subhead_text">AI as a Force‑Multiplier</h3>
+          <p>
+            I use tools like Cursor, Claude, and GitHub Copilot to explore ideas, refactor safely,
+            and accelerate delivery—without skipping understanding.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beyond the Code -->
+  <section class="about-beyond-code">
+    <div class="container">
+      <h2 class="head_text" style="text-align: center; padding-bottom: 30px;">
+        Beyond the <span class="rainbow head_text">Code</span>
+      </h2>
+      <p style="max-width: 720px; margin: 0 auto 10px;">
+        Outside of work, I enjoy experimenting with side projects, writing about engineering,
+        and speaking at meetups. I like taking things I’ve learned in real projects and
+        turning them into talks, blog posts, or tools that others can pick up quickly.
+      </p>
+      <p style="max-width: 720px; margin: 0 auto;">
+        You’ll often find me tinkering with new frameworks, improving my dev environment,
+        or helping friends and peers debug their apps and workflows.
+      </p>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="about-cta">
+    <div class="container" style="text-align: center; padding: 40px 0;">
+      <h2 class="head_text" style="margin-bottom: 10px;">
+        Interested in <span class="rainbow head_text">working together</span>?
+      </h2>
+      <p style="max-width: 640px; margin: 0 auto 20px;">
+        If you’re building developer tools, SaaS products, or customer‑facing web experiences
+        and need someone who can own both the frontend and the delivery pipeline,
+        I’d love to chat.
+      </p>
+      <div>
+        <a href="https://www.linkedin.com/in/singhkunal2050" target="_blank" class="btn btn-primary">
+          Say hi on LinkedIn
+        </a>
+        <a href="mailto:singhkunal2050@gmail.com" class="btn btn-outline">
+          Email me
+        </a>
+      </div>
+    </div>
+  </section>
 
 </main>
