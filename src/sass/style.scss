@@ -1038,6 +1038,110 @@ footer {
 
 }
 
+.about-life{
+
+  & .about-life-board{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+
+    @media(max-width:$lg){
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media(max-width:$md){
+      grid-template-columns: 1fr;
+    }
+  }
+
+  & .about-life-card{
+    display: flex;
+    justify-content: center;
+  }
+
+  & .about-life-pin{
+    position: relative;
+    background: var(--background-light);
+    padding: 16px 16px 18px;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    max-width: 260px;
+    transform-origin: center top;
+    transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+  }
+
+  & .about-life-pin-head{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+
+  & .about-life-pin figure{
+    margin: 0 0 10px;
+  }
+
+  & .about-life-pin img{
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  & .about-life-pin figcaption{
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--head-color);
+  }
+
+  & .about-life-pin p{
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  @media(min-width:$xl){
+    & .about-life-pin{
+      max-width: 330px;
+    }
+  }
+
+  // subtle storyboard feel via rotations
+  & .about-life-card:nth-child(1) .about-life-pin{
+    transform: rotate(-3deg);
+  }
+
+  & .about-life-card:nth-child(2) .about-life-pin{
+    transform: rotate(2deg);
+  }
+
+  & .about-life-card:nth-child(3) .about-life-pin{
+    transform: rotate(-1deg);
+  }
+
+  & .about-life-card:nth-child(4) .about-life-pin{
+    transform: rotate(3deg);
+  }
+
+  & .about-life-card:nth-child(5) .about-life-pin{
+    transform: rotate(-2deg);
+  }
+
+  & .about-life-card:nth-child(6) .about-life-pin{
+    transform: rotate(1deg);
+  }
+
+  & .about-life-pin:hover{
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.6);
+  }
+}
+
 // -----------------------BLOGS PAGE--------------------------
 
 .blogs-hero{
