@@ -52,9 +52,7 @@ eleventyExcludeFromCollections: true
             <h3 class="subhead_text">{{ experience.data.title }}</h3>
             <p><strong>{{ experience.data.company }} · {{ experience.data | formatDateRange }} · {{ experience.data.location }}{% if experience.data.work_type %} ({{ experience.data.work_type }}){% endif %}</strong></p>
             {% if experience.data.description %}
-            <p style="margin: 8px 0 12px;">
-              {{ experience.data.description }}
-            </p>
+            <p>{{ experience.data.description }}</p>
             {% endif %}
             {% if experience.data.achievements %}
             <ul>

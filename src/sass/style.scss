@@ -1186,11 +1186,58 @@ footer {
   }
 
   & .about-journey-card{
+    color: var(--font-col1);
     background: var(--background-light);
     border-radius: 16px;
     border: 1px solid var(--font-col1-o-100);
-    padding: 20px 24px;
+    padding: 24px 28px;
     box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+
+    h3 {
+      margin: 0 0 12px 0;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    > p {
+      margin: 0 0 16px 0;
+      line-height: 1.6;
+      font-size: 0.95rem;
+      color: var(--font-col1-o-80);
+
+      strong {
+        color: var(--font-col1);
+        font-weight: 600;
+      }
+    }
+
+    ul {
+      margin: 16px 0 0 0;
+      padding-left: 0;
+      list-style: none;
+
+      li {
+        position: relative;
+        padding-left: 24px;
+        margin-bottom: 12px;
+        line-height: 1.7;
+        color: var(--font-col1-o-90);
+        font-size: 0.95rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          content: "▸";
+          position: absolute;
+          left: 0;
+          color: var(--secondary-color);
+          font-weight: bold;
+          font-size: 1.1rem;
+        }
+      }
+    }
   }
 
   & .about-journey-logo{
@@ -1201,7 +1248,8 @@ footer {
     background: var(--background);
     border: 1px solid var(--font-col1-o-100);
     padding: 4px;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
+    display: block;
   }
 
   // timeline marker
