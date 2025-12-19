@@ -50,4 +50,34 @@ collections:
       - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
       - { label : "Body" , name : "body" , widget : "markdown" }
 
+  - name: "experience"
+    label: "Experience"
+    folder: "src/experience"
+    create: true
+    slug: "experience-{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["date_start"]
+    fields:
+      - { label : "Job Title" , name : "title" , widget : "string" }
+      - { label : "Company Name" , name : "company" , widget : "string" }
+      - { label : "Company Logo" , name : "logo" , widget : "image" , media_folder: "public/img/companies" , public_folder: "/img/companies" }
+      - { label : "Start Date" , name : "date_start" , widget : "datetime" }
+      - { label : "End Date" , name : "date_end" , widget : "datetime" , required: false }
+      - { label : "Is Current Role" , name : "is_current" , widget : "boolean" , default: false }
+      - { label : "Location" , name : "location" , widget : "string" }
+      - { label : "Work Type" , name : "work_type" , widget : "select" , options: ["Full-time", "Part-time", "Contract", "Freelance", "Remote", "Hybrid", "On-site"] , default: "Full-time" }
+      - { label : "Description" , name : "description" , widget : "text" , required: false }
+      - { label : "Achievements" , name : "achievements" , widget : "list" , field: { label: "Achievement", name: "item", widget: "string" } }
+
+  - name: "life-snapshots"
+    label: "Life Snapshots"
+    folder: "src/life-snapshots"
+    create: true
+    slug: "snapshot-{{year}}-{{month}}-{{day}}-{{slug}}"
+    sortable_fields: ["order"]
+    fields:
+      - { label : "Caption" , name : "caption" , widget : "string" }
+      - { label : "Image" , name : "image" , widget : "image" , media_folder: "public/img/kunal" , public_folder: "/img/kunal" }
+      - { label : "Description" , name : "description" , widget : "text" }
+      - { label : "Order" , name : "order" , widget : "number" , default: 0 }
+
 

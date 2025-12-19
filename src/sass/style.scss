@@ -199,7 +199,7 @@ $xxl:1400px;
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   // transition: 250ms ease-in-out;
 }
@@ -983,14 +983,13 @@ footer {
 
 
 .about-hero{
- 
- 
+
   & .about-hero-container {
     display: grid;
     grid-template-columns: 60% 40%;
     justify-content: center;
     align-items: center;
-    padding: 10px 70px;
+    padding: 10px 40px;
 
     @media(max-width:$lm){
       display: flex;
@@ -1004,14 +1003,22 @@ footer {
 
     & .about-hero-image{
       max-width: 400px;
-      border-radius: 16px;
+      border-radius: 50%;
       box-shadow: 10px 10px var(--primary-color);
       & img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
         max-width: 100%;
-        border-radius: 16px;
+        height: 400px;
+        border-radius: 50%;
         &:hover{
           transform: translate(5px , 5px);
         }
+
+        @media(max-width:$md){
+          height: 300px;
+        }
+     
       }
       &:hover{
         box-shadow: 10px 5px var(--primary-color-300);
@@ -1020,7 +1027,246 @@ footer {
     }
   
   }
-  
+
+
+  & .about-hero-content{
+    max-width: 640px;
+
+    .about-hero-title{
+      font-size: clamp(1.4rem, 2vw, 2rem);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .about-hero-lead{
+      font-size: clamp(1rem, 1.4vw, 1.15rem);
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+  }
+
+}
+
+.about-life{
+
+  & .about-life-board{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 30px;
+
+    @media(max-width:$lg){
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    @media(max-width:$md){
+      grid-template-columns: 1fr;
+    }
+  }
+
+  & .about-life-card{
+    display: flex;
+    justify-content: center;
+  }
+
+  & .about-life-pin{
+    position: relative;
+    background: var(--background-light);
+    padding: 16px 16px 18px;
+    border-radius: 10px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+    max-width: 260px;
+    transform-origin: center top;
+    transition: transform 150ms ease-out, box-shadow 150ms ease-out;
+  }
+
+  & .about-life-pin-head{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  }
+
+  & .about-life-pin figure{
+    margin: 0 0 10px;
+  }
+
+  & .about-life-pin img{
+    display: block;
+    width: 100%;
+    height: 300px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  & .about-life-pin figcaption{
+    margin-top: 8px;
+    font-weight: 600;
+    color: var(--head-color);
+  }
+
+  & .about-life-pin p{
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  @media(min-width:$xl){
+    & .about-life-pin{
+      max-width: 330px;
+    }
+  }
+
+  // subtle storyboard feel via rotations
+  & .about-life-card:nth-child(1) .about-life-pin{
+    transform: rotate(-3deg);
+  }
+
+  & .about-life-card:nth-child(2) .about-life-pin{
+    transform: rotate(2deg);
+  }
+
+  & .about-life-card:nth-child(3) .about-life-pin{
+    transform: rotate(-1deg);
+  }
+
+  & .about-life-card:nth-child(4) .about-life-pin{
+    transform: rotate(3deg);
+  }
+
+  & .about-life-card:nth-child(5) .about-life-pin{
+    transform: rotate(-2deg);
+  }
+
+  & .about-life-card:nth-child(6) .about-life-pin{
+    transform: rotate(1deg);
+  }
+
+  & .about-life-pin:hover{
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.6);
+  }
+}
+
+.about-journey{
+
+  & .about-journey-list{
+    position: relative;
+    margin-top: 20px;
+    padding: 20px 0;
+
+    &::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      border-right: 2px dotted var(--font-col1-o-100);
+      opacity: 0.7;
+    }
+  }
+
+  & .about-journey-item{
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+
+    @media(max-width:$md){
+      width: 100%;
+      padding: 20px 0 20px 40px;
+    }
+  }
+
+  & .about-journey-card{
+    background: var(--background-light);
+    border-radius: 16px;
+    border: 1px solid var(--font-col1-o-100);
+    padding: 20px 24px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.35);
+  }
+
+  & .about-journey-logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    object-fit: contain;
+    background: var(--background);
+    border: 1px solid var(--font-col1-o-100);
+    padding: 4px;
+    margin-bottom: 10px;
+  }
+
+  // timeline marker
+  & .about-journey-item::before{
+    content: "";
+    position: absolute;
+    top: 28px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--secondary-color);
+    border: 2px solid var(--background);
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.4);
+  }
+
+  // left side items
+  & .about-journey-item:nth-child(odd){
+    margin-left: 0;
+    margin-right: auto;
+
+    &::before{
+      right: -7px;
+      transform: translateX(50%);
+    }
+
+    & .about-journey-card{
+      margin-right: 40px;
+    }
+  }
+
+  // right side items
+  & .about-journey-item:nth-child(even){
+    margin-left: auto;
+    margin-right: 0;
+    text-align: left;
+
+    &::before{
+      left: -7px;
+      transform: translateX(-50%);
+    }
+
+    & .about-journey-card{
+      margin-left: 40px;
+    }
+  }
+
+  @media(max-width:$md){
+    & .about-journey-list::before{
+      left: 24px;
+      transform: none;
+    }
+
+    & .about-journey-item{
+      text-align: left !important;
+    }
+
+    & .about-journey-item::before{
+      left: 24px;
+      transform: translateX(-50%);
+    }
+
+    & .about-journey-card{
+      margin: 0 0 0 40px !important;
+    }
+  }
 }
 
 // -----------------------BLOGS PAGE--------------------------
@@ -1313,11 +1559,11 @@ footer {
       font-size: 1.15rem;
       line-height: 1.5;
       color: var(--font-col1);
-      font-weight: 400 !important;
+      font-weight: 200;
     }
 
     & li{
-      font-weight: 400 !important;
+      font-weight: 200;
     }
 
     & p{
@@ -1325,7 +1571,7 @@ footer {
       font-size: 1.15rem;
       line-height: 1.5;
       color: var(--font-col1);
-      font-weight: 400 !important;
+      font-weight: 200;
     }
 
     & img{
