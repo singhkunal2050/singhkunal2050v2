@@ -17,6 +17,32 @@ module.exports = function(eleventyConfig) {
     return url.split("//")[1]
   });
 
+  // Format date range for experience - takes an experience data object
+  eleventyConfig.addFilter( "formatDateRange", function(experienceData) {
+    if (!experienceData || !experienceData.date_start) return "";
+    const start = DateTime.fromJSDate(experienceData.date_start).toFormat("MMM yyyy");
+    if (experienceData.is_current) {
+      return `${start} – Present`;
+    }
+    if (experienceData.date_end) {
+      const end = DateTime.fromJSDate(experienceData.date_end).toFormat("MMM yyyy");
+      return `${start} – ${end}`;
+    }
+    return start;
+  });
+
+  // Sort by order field
+  eleventyConfig.addFilter( "sortByOrder", function(array) {
+    if (!array || !Array.isArray(array)) {
+      return [];
+    }
+    return array.sort((a, b) => {
+      const orderA = (a && a.data && a.data.order) ? a.data.order : 0;
+      const orderB = (b && b.data && b.data.order) ? b.data.order : 0;
+      return orderA - orderB;
+    });
+  });
+
   //  check if isArticlePage
   eleventyConfig.addFilter( "isArticlePage", function(url) {
     return url.split("/").includes('blog') || url.split("/").includes('snippet');

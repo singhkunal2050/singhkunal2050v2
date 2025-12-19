@@ -7,7 +7,7 @@ eleventyExcludeFromCollections: true
 <main>
 
   <!-- About Hero (Personal / Sales) -->
-  <section class="about-hero">
+  <section class="about-hero">  
     <div class="about-hero-container container">
       <div class="about-hero-content">
         <p class="about-hero-title">
@@ -45,98 +45,27 @@ eleventyExcludeFromCollections: true
       </h2>
 
       <div class="about-journey-list">
+        {%- for experience in collections.experience | reverse -%}
         <article class="about-journey-item">
           <div class="about-journey-card">
-            <img src="{{ '/img/companies/ct.png' | url }}" alt="CleverTap logo" class="about-journey-logo">
-            <h3 class="subhead_text">Staff Engineer – Frontend</h3>
-            <p><strong>CleverTap · Oct 2024 – Present · Mumbai (Hybrid)</strong></p>
+            <img src="{{ experience.data.logo | url }}" alt="{{ experience.data.company }} logo" class="about-journey-logo">
+            <h3 class="subhead_text">{{ experience.data.title }}</h3>
+            <p><strong>{{ experience.data.company }} · {{ experience.data | formatDateRange }} · {{ experience.data.location }}{% if experience.data.work_type %} ({{ experience.data.work_type }}){% endif %}</strong></p>
+            {% if experience.data.description %}
             <p style="margin: 8px 0 12px;">
-              Leading the CleverTap Web SDK and web experiences that power product analytics for thousands of customers.
+              {{ experience.data.description }}
             </p>
+            {% endif %}
+            {% if experience.data.achievements %}
             <ul>
-              <li>Own the Web SDK used by 3000+ customers, impacting 10M+ users daily.</li>
-              <li>Designed and shipped Advanced Delivery Preferences for campaign deliveries, refactoring legacy flows without breaking existing users.</li>
-              <li>Hardened SDK security with XSS fixes, sandboxing, postMessage isolation, and encryption.</li>
-              <li>Set up CI/CD and Playwright automation to cut release time and reduce bugs, improving stability and release cadence.</li>
+              {%- for achievement in experience.data.achievements -%}
+              <li>{{ achievement }}</li>
+              {%- endfor -%}
             </ul>
+            {% endif %}
           </div>
         </article>
-
-        <article class="about-journey-item">
-          <div class="about-journey-card">
-            <img src="{{ '/img/companies/fw.png' | url }}" alt="Freshworks logo" class="about-journey-logo">
-            <h3 class="subhead_text">Senior Software Engineer – Frontend</h3>
-            <p><strong>Freshworks · Aug 2022 – Oct 2024 · Bangalore (Remote)</strong></p>
-            <p style="margin: 8px 0 12px;">
-              Worked on the Developer Platform and Marketplace, building tools that help thousands of developers extend Freshworks products.
-            </p>
-            <ul>
-              <li>Built the Freddy Copilot VS Code extension, showcased at Freshworks Dev Summit 2023.</li>
-              <li>Shipped features for the Developer Portal and Marketplace, and contributed to the Crayons design system in open source.</li>
-              <li>Won a company hackathon for a major FDK CLI feature and received 8+ recognitions in 12 months.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="about-journey-item">
-          <div class="about-journey-card">
-            <img src="{{ '/img/companies/uplers.png' | url }}" alt="Uplers logo" class="about-journey-logo">
-            <h3 class="subhead_text">JavaScript Developer</h3>
-            <p><strong>Uplers · Jan 2022 – Aug 2022 · Ahmedabad (Remote)</strong></p>
-            <ul>
-              <li>Built React and Next.js features including listings, pagination, and third‑party API integrations.</li>
-              <li>Worked across TailwindCSS, Redux Toolkit, and REST APIs for client projects.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="about-journey-item">
-          <div class="about-journey-card">
-            <img src="{{ '/img/companies/antriksh.png' | url }}" alt="Antriksh logo" class="about-journey-logo">
-            <h3 class="subhead_text">Web Developer</h3>
-            <p><strong>Antriksh · Oct 2020 – Dec 2021 · Pune</strong></p>
-            <ul>
-              <li>Developed faceted search, deep linking, and pagination for real‑estate listings.</li>
-              <li>Worked across HTML, CSS, JavaScript, React, Node.js, TailwindCSS, MySQL, and MongoDB.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="about-journey-item">
-          <div class="about-journey-card">
-            <img src="{{ '/img/companies/maestro.jpeg' | url }}" alt="Maestro Intellect logo" class="about-journey-logo">
-            <h3 class="subhead_text">Web Developer</h3>
-            <p><strong>Maestro Intellect · Jul 2020 – Oct 2020 · Pune</strong></p>
-            <ul>
-              <li>Worked on backend and web development projects with a strong focus on problem solving.</li>
-              <li>Contributed to building and maintaining web experiences for clients in Pune.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="about-journey-item">
-          <div class="about-journey-card">
-            <img src="{{ '/img/companies/modern.jpeg' | url }}" alt="Modern College logo" class="about-journey-logo">
-            <h3 class="subhead_text">Coding Instructor</h3>
-            <p><strong>Progressive Education Society’s Modern College · Jul 2019 – Jul 2020 · Pune</strong></p>
-            <ul>
-              <li>Worked as a practical lab instructor helping juniors debug and improve their code.</li>
-              <li>Taught and assisted with C, C++, PSQL, HTML, CSS, and JavaScript in daily lab sessions.</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="about-journey-item">
-          <div class="about-journey-card">
-            <img src="{{ '/img/companies/self.jpeg' | url }}" alt="Self Employed logo" class="about-journey-logo">
-            <h3 class="subhead_text">Freelance Web Developer</h3>
-            <p><strong>Self Employed · Jun 2018 – May 2020 · Pune</strong></p>
-            <ul>
-              <li>Delivered multiple frontend and full‑stack projects on the MERN stack for clients in India, Europe, and the US.</li>
-              <li>Built products across healthcare, edtech, and e‑commerce domains, from landing pages to production apps.</li>
-            </ul>
-          </div>
-        </article>
+        {%- endfor -%}
       </div>
     </div>
   </section>
@@ -149,89 +78,20 @@ eleventyExcludeFromCollections: true
       </h2>
 
       <div class="about-life-board">
+        {%- for snapshot in collections["life-snapshots"] | sortByOrder -%}
         <article class="about-life-card">
           <div class="about-life-pin">
             <span class="about-life-pin-head"></span>
             <figure>
-              {# Replace with a real photo: you playing football #}
-              <img src="{{ '/img/kunal/football.png' | url }}" alt="Playing football">
-              <figcaption>Playing Football</figcaption>
+              <img src="{{ snapshot.data.image | url }}" alt="{{ snapshot.data.caption }}">
+              <figcaption>{{ snapshot.data.caption }}</figcaption>
             </figure>
             <p>
-              Football keeps me honest about teamwork, feedback, and getting better a little every day.
+              {{ snapshot.data.description }}
             </p>
           </div>
         </article>
-
-        <article class="about-life-card">
-          <div class="about-life-pin">
-            <span class="about-life-pin-head"></span>
-            <figure>
-              {# Replace with a real photo: you with your cat #}
-              <img src="{{ '/img/kunal/dukku.jpeg' | url }}" alt="With my cat">
-              <figcaption>With My Cat</figcaption>
-            </figure>
-            <p>
-              Most late‑night debugging sessions end here — with a cat on my lap and a stubborn bug on screen.
-            </p>
-          </div>
-        </article>
-
-        <article class="about-life-card">
-          <div class="about-life-pin">
-            <span class="about-life-pin-head"></span>
-            <figure>
-              {# Replace with a real photo: college awards / stage #}
-              <img src="{{ '/img/kunal/content.png' | url }}" alt="Winning awards at college">
-              <figcaption>Blogs and Videos around Software Engineering</figcaption>
-            </figure>
-            <p>
-              I write blogs and create videos around software engineering to help others learn and grow.
-            </p>
-          </div>
-        </article>
-
-        <article class="about-life-card">
-          <div class="about-life-pin">
-            <span class="about-life-pin-head"></span>
-            <figure>
-              {# Replace with a real photo: giving a tech talk #}
-              <img src="{{ '/img/kunal/tech-talk.jpeg' | url }}" alt="Giving tech talks at events">
-              <figcaption>Giving Tech Talks</figcaption>
-            </figure>
-            <p>
-              I like turning hard‑won lessons into talks and demos — recently at the Cursor AI Meetup in Mumbai.
-            </p>
-          </div>
-        </article>
-
-        <article class="about-life-card">
-          <div class="about-life-pin">
-            <span class="about-life-pin-head"></span>
-            <figure>
-              {# Replace with a real photo: team / remote standup screenshot #}
-              <img src="{{ '/img/kunal/gym.jpeg' | url }}" alt="Working Out">
-              <figcaption>Working Out</figcaption>
-            </figure>
-            <p>
-              Working out keeps me healthy and focused on my goals.
-            </p>
-          </div>
-        </article>
-
-        <article class="about-life-card">
-          <div class="about-life-pin">
-            <span class="about-life-pin-head"></span>
-            <figure>
-              {# Replace with a real screenshot of Mailglider #}
-              <img src="{{ '/img/kunal/builder.jpeg' | url }}" alt="Launching Mailglider">
-              <figcaption>Building Products and Side Projects</figcaption>
-            </figure>
-            <p>
-              I build products and side projects to learn and grow.
-            </p>
-          </div>
-        </article>
+        {%- endfor -%}
       </div>
     </div>
   </section>
