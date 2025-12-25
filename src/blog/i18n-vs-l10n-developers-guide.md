@@ -1,5 +1,5 @@
 ---
-title: i18n vs l10n: What Developers Need to Know
+title: "i18n vs l10n: What Developers Need to Know"
 description: A practical guide to internationalization and localization for developers. Learn the difference between i18n and l10n, when to implement them, and how to avoid common mistakes.
 tags:
   - i18n
