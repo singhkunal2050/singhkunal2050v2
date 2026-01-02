@@ -2252,3 +2252,116 @@ footer {
  .command-line-prompt > span:before {
    color: #8da1b9da;
  }
+
+// ===========================================
+// View Transitions API
+// ===========================================
+
+// Enable view transitions
+@view-transition {
+  navigation: auto;
+}
+
+// Default page transition - crossfade
+::view-transition-old(root) {
+  animation: fade-out 0.25s ease-out forwards;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 0.3s ease-in forwards;
+}
+
+// Blog title transition - slides up with scale
+::view-transition-old(blog-title) {
+  animation: slide-out-up 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+::view-transition-new(blog-title) {
+  animation: slide-in-up 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+// Main content area transition
+::view-transition-old(main-content) {
+  animation: fade-slide-out 0.25s ease-out forwards;
+}
+
+::view-transition-new(main-content) {
+  animation: fade-slide-in 0.35s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+// Keyframes
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-out-up {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
+  }
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-slide-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Apply view-transition-name to elements
+.blog-single-hero h1 {
+  view-transition-name: blog-title;
+}
+
+.blog-single-content {
+  view-transition-name: main-content;
+}
+
+// Reduce motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-old(blog-title),
+  ::view-transition-new(blog-title),
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation: none;
+  }
+}
