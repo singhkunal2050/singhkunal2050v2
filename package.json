@@ -26,6 +26,7 @@
     "@11ty/eleventy": "^0.12.1",
     "eleventy-critical-css": "^1.0.0",
     "eleventy-plugin-pwa": "^1.0.8",
+    "markdown-it": "^14.1.0",
     "node-sass": "^9.0.0"
   },
   "devDependencies": {

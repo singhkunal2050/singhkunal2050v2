@@ -148,7 +148,7 @@ t('welcome_user', { name: userName })
 
 **Set up your file structure:**
 
-```
+```bash
 src/
   locales/
     en.json      # English (your default)

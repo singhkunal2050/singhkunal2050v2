@@ -93,7 +93,7 @@
   --background-light: hsl(0, 67%, 98%);
   --background-o-500: hsla(0, 100%, 98%, 0.807);
   --primary-color: hsl(261, 58%, 38%);
-  --primary-color-800:hsl(261, 58%, 18%);
+  --primary-color-800:hsl(262, 80%, 92%);
   --primary-color-500:hsl(261, 58%, 34%);
   --primary-color-300:hsl(261, 100%, 69%);
   --secondary-color: hsl(268, 86%, 59%);
@@ -114,9 +114,9 @@
   --background-light:  default;
   --background-o-500:  #efefefa8;
   --primary-color:  #333333;
-  --primary-color-800: rgb(44, 44, 44);
+  --primary-color-800: rgb(187, 187, 187);
   --primary-color-500: rgb(44, 44, 44);
-  --primary-color-300: default;
+  --primary-color-300:  default;
   --secondary-color:  white;
   --secondary-color-o-100:  default;
   --font-col1 :  rgb(36, 36, 36);
@@ -1640,6 +1640,46 @@ footer {
       line-height: 1.75;
       color: var(--font-col1);
       background: var(--card-hover);
+    }
+
+    & table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 1rem;
+      overflow-x: auto;
+      display: block;
+      
+      @media (min-width: $md) {
+        display: table;
+      }
+    }
+
+    & thead {
+      background: var(--primary-color-800);
+    }
+
+    & th {
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--font-col1);
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    & td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--font-col1-o-100);
+      color: var(--font-col1);
+      font-weight: 200;
+    }
+
+    & tr:hover {
+      background: var(--blog-hover);
+    }
+
+    & tbody tr:last-child td {
+      border-bottom: none;
     }
 
   }
