@@ -192,3 +192,23 @@ if (aboutHeroImg) {
     if (staticSrc) aboutHeroImg.src = staticSrc;
   });
 }
+
+// View Transitions - animate blog title from list to single page
+document.addEventListener('click', (e) => {
+  const blogLink = e.target.closest('.blog-card');
+  if (blogLink) {
+    const title = blogLink.querySelector('.blog-title');
+    if (title) {
+      // Set view-transition-name on the clicked title
+      title.style.viewTransitionName = 'blog-title';
+    }
+  }
+});
+
+// Clean up view-transition-name after navigation (for back navigation)
+document.addEventListener('pagereveal', () => {
+  // Reset any lingering view-transition-names on blog cards
+  document.querySelectorAll('.blog-card .blog-title').forEach(title => {
+    title.style.viewTransitionName = '';
+  });
+});

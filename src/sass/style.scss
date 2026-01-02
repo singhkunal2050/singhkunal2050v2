@@ -1,5 +1,10 @@
 // @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 
+// Header display font - Sora (modern geometric with soft curves)
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+// Body font - DM Sans (clean geometric, excellent readability)
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @font-face {
   font-family: 'Josefin Sans';
   src:  url('/fonts/static/JosefinSans-Regular.ttf') format('truetype');
@@ -93,7 +98,7 @@
   --background-light: hsl(0, 67%, 98%);
   --background-o-500: hsla(0, 100%, 98%, 0.807);
   --primary-color: hsl(261, 58%, 38%);
-  --primary-color-800:hsl(261, 58%, 18%);
+  --primary-color-800:hsl(262, 80%, 92%);
   --primary-color-500:hsl(261, 58%, 34%);
   --primary-color-300:hsl(261, 100%, 69%);
   --secondary-color: hsl(268, 86%, 59%);
@@ -114,9 +119,9 @@
   --background-light:  default;
   --background-o-500:  #efefefa8;
   --primary-color:  #333333;
-  --primary-color-800: rgb(44, 44, 44);
+  --primary-color-800: rgb(187, 187, 187);
   --primary-color-500: rgb(44, 44, 44);
-  --primary-color-300: default;
+  --primary-color-300:  default;
   --secondary-color:  white;
   --secondary-color-o-100:  default;
   --font-col1 :  rgb(36, 36, 36);
@@ -198,8 +203,8 @@ $xxl:1400px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   // transition: 250ms ease-in-out;
 }
@@ -276,12 +281,18 @@ blockquote{
 }
 
 .head_text {
+  font-family: 'Sora', sans-serif;
   font-size: clamp(2.9rem, 7vw, 6rem);
+  font-weight: 700;
   line-height: 1 !important;
+  letter-spacing: -0.02em;
 }
 
 .subhead_text {
+  font-family: 'Sora', sans-serif;
   font-size: clamp(1.28rem, 2.8vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
   // opacity: .4;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -1408,9 +1419,11 @@ footer {
   }
 
   & h1{
+    font-family: 'Sora', sans-serif;
     margin-bottom: 5px;
     color: var(--primary-color);
     opacity: 1;
+    letter-spacing: -0.01em;
   }
 
   & .blog-hashtags{
@@ -1478,8 +1491,17 @@ footer {
   background-blend-mode: color !important;
   padding: 120px 40px;
 
+  & h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
   & h2{
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
     margin-top: 20px;
+    letter-spacing: -0.01em;
   }
 
   & .blog-hashtags{
@@ -1562,33 +1584,42 @@ footer {
     }
 
     & h1 , & h2 , & h3 , & h4 , & h5 , & h6{
+      font-family: 'Sora', sans-serif;
       margin:10px 0;
       text-align: left;
       margin-top: 40px;
+      letter-spacing: -0.02em;
+      font-weight: 600;
     } 
 
     & h1{
-      font-size:2.4rem;  
+      font-size:2.4rem;
+      font-weight: 700;
     }
     
     & h2{
-      font-size:2.2rem;  
+      font-size:2.2rem;
+      font-weight: 600;
     }
     
     & h3{
-      font-size:2rem;  
+      font-size:2rem;
+      font-weight: 600;
     }
 
     & h4{
-      font-size:1.8rem;  
+      font-size:1.8rem;
+      font-weight: 500;
     }
 
     & h5{
-      font-size:1.4rem;  
+      font-size:1.4rem;
+      font-weight: 500;
     }
 
     & h6{
-      font-size:1.2rem;  
+      font-size:1.2rem;
+      font-weight: 500;
     }
 
     & li{
@@ -1640,6 +1671,46 @@ footer {
       line-height: 1.75;
       color: var(--font-col1);
       background: var(--card-hover);
+    }
+
+    & table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2rem 0;
+      font-size: 1rem;
+      overflow-x: auto;
+      display: block;
+      
+      @media (min-width: $md) {
+        display: table;
+      }
+    }
+
+    & thead {
+      background: var(--primary-color-800);
+    }
+
+    & th {
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+      color: var(--font-col1);
+      border-bottom: 2px solid var(--primary-color);
+    }
+
+    & td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--font-col1-o-100);
+      color: var(--font-col1);
+      font-weight: 200;
+    }
+
+    & tr:hover {
+      background: var(--blog-hover);
+    }
+
+    & tbody tr:last-child td {
+      border-bottom: none;
     }
 
   }
@@ -2181,3 +2252,116 @@ footer {
  .command-line-prompt > span:before {
    color: #8da1b9da;
  }
+
+// ===========================================
+// View Transitions API
+// ===========================================
+
+// Enable view transitions
+@view-transition {
+  navigation: auto;
+}
+
+// Default page transition - crossfade
+::view-transition-old(root) {
+  animation: fade-out 0.25s ease-out forwards;
+}
+
+::view-transition-new(root) {
+  animation: fade-in 0.3s ease-in forwards;
+}
+
+// Blog title transition - slides up with scale
+::view-transition-old(blog-title) {
+  animation: slide-out-up 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+::view-transition-new(blog-title) {
+  animation: slide-in-up 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+// Main content area transition
+::view-transition-old(main-content) {
+  animation: fade-slide-out 0.25s ease-out forwards;
+}
+
+::view-transition-new(main-content) {
+  animation: fade-slide-in 0.35s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+// Keyframes
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-out-up {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
+  }
+}
+
+@keyframes slide-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fade-slide-out {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fade-slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Apply view-transition-name to elements
+.blog-single-hero h1 {
+  view-transition-name: blog-title;
+}
+
+.blog-single-content {
+  view-transition-name: main-content;
+}
+
+// Reduce motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-old(root),
+  ::view-transition-new(root),
+  ::view-transition-old(blog-title),
+  ::view-transition-new(blog-title),
+  ::view-transition-old(main-content),
+  ::view-transition-new(main-content) {
+    animation: none;
+  }
+}

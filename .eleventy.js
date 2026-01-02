@@ -3,9 +3,19 @@ const pluginPWA = require("eleventy-plugin-pwa")
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const criticalCss = require("eleventy-critical-css");
 const util = require('util');
+const markdownIt = require("markdown-it");
 
 
 module.exports = function(eleventyConfig) {
+
+  // Configure markdown-it with table support
+  const md = markdownIt({
+    html: true,
+    breaks: true,
+    linkify: true,
+    typographer: true
+  });
+  eleventyConfig.setLibrary("md", md);
 
   // Add a filter using the Config API
   eleventyConfig.addFilter( "postDate", function(dateObj) {
