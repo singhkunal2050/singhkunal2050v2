@@ -1,5 +1,10 @@
 // @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap');
 
+// Header display font - Sora (modern geometric with soft curves)
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap');
+// Body font - DM Sans (clean geometric, excellent readability)
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 @font-face {
   font-family: 'Josefin Sans';
   src:  url('/fonts/static/JosefinSans-Regular.ttf') format('truetype');
@@ -198,8 +203,8 @@ $xxl:1400px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
   // transition: 250ms ease-in-out;
 }
@@ -276,12 +281,18 @@ blockquote{
 }
 
 .head_text {
+  font-family: 'Sora', sans-serif;
   font-size: clamp(2.9rem, 7vw, 6rem);
+  font-weight: 700;
   line-height: 1 !important;
+  letter-spacing: -0.02em;
 }
 
 .subhead_text {
+  font-family: 'Sora', sans-serif;
   font-size: clamp(1.28rem, 2.8vw, 4rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
   // opacity: .4;
   margin-bottom: 10px;
   margin-left: 5px;
@@ -1408,9 +1419,11 @@ footer {
   }
 
   & h1{
+    font-family: 'Sora', sans-serif;
     margin-bottom: 5px;
     color: var(--primary-color);
     opacity: 1;
+    letter-spacing: -0.01em;
   }
 
   & .blog-hashtags{
@@ -1478,8 +1491,17 @@ footer {
   background-blend-mode: color !important;
   padding: 120px 40px;
 
+  & h1 {
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
   & h2{
+    font-family: 'Sora', sans-serif;
+    font-weight: 500;
     margin-top: 20px;
+    letter-spacing: -0.01em;
   }
 
   & .blog-hashtags{
@@ -1562,33 +1584,42 @@ footer {
     }
 
     & h1 , & h2 , & h3 , & h4 , & h5 , & h6{
+      font-family: 'Sora', sans-serif;
       margin:10px 0;
       text-align: left;
       margin-top: 40px;
+      letter-spacing: -0.02em;
+      font-weight: 600;
     } 
 
     & h1{
-      font-size:2.4rem;  
+      font-size:2.4rem;
+      font-weight: 700;
     }
     
     & h2{
-      font-size:2.2rem;  
+      font-size:2.2rem;
+      font-weight: 600;
     }
     
     & h3{
-      font-size:2rem;  
+      font-size:2rem;
+      font-weight: 600;
     }
 
     & h4{
-      font-size:1.8rem;  
+      font-size:1.8rem;
+      font-weight: 500;
     }
 
     & h5{
-      font-size:1.4rem;  
+      font-size:1.4rem;
+      font-weight: 500;
     }
 
     & h6{
-      font-size:1.2rem;  
+      font-size:1.2rem;
+      font-weight: 500;
     }
 
     & li{
