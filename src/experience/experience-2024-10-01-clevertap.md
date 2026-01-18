@@ -5,7 +5,7 @@ title: Staff Engineer – Frontend
 company: CleverTap
 logo: /img/companies/ct.png
 date_start: 2024-10-01
-date_end: 2025-12-15
+date_end: 2025-12-01
 is_current: true
 location: Mumbai
 work_type: Hybrid
