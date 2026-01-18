@@ -6,7 +6,7 @@ date_start: 2022-08-01
 date_end: 2024-10-01
 is_current: false
 location: Bangalore
-work_type: Remote
+work_type: Hybrid
 description: Worked on the Developer Platform and Marketplace, building tools that help thousands of developers extend Freshworks products.
 achievements:
   - Built the Freddy Copilot VS Code extension, showcased at Freshworks Dev Summit 2023.
