@@ -4,7 +4,7 @@ tags:
 title: Staff Software Engineer
 company: Zendesk
 logo: /img/companies/zendesk.png
-date_start: 2025-01-20
+date_start: 2025-12-22
 is_current: true
 location: Pune
 work_type: Hybrid
