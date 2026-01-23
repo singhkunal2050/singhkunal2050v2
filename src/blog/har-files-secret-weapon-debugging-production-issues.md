@@ -1,5 +1,5 @@
 ---
-title: HAR Files: Your Secret Weapon for Debugging Production Issues
+title: "HAR Files: Your Secret Weapon for Debugging Production Issues"
 author: singhkunal2050
 description: How to use HAR files as a practical, zero-setup tool for debugging hard-to-reproduce production issues.
 tags:
