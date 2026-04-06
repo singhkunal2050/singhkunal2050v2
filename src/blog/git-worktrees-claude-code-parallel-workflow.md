@@ -1,7 +1,8 @@
 ---
 title: Supercharge Your Workflow with Git Worktrees and Claude Code
 author: Kunal Singh
-description: How to run multiple Claude Code agents in parallel on the same repository using git worktrees, and why it changes how you build.
+description: How to run multiple Claude Code agents in parallel on the same
+  repository using git worktrees, and why it changes how you build.
 tags:
   - git
   - claude-code
@@ -10,13 +11,15 @@ tags:
   - workflow
   - post
 date: 2026-04-06T14:14:43.123Z
+image: /img/post/image.png
+imageAlt: Git Worktrees
 readTime: 6 Minutes ⌚
 ---
 Most developers context-switch. You are mid-way through a feature, a bug comes in, you stash, switch branches, fix the bug, switch back, pop the stash, and try to remember where you were. It is friction. Small, constant, invisible friction that compounds across a day.
 
 Git worktrees combined with Claude Code eliminate this entirely. You can run multiple agents on the same repository in parallel, each working on a different task, without any of them knowing or caring about the others.
 
----
+- - -
 
 ## What is a Git Worktree
 
@@ -24,13 +27,13 @@ A git worktree is an additional working directory linked to the same repository.
 
 You can have as many worktrees as you want. They live in separate directories, and they do not interfere with each other.
 
----
+- - -
 
 ## What This Looks Like in Practice
 
 Your repository lives at `~/projects/my-app`. You add two worktrees:
 
-```
+```shell
 ~/projects/my-app-auth       → branch: feature/auth
 ~/projects/my-app-dashboard  → branch: feature/dashboard
 ~/projects/my-app-bugfix     → branch: fix/api-timeout
@@ -38,7 +41,7 @@ Your repository lives at `~/projects/my-app`. You add two worktrees:
 
 You open a terminal in each directory, start Claude Code in each one, and assign a task. All three agents work simultaneously. When each is done, you review and merge the branches as normal.
 
----
+- - -
 
 ## Setting It Up
 
@@ -80,7 +83,7 @@ git worktree remove ../my-app-auth
 git worktree list
 ```
 
----
+- - -
 
 ## Why This Works So Well with Claude Code
 
@@ -88,12 +91,12 @@ A normal Claude Code session has context about one working directory. It reads f
 
 This matters because:
 
-- **No merge conflicts mid-task.** Each agent works on its own branch.
-- **No context bleed.** Session 1 working on auth does not pick up changes from session 2 working on the dashboard.
-- **Full parallelism.** You are not waiting. All agents work simultaneously.
-- **Easy review.** When each task is done, you get a clean branch and a clean diff.
+* **No merge conflicts mid-task.** Each agent works on its own branch.
+* **No context bleed.** Session 1 working on auth does not pick up changes from session 2 working on the dashboard.
+* **Full parallelism.** You are not waiting. All agents work simultaneously.
+* **Easy review.** When each task is done, you get a clean branch and a clean diff.
 
----
+- - -
 
 ## A Real Workflow Example
 
@@ -109,7 +112,7 @@ With worktrees and Claude Code, you set all three up in five minutes. You hand o
 
 The three tasks that would take a full day become a focused few hours.
 
----
+- - -
 
 ## Tips
 
@@ -123,7 +126,7 @@ The three tasks that would take a full day become a focused few hours.
 
 **Clean up after merging.** Stale worktrees accumulate. Make it a habit to `git worktree remove` after you merge and delete the branch.
 
----
+- - -
 
 ## The Shift in How You Work
 
@@ -131,7 +134,7 @@ The real change is not speed, though you do move faster. The real change is that
 
 That is where you should be spending your time anyway.
 
----
+- - -
 
 ## Quick Reference
 
@@ -152,6 +155,6 @@ git worktree remove <path>
 git worktree prune
 ```
 
----
+- - -
 
 If you have not tried this setup yet, the overhead is two minutes. The payoff starts immediately.
