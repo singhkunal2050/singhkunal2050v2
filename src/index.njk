@@ -72,8 +72,13 @@ layout: 'base.njk'
         <a href="{{ work.data.workUrl | url }}" target="_blank">
           <div class="work-card">
             <div class="work-img">
+              {%- if work.data.video %}
+              <video src="{{ work.data.video | url }}" poster="{{ work.data.image | url }}" width="333" height="177"
+                autoplay muted loop playsinline aria-label="{{ work.data.imageAlt }}"></video>
+              {%- else %}
               <img src="{{ work.data.image | url }}" loading="lazy" width="333" height="177"
                 alt="{{ work.data.imageAlt }}">
+              {%- endif %}
             </div>
             <div class="work-content">
               <h1>{{ work.data.title }}</h1>

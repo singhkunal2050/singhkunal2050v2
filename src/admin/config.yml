@@ -19,6 +19,7 @@ collections:
       - { label : "Date" , name : "date" , widget : "datetime" }
       - { label : "Featured Image" , name : "image" , widget : "image" }
       - { label : "Image Caption" , name : "imageAlt" , widget : "string" }
+      - { label : "Preview Video (optional, plays muted on the card)" , name : "video" , widget : "file" , required: false }
       - { label : "Read Time" , name : "readTime" , widget : "string" , default: "2 Minutes ⌚" }
       - { label : "Body" , name : "body" , widget : "markdown" }
 

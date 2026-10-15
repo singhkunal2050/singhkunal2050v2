@@ -658,9 +658,14 @@ nav {
 
       & .work-img{
 
-        & img{
+        & img, & video{
           max-width: 100%;
           object-fit: contain;
+        }
+
+        & video{
+          display: block;
+          height: auto;
         }
       }
 
